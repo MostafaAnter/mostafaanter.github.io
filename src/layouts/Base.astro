@@ -12,18 +12,27 @@ const title = Astro.props.title ?? `${profile.name} — ${profile.role}`;
 const description = Astro.props.description ?? 'Senior Android Engineer and Technical Lead with 10+ years building scalable apps for 100M+ users. Kotlin, Jetpack Compose, clean architecture, CI/CD and AI-accelerated engineering.';
 const url = new URL(Astro.url.pathname, Astro.site).href;
 const og = new URL('/og.png', Astro.site).href;
-const person = {
-  '@context': 'https://schema.org', '@type': 'Person',
-  name: profile.name, jobTitle: profile.role, url: Astro.site?.href,
-  image: new URL('/img/portrait.jpg', Astro.site).href,
-  email: `mailto:${profile.contact.email}`,
-  address: { '@type': 'PostalAddress', addressLocality: 'Cairo', addressCountry: 'EG' },
-  worksFor: { '@type': 'Organization', name: 'The Weather Company' },
-  alumniOf: { '@type': 'CollegeOrUniversity', name: 'Assiut University' },
-  knowsLanguage: ['English', 'Arabic'],
-  knowsAbout: ['Android', 'Kotlin', 'Jetpack Compose', 'Clean Architecture', 'CI/CD', 'Server-Driven UI'],
-  sameAs: [profile.links.linkedin, profile.links.github, profile.links.stackoverflow, profile.links.twitter, profile.links.blog],
+const site = Astro.site!.href;
+const graph = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Person', '@id': `${site}#person`,
+      name: profile.name, jobTitle: profile.role, url: site,
+      image: new URL('/img/portrait.jpg', site).href,
+      email: `mailto:${profile.contact.email}`,
+      address: { '@type': 'PostalAddress', addressLocality: 'Cairo', addressCountry: 'EG' },
+      worksFor: { '@type': 'Organization', name: 'The Weather Company' },
+      alumniOf: { '@type': 'CollegeOrUniversity', name: 'Assiut University' },
+      knowsLanguage: ['English', 'Arabic'],
+      knowsAbout: ['Kotlin', 'Jetpack Compose', 'Android', 'Clean Architecture', 'CI/CD', 'Server-Driven UI'],
+      sameAs: [profile.links.linkedin, profile.links.github, profile.links.stackoverflow, profile.links.twitter, profile.links.blog],
+    },
+    { '@type': 'WebSite', '@id': `${site}#website`, url: site, name: `${profile.name} — Portfolio`, inLanguage: 'en', publisher: { '@id': `${site}#person` } },
+    { '@type': 'ProfilePage', '@id': `${site}#profilepage`, url: site, name: title, description, inLanguage: 'en', isPartOf: { '@id': `${site}#website` }, mainEntity: { '@id': `${site}#person` }, primaryImageOfPage: { '@type': 'ImageObject', url: og } },
+  ],
 };
+const gc = profile.analytics?.goatcounter; // empty = no analytics script
 ---
 <!doctype html>
 <html lang="en" data-theme="dark">
@@ -47,14 +56,16 @@ const person = {
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={og} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <link rel="preload" as="font" type="font/woff2" href={sgUrl} crossorigin />
     <link rel="preload" as="font" type="font/woff2" href={interUrl} crossorigin />
     <slot name="head" />
-    <script type="application/ld+json" set:html={JSON.stringify(person)} />
+    <script type="application/ld+json" set:html={JSON.stringify(graph)} />
     <script is:inline>
       // Saved choice wins, otherwise follow the system. Runs before paint to avoid a flash.
       (function () {
@@ -73,5 +84,6 @@ const person = {
   <body>
     <a class="skip" href="#main">Skip to content</a>
     <slot />
+    {gc && <script is:inline async data-goatcounter={`https://${gc}.goatcounter.com/count`} src="https://gc.zgo.at/count.js"></script>}
   </body>
 </html>

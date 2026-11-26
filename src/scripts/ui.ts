@@ -46,11 +46,12 @@ links.forEach((a) => { const s = document.getElementById(a.dataset.nav!); if (s)
 $$<HTMLElement>('[data-video]').forEach((box) => {
   $('.play', box)?.addEventListener('click', () => {
     const v = document.createElement('video');
-    v.controls = true; v.autoplay = true; v.playsInline = true; v.preload = 'auto';
+    v.controls = true; v.playsInline = true; v.preload = 'metadata';
     v.setAttribute('aria-label', 'Mostafa Anter introduction');
     v.innerHTML = `<source src="${box.dataset.webm}" type="video/webm; codecs=vp9,opus"><source src="${box.dataset.mp4}" type="video/mp4"><track kind="captions" srclang="en" label="English" src="${box.dataset.captions}" default>`;
     box.replaceChildren(v);
     v.focus();
+    void v.play().catch(() => { /* user can press play */ }); // started by the visitor's click, not autoplay
   }, { once: true });
 });
 

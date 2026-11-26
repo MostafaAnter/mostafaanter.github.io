@@ -1,0 +1,13 @@
+{
+  "_readme": [
+    "Testimonials appear on the site ONLY for entries where \"placeholder\" is false. While every entry is a placeholder the whole section is hidden, so nothing fake can ship.",
+    "How to get real ones: ask colleagues on LinkedIn (Profile > Add profile section > Recommendations > Ask for a recommendation), or ask by email for 2-3 sentences.",
+    "ALWAYS get explicit written permission (an email or message saying 'yes, you may publish this with my name and role') before adding a quote here. Do not edit quotes beyond trimming; keep the author's meaning.",
+    "Fields: quote, name, role, company, relationship ('manager' | 'peer' | 'report'), linkedin (optional URL), avatar (optional path under public/), placeholder (set to false when the entry is real and approved)."
+  ],
+  "items": [
+    { "placeholder": true, "quote": "TODO: quote from a manager", "name": "TODO Name", "role": "TODO Role", "company": "TODO Company", "relationship": "manager", "linkedin": null, "avatar": null },
+    { "placeholder": true, "quote": "TODO: quote from a peer", "name": "TODO Name", "role": "TODO Role", "company": "TODO Company", "relationship": "peer", "linkedin": null, "avatar": null },
+    { "placeholder": true, "quote": "TODO: quote from someone you led", "name": "TODO Name", "role": "TODO Role", "company": "TODO Company", "relationship": "report", "linkedin": null, "avatar": null }
+  ]
+}
