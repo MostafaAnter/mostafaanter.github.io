@@ -1,0 +1,24 @@
+---
+import { skills } from '../lib/content';
+---
+<section id="skills" aria-labelledby="skills-h">
+  <div class="wrap">
+    <span class="eyebrow">Skills</span>
+    <h2 class="h2" id="skills-h">The toolkit behind 100M-user apps.</h2>
+    <div class="groups">
+      {skills.groups.map((g) => (
+        <div class="group card">
+          <h3>{g.name}</h3>
+          <ul>{g.items.map((i) => <li class="chip">{i}</li>)}</ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+<style>
+  .groups { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 1.1rem; margin-top: 3rem; }
+  .group { padding: 1.4rem; transition: border-color .3s, transform .3s var(--ease); }
+  .group:hover { border-color: var(--accent); transform: translateY(-3px); }
+  h3 { font: 500 .8rem var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--accent-text); margin-bottom: 1rem; }
+  ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+</style>

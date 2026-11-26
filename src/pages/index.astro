@@ -1,16 +1,26 @@
 ---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Experience from '../components/Experience.astro';
+import Skills from '../components/Skills.astro';
+import Projects from '../components/Projects.astro';
+import Certificates from '../components/Certificates.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
 ---
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Mostafa Anter</title>
-    <link rel="canonical" href="https://mostafaanter.github.io/en/" />
-    <meta http-equiv="refresh" content="0; url=/en/" />
-    <script is:inline>
-      var l = (navigator.language || 'en').slice(0, 2) === 'ar' ? 'ar' : 'en';
-      location.replace('/' + l + '/');
-    </script>
-  </head>
-  <body><a href="/en/">English</a> · <a href="/ar/">العربية</a></body>
-</html>
+<Base>
+  <Nav />
+  <main id="main">
+    <Hero />
+    <About />
+    <Experience />
+    <Skills />
+    <Projects />
+    <Certificates />
+    <Contact />
+  </main>
+  <Footer />
+  <script>import '../scripts/ui';</script>
+</Base>

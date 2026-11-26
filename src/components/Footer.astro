@@ -1,0 +1,14 @@
+---
+import { profile } from '../lib/content';
+---
+<footer>
+  <div class="wrap row">
+    <p>© {new Date().getFullYear()} {profile.name} · {profile.location}</p>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+<style>
+  footer { border-top: 1px solid var(--line); padding-block: 2rem; color: var(--muted); font-size: .9rem; }
+  .row { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  p { margin: 0; }
+</style>

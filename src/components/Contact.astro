@@ -1,0 +1,40 @@
+---
+import { profile } from '../lib/content';
+const { contact, links } = profile;
+const tel = contact.phone.replace(/\s/g, '');
+const rows = [
+  ['Email', contact.email, `mailto:${contact.email}`],
+  ['Phone', contact.phone, `tel:${tel}`],
+  ['LinkedIn', 'in/mostafaanter', links.linkedin],
+  ['GitHub', 'MostafaAnter', links.github],
+  ['Stack Overflow', 'mostafa-anter', links.stackoverflow],
+  ['X / Twitter', '@mostafa_3nter', links.twitter],
+] as const;
+---
+<section id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h2 class="h2" id="contact-h">Let’s build something great together.</h2>
+    <p class="lede">Open to senior Android and technical-lead roles, and to selected consulting work. Email is the fastest way to reach me.</p>
+    <div class="cta">
+      <a class="btn primary" href={`mailto:${contact.email}?subject=Hello%20Mostafa`}>Email me</a>
+      <a class="btn" href="/Mostafa_Anter_Resume.pdf" download>Download resume (PDF)</a>
+    </div>
+    <ul class="rows">
+      {rows.map(([k, v, h]) => (
+        <li><a href={h} target={h.startsWith('http') ? '_blank' : undefined} rel={h.startsWith('http') ? 'noopener' : undefined}><span>{k}</span><strong>{v}</strong><i aria-hidden="true">→</i></a></li>
+      ))}
+    </ul>
+  </div>
+</section>
+<style>
+  .lede { color: var(--muted); max-width: 52ch; margin-top: 1rem; font-size: 1.15rem; }
+  .cta { display: flex; flex-wrap: wrap; gap: .75rem; margin: 2rem 0 3rem; }
+  .rows { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+  .rows a { display: grid; grid-template-columns: 9rem 1fr auto; gap: 1rem; align-items: center; padding: 1.15rem .25rem; border-bottom: 1px solid var(--line); text-decoration: none; color: var(--text); min-height: 44px; transition: padding .3s var(--ease), color .2s; }
+  .rows a:hover { padding-inline-start: 1rem; color: var(--accent-text); }
+  .rows span { font: 500 .78rem var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .rows strong { font: 600 clamp(1.05rem, 2.4vw, 1.5rem) var(--font-display); overflow-wrap: anywhere; }
+  .rows i { font-style: normal; }
+  @media (max-width: 560px) { .rows a { grid-template-columns: 1fr auto; } .rows span { grid-column: 1 / -1; } }
+</style>

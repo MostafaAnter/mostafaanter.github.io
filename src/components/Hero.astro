@@ -1,0 +1,50 @@
+---
+import { profile } from '../lib/content';
+const p = profile.portrait;
+const stats = [['10+', 'years building Android'], ['100M+', 'users reached at The Weather Company'], ['8+', 'developers led']];
+---
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap grid">
+    <div class="copy">
+      <span class="eyebrow">Senior Android Engineer · Technical Lead</span>
+      <h1 id="hero-title">Mostafa<br />Anter</h1>
+      <p class="lede">{profile.tagline}</p>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Get in touch</a>
+        <a class="btn" href="/Mostafa_Anter_Resume.pdf" download>Download resume</a>
+        <a class="btn" href="#projects">See my work</a>
+      </div>
+      <dl class="stats">
+        {stats.map(([n, l]) => <div><dt>{n}</dt><dd>{l}</dd></div>)}
+      </dl>
+    </div>
+    <div class="visual" id="hero-visual">
+      <div class="frame">
+        <picture>
+          <source type="image/avif" srcset={`/${p.base}-400.avif 400w, /${p.base}-800.avif 800w`} sizes="(max-width: 880px) 70vw, 420px" />
+          <source type="image/webp" srcset={`/${p.base}-400.webp 400w, /${p.base}-800.webp 800w`} sizes="(max-width: 880px) 70vw, 420px" />
+          <img src={`/${p.fallback}`} alt={p.alt} width="800" height="800" fetchpriority="high" decoding="async" />
+        </picture>
+      </div>
+      <!-- 3D hero mounts here (lazy, step 5). The portrait above is the permanent fallback. -->
+      <canvas id="hero-canvas" aria-hidden="true" hidden></canvas>
+    </div>
+  </div>
+</section>
+<style>
+  .hero { padding-top: calc(var(--nav-h) + clamp(2rem, 6vw, 5rem)); min-height: 100svh; display: grid; align-items: center; position: relative; overflow: hidden; }
+  .hero::before { content: ''; position: absolute; inset: -20% -10% auto auto; width: 60vw; height: 60vw; background: radial-gradient(closest-side, var(--glow), transparent); pointer-events: none; }
+  .grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: clamp(2rem, 6vw, 5rem); align-items: center; position: relative; }
+  h1 { font-size: clamp(3.4rem, 10vw, 8rem); letter-spacing: -.045em; margin-bottom: .3em; }
+  .lede { font-size: clamp(1.1rem, 2vw, 1.4rem); color: var(--muted); max-width: 38ch; }
+  .cta { display: flex; flex-wrap: wrap; gap: .75rem; margin-block: 2rem 2.5rem; }
+  .stats { display: grid; grid-template-columns: repeat(3, auto); gap: 1.5rem 2.5rem; margin: 0; justify-content: start; }
+  .stats div { border-inline-start: 2px solid var(--accent); padding-inline-start: .9rem; }
+  dt { font: 700 clamp(1.5rem, 3vw, 2.1rem) var(--font-display); letter-spacing: -.02em; }
+  dd { margin: 0; color: var(--muted); font-size: .85rem; max-width: 16ch; line-height: 1.35; }
+  .visual { position: relative; justify-self: center; width: min(100%, 420px); }
+  .frame { aspect-ratio: 1; border-radius: 28px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 0 0 10px color-mix(in srgb, var(--accent) 8%, transparent), 0 30px 80px -30px rgba(0,0,0,.6); }
+  .frame img { width: 100%; height: 100%; object-fit: cover; }
+  #hero-canvas { position: absolute; inset: -12%; width: 124%; height: 124%; pointer-events: none; }
+  @media (max-width: 880px) { .grid { grid-template-columns: 1fr; } .visual { order: -1; width: min(70%, 320px); } .stats { grid-template-columns: repeat(3, 1fr); gap: 1rem; } dd { font-size: .78rem; } }
+</style>

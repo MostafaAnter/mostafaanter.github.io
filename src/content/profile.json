@@ -1,20 +1,8 @@
 {
-  "name": {
-    "en": "Mostafa Anter",
-    "ar": null
-  },
-  "role": {
-    "en": "Senior Android Engineer & Technical Lead",
-    "ar": null
-  },
-  "tagline": {
-    "en": "Scalable, high-performance Android apps for 100M+ users — built and led with clean architecture, CI/CD and AI-accelerated engineering.",
-    "ar": null
-  },
-  "location": {
-    "en": "Cairo, Egypt",
-    "ar": null
-  },
+  "name": "Mostafa Anter",
+  "role": "Senior Android Engineer & Technical Lead",
+  "tagline": "Scalable, high-performance Android apps for 100M+ users — built and led with clean architecture, CI/CD and AI-accelerated engineering.",
+  "location": "Cairo, Egypt",
   "languages": [
     {
       "name": "English",
@@ -36,15 +24,11 @@
     "twitter": "https://twitter.com/mostafa_3nter",
     "blog": "https://mostafa-anter-portfolio.blogspot.com/"
   },
-  "about": {
-    "source": "Video transcript (Dec 2024) + LinkedIn summary. Wording is the owner's; ASR errors corrected, pending owner confirmation.",
-    "en": [
-      "I'm an experienced Senior Android developer with over 10 years in the field. I specialize in building scalable, high-performance mobile applications with Kotlin, Java, Jetpack Compose and multi-module architectures.",
-      "I have a strong background in integrating third-party SDKs, implementing server-driven UI, and keeping code quality high with test-driven development. I've led Android teams, and today I build weather apps serving 100M+ users at The Weather Company.",
-      "My work spans cross-functional teams delivering for businesses across the United States, Saudi Arabia and Singapore. Whether it's building an app from scratch or improving an existing one, I make sure every detail meets both technical and user needs."
-    ],
-    "ar": null
-  },
+  "about": [
+    "I'm an experienced Senior Android developer with over 10 years in the field. I specialize in building scalable, high-performance mobile applications with Kotlin, Java, Jetpack Compose and multi-module architectures.",
+    "I have a strong background in integrating third-party SDKs, implementing server-driven UI, and keeping code quality high with test-driven development. I've led Android teams, and today I build weather apps serving 100M+ users at The Weather Company.",
+    "My work spans cross-functional teams delivering for businesses across the United States, Saudi Arabia and Singapore. Whether it's building an app from scratch or improving an existing one, I make sure every detail meets both technical and user needs."
+  ],
   "video": {
     "webm": "media/intro.webm",
     "mp4": "media/intro.mp4",
@@ -61,9 +45,6 @@
       400,
       800
     ],
-    "alt": {
-      "en": "Portrait of Mostafa Anter",
-      "ar": null
-    }
+    "alt": "Portrait of Mostafa Anter"
   }
 }

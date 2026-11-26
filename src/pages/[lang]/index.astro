@@ -1,8 +1,0 @@
----
-import Base from '../../layouts/Base.astro';
-export function getStaticPaths() { return [{ params: { lang: 'en' } }, { params: { lang: 'ar' } }]; }
-const { lang } = Astro.params as { lang: 'en' | 'ar' };
----
-<Base lang={lang} title="Mostafa Anter — Senior Android Engineer & Technical Lead" description="Senior Android Engineer and Technical Lead with 10+ years building scalable apps for 100M+ users.">
-  <main id="main" class="wrap"><h1>Mostafa Anter</h1><p>Scaffold OK ({lang}).</p></main>
-</Base>
