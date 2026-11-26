@@ -1,5 +1,9 @@
 @import './tokens.css';
 *, *::before, *::after { box-sizing: border-box; }
+/* Large displays: scale the whole rem-based layout so 1440p/4K do not look like a small column in a big void */
+@media (min-width: 1800px) { html { font-size: 112.5%; } }
+@media (min-width: 2400px) { html { font-size: 150%; } }
+@media (min-width: 3200px) { html { font-size: 200%; } }
 html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--nav-h) + 12px); }
 body { margin: 0; background: var(--bg); color: var(--text); font: 400 1.0625rem/1.65 var(--font-body); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
 img, picture, video { max-width: 100%; display: block; }
@@ -15,7 +19,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 section { padding-block: clamp(4rem, 9vw, 8rem); }
 .eyebrow { font: 500 .8rem/1 var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--accent-text); margin-bottom: 1rem; display: block; }
 .h2 { font-size: clamp(2rem, 4.5vw, 3.4rem); max-width: 18ch; }
-.btn { display: inline-flex; align-items: center; gap: .55rem; padding: .85rem 1.35rem; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); text-decoration: none; color: var(--text); font-weight: 600; font-size: .98rem; transition: transform .25s var(--ease), border-color .25s, background .25s; min-height: 44px; }
+.btn { display: inline-flex; align-items: center; gap: .55rem; padding: .85rem 1.35rem; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); text-decoration: none; color: var(--text); font-weight: 600; font-size: .98rem; transition: transform .25s var(--ease), border-color .25s, background .25s; min-height: 2.75rem; }
 .btn:hover { border-color: var(--accent); transform: translateY(-2px); }
 .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
 .btn.primary:hover { filter: brightness(1.08); }

@@ -5,9 +5,9 @@
   --accent: #3ddc84;
   --accent-ink: #04210f;
   --radius: 16px;
-  --maxw: 1180px;
+  --maxw: 73.75rem;
   --ease: cubic-bezier(.22, 1, .36, 1);
-  --nav-h: 68px;
+  --nav-h: 4.25rem;
 }
 :root[data-theme='dark'] {
   color-scheme: dark;
