@@ -1,10 +1,34 @@
 {
-  "name": { "en": "Mostafa Anter", "ar": null },
-  "role": { "en": "Senior Android Engineer & Technical Lead", "ar": null },
-  "tagline": { "en": "Scalable, high-performance Android apps for 100M+ users — built and led with clean architecture, CI/CD and AI-accelerated engineering.", "ar": null },
-  "location": { "en": "Cairo, Egypt", "ar": null },
-  "languages": [{ "name": "English", "level": "Professional working" }, { "name": "Arabic", "level": "Native" }],
-  "contact": { "email": "mostafa3nter@gmail.com", "phone": "+20 111 783 3303" },
+  "name": {
+    "en": "Mostafa Anter",
+    "ar": null
+  },
+  "role": {
+    "en": "Senior Android Engineer & Technical Lead",
+    "ar": null
+  },
+  "tagline": {
+    "en": "Scalable, high-performance Android apps for 100M+ users — built and led with clean architecture, CI/CD and AI-accelerated engineering.",
+    "ar": null
+  },
+  "location": {
+    "en": "Cairo, Egypt",
+    "ar": null
+  },
+  "languages": [
+    {
+      "name": "English",
+      "level": "Professional working"
+    },
+    {
+      "name": "Arabic",
+      "level": "Native"
+    }
+  ],
+  "contact": {
+    "email": "mostafa3nter@gmail.com",
+    "phone": "+20 111 783 3303"
+  },
   "links": {
     "linkedin": "https://www.linkedin.com/in/mostafaanter",
     "github": "https://github.com/MostafaAnter",
@@ -21,5 +45,25 @@
     ],
     "ar": null
   },
-  "video": { "file": "intro", "captions": "intro.vtt", "note": "Original 117s, 1080x720, 75MB - to be compressed" }
+  "video": {
+    "webm": "media/intro.webm",
+    "mp4": "media/intro.mp4",
+    "poster": "media/intro-poster",
+    "captions": "media/intro.en.vtt",
+    "duration": 117,
+    "aspect": "680/720",
+    "note": "Cropped from 1080x720 original to remove editor watermark; captions corrected from ASR"
+  },
+  "portrait": {
+    "base": "img/portrait",
+    "fallback": "img/portrait.jpg",
+    "widths": [
+      400,
+      800
+    ],
+    "alt": {
+      "en": "Portrait of Mostafa Anter",
+      "ar": null
+    }
+  }
 }

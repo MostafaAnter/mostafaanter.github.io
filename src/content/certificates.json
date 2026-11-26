@@ -1,11 +1,62 @@
 {
   "note": "Items with file=null have no scan; card shows title/issuer only. Dates only where a source states them.",
   "items": [
-    { "id": "github-copilot", "title": "GitHub Copilot", "issuer": "Microsoft", "category": "AI", "date": "2025-09-13", "expires": "2027-09-14", "credentialId": "A0A5D6AE95BD68EE", "verify": "https://learn.microsoft.com/en-us/users/mostafaantersaydabdelaal-7274/credentials/a0a5d6ae95bd68ee", "file": "certs/microsoft-github-copilot.pdf" },
-    { "id": "applied-skills-copilot", "title": "Applied Skills: Accelerate app development by using GitHub Copilot", "issuer": "Microsoft", "category": "AI", "date": "2025", "file": null, "source": "resume + LinkedIn" },
-    { "id": "android-nanodegree", "title": "Android Developer Nanodegree", "issuer": "Udacity (co-created with Google)", "category": "Android", "date": "2017-01-24", "file": "certs/udacity-android-nanodegree.pdf" },
-    { "id": "mal-facilitator", "title": "Developing Android Apps — Trained Facilitator", "issuer": "Mobile Application Launchpad (Google, Udacity, Egypt MCIT)", "category": "Android", "date": "2016-12-25", "file": "certs/mal-study-group-leader.jpg" },
-    { "id": "cicd-android", "title": "Master CI/CD for Android Developers", "issuer": "Udemy", "category": "Engineering", "date": "2020", "file": null, "source": "resume + LinkedIn" },
-    { "id": "swift5", "title": "Swift 5 iOS Application Developer Specialization", "issuer": null, "category": "iOS", "date": null, "file": null, "source": "LinkedIn only - issuer and date unknown" }
+    {
+      "id": "github-copilot",
+      "title": "GitHub Copilot",
+      "issuer": "Microsoft",
+      "category": "AI",
+      "date": "2025-09-13",
+      "expires": "2027-09-14",
+      "credentialId": "A0A5D6AE95BD68EE",
+      "verify": "https://learn.microsoft.com/en-us/users/mostafaantersaydabdelaal-7274/credentials/a0a5d6ae95bd68ee",
+      "file": "certs/microsoft-github-copilot.pdf",
+      "image": "certs/microsoft-github-copilot"
+    },
+    {
+      "id": "applied-skills-copilot",
+      "title": "Applied Skills: Accelerate app development by using GitHub Copilot",
+      "issuer": "Microsoft",
+      "category": "AI",
+      "date": "2025",
+      "file": null,
+      "source": "resume + LinkedIn"
+    },
+    {
+      "id": "android-nanodegree",
+      "title": "Android Developer Nanodegree",
+      "issuer": "Udacity (co-created with Google)",
+      "category": "Android",
+      "date": "2017-01-24",
+      "file": "certs/udacity-android-nanodegree.pdf",
+      "image": "certs/udacity-android-nanodegree"
+    },
+    {
+      "id": "mal-facilitator",
+      "title": "Developing Android Apps — Trained Facilitator",
+      "issuer": "Mobile Application Launchpad (Google, Udacity, Egypt MCIT)",
+      "category": "Android",
+      "date": "2016-12-25",
+      "file": "certs/mal-study-group-leader.jpg",
+      "image": "certs/mal-study-group-leader"
+    },
+    {
+      "id": "cicd-android",
+      "title": "Master CI/CD for Android Developers",
+      "issuer": "Udemy",
+      "category": "Engineering",
+      "date": "2020",
+      "file": null,
+      "source": "resume + LinkedIn"
+    },
+    {
+      "id": "swift5",
+      "title": "Swift 5 iOS Application Developer Specialization",
+      "issuer": null,
+      "category": "iOS",
+      "date": null,
+      "file": null,
+      "source": "LinkedIn only - issuer and date unknown"
+    }
   ]
 }
