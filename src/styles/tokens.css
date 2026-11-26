@@ -1,0 +1,23 @@
+:root {
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --accent: #3ddc84;
+  --accent-ink: #04210f;
+  --radius: 14px;
+  --maxw: 1180px;
+  --ease: cubic-bezier(.22, 1, .36, 1);
+}
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0b0f14; --surface: #121821; --surface-2: #19212c;
+  --text: #eef2f6; --muted: #9aa7b6; --line: #243040;
+  --accent-text: #3ddc84;
+}
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f6f8f7; --surface: #ffffff; --surface-2: #eef2f0;
+  --text: #0e1612; --muted: #4a5a52; --line: #d6dfdb;
+  --accent-text: #0a7a3c;
+}
+:root[lang='ar'] { --font-display: 'IBM Plex Sans Arabic', 'Space Grotesk', sans-serif; --font-body: 'IBM Plex Sans Arabic', 'Inter', sans-serif; }

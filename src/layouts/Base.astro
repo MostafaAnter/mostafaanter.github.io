@@ -1,0 +1,31 @@
+---
+import '../styles/global.css';
+interface Props { lang: 'en' | 'ar'; title: string; description: string; }
+const { lang, title, description } = Astro.props;
+const dir = lang === 'ar' ? 'rtl' : 'ltr';
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang={lang} dir={dir} data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="en" href={new URL('/en/', Astro.site)} />
+    <link rel="alternate" hreflang="ar" href={new URL('/ar/', Astro.site)} />
+    <script is:inline>
+      // Theme: saved choice, else system preference. Runs before paint to avoid a flash.
+      (function () {
+        var s = localStorage.getItem('theme');
+        var t = s || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">{lang === 'ar' ? 'تخطَّ إلى المحتوى' : 'Skip to content'}</a>
+    <slot />
+  </body>
+</html>
