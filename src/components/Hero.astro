@@ -26,7 +26,7 @@ const stats = [['10+', 'years building Android'], ['100M+', 'users reached at Th
           <img src={`/${p.fallback}`} alt={p.alt} width="800" height="800" fetchpriority="high" decoding="async" />
         </picture>
       </div>
-      <!-- 3D hero mounts here (lazy, step 5). The portrait above is the permanent fallback. -->
+      <!-- 3D hero (src/scripts/hero3d.ts) mounts here, lazily. The portrait above is the permanent fallback. -->
       <canvas id="hero-canvas" aria-hidden="true" hidden></canvas>
     </div>
   </div>
@@ -43,8 +43,11 @@ const stats = [['10+', 'years building Android'], ['100M+', 'users reached at Th
   dt { font: 700 clamp(1.5rem, 3vw, 2.1rem) var(--font-display); letter-spacing: -.02em; }
   dd { margin: 0; color: var(--muted); font-size: .85rem; max-width: 16ch; line-height: 1.35; }
   .visual { position: relative; justify-self: center; width: min(100%, 420px); }
-  .frame { aspect-ratio: 1; border-radius: 28px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 0 0 10px color-mix(in srgb, var(--accent) 8%, transparent), 0 30px 80px -30px rgba(0,0,0,.6); }
+  .frame { aspect-ratio: 4 / 5; border-radius: 28px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 0 0 10px color-mix(in srgb, var(--accent) 8%, transparent), 0 30px 80px -30px rgba(0,0,0,.6); }
   .frame img { width: 100%; height: 100%; object-fit: cover; }
-  #hero-canvas { position: absolute; inset: -12%; width: 124%; height: 124%; pointer-events: none; }
+  .frame { transition: opacity .5s var(--ease); }
+  #hero-canvas { position: absolute; inset: -8% -22%; width: 144%; height: 116%; pointer-events: none; opacity: 0; transition: opacity .8s var(--ease); }
+  .visual:global(.three-on) .frame { opacity: 0; }
+  .visual:global(.three-on) #hero-canvas { opacity: 1; }
   @media (max-width: 880px) { .grid { grid-template-columns: 1fr; } .visual { order: -1; width: min(70%, 320px); } .stats { grid-template-columns: repeat(3, 1fr); gap: 1rem; } dd { font-size: .78rem; } }
 </style>
