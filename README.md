@@ -38,10 +38,17 @@ npm run fetch:blog
 
 This re-reads the Blogger feed into `src/content/projects/feed.json`. For any **new** post, add an entry to `src/content/projects/curated.json` (key = the post path such as `/2025/01/my-app.html`, plus `group`, `summary`, `tech`). Posts without an entry are not shown.
 
+## Featured projects, testimonials, form and analytics
+
+- **Featured case studies:** `src/content/featured.json`. A field set to `null` is hidden; the `_todo` notes say what is missing.
+- **Testimonials:** `src/content/testimonials.json`. The section stays hidden until you set `"placeholder": false` on a real, approved entry. Always get written permission first (see the `_readme` in that file).
+- **Contact form:** paste your public Web3Forms access key into `contact.web3formsKey` in `src/content/profile.json`. Empty = no form.
+- **Analytics:** put your GoatCounter site code into `analytics.goatcounter` in `profile.json`. Empty = no analytics. Cookieless, no banner needed. To use Plausible instead, see section 11 of `CLAUDE.md`.
+
 ## Other tasks
 
 - Change the intro video / portrait: see section 6 of `CLAUDE.md`.
-- Regenerate the UI sounds: `npm run audio`.
+- Regenerate the UI sounds: `npm run audio`. Regenerate favicons: `npm run icons`.
 - Theme colors: `src/styles/tokens.css`.
 
 `CLAUDE.md` contains the full project context, decisions and gotchas. Start there when asking Claude Code to make changes.

@@ -9,7 +9,7 @@ import interUrl from '@fontsource-variable/inter/files/inter-latin-wght-normal.w
 
 interface Props { title?: string; description?: string }
 const title = Astro.props.title ?? `${profile.name} — ${profile.role}`;
-const description = Astro.props.description ?? 'Senior Android Engineer and Technical Lead with 10+ years building scalable apps for 100M+ users. Kotlin, Jetpack Compose, clean architecture, CI/CD and AI-accelerated engineering.';
+const description = Astro.props.description ?? 'Senior Android Engineer and Technical Lead with 10+ years building scalable apps for 100M+ users. Kotlin, Jetpack Compose, clean architecture and CI/CD.';
 const url = new URL(Astro.url.pathname, Astro.site).href;
 const og = new URL('/og.png', Astro.site).href;
 const site = Astro.site!.href;
