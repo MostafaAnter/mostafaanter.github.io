@@ -35,8 +35,24 @@ async function init() {
   });
 
   // Timeline line draws with scroll
-  const line = document.querySelector('.timeline .line');
-  if (line) gsap.fromTo(line, { scaleY: 0 }, { scaleY: 1, ease: 'none', scrollTrigger: { trigger: '.timeline', start: 'top 70%', end: 'bottom 70%', scrub: true } });
+  const line = document.querySelector('.timeline.main .line');
+  if (line) gsap.fromTo(line, { scaleY: 0 }, { scaleY: 1, ease: 'none', scrollTrigger: { trigger: '.timeline.main', start: 'top 70%', end: 'bottom 70%', scrub: true } });
+
+  // Stat counters: count up once when scrolled into view. The final text is already in the HTML (no-JS fallback);
+  // nothing is touched until the element is actually visible, and a timer guarantees the final value is always restored.
+  const counters = document.querySelectorAll<HTMLElement>('[data-count]');
+  const cio = new IntersectionObserver((entries) => {
+    for (const en of entries) {
+      if (!en.isIntersecting) continue;
+      const el = en.target as HTMLElement; cio.unobserve(el);
+      const m = /^(\d+)(.*)$/.exec(el.dataset.count || ''); if (!m) continue;
+      const end = +m[1], suffix = m[2], o = { v: 0 }, final = () => { el.textContent = end + suffix; };
+      el.textContent = '0' + suffix;
+      gsap.to(o, { v: end, duration: 1.6, ease: 'power2.out', onUpdate: () => { el.textContent = Math.round(o.v) + suffix; }, onComplete: final });
+      setTimeout(final, 3200);
+    }
+  }, { threshold: 0.6 });
+  counters.forEach((el) => cio.observe(el));
 
   window.__motionReady = true;
 

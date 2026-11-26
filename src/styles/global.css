@@ -5,10 +5,10 @@
 @media (min-width: 2400px) { html { font-size: 150%; } }
 @media (min-width: 3200px) { html { font-size: 200%; } }
 html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--nav-h) + 12px); }
-body { margin: 0; background: var(--bg); color: var(--text); font: 400 1.0625rem/1.65 var(--font-body); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 400 var(--text-base)/1.65 var(--font-body); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
 img, picture, video { max-width: 100%; display: block; }
 h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.1; margin: 0 0 .5em; letter-spacing: -.02em; }
-p { margin: 0 0 1em; }
+p { margin: 0 0 1em; max-width: var(--measure); }
 a { color: var(--accent-text); text-underline-offset: 3px; }
 button { font: inherit; color: inherit; cursor: pointer; }
 :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
@@ -17,14 +17,15 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .wrap { width: min(100% - 2.5rem, var(--maxw)); margin-inline: auto; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 section { padding-block: clamp(4rem, 9vw, 8rem); }
-.eyebrow { font: 500 .8rem/1 var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--accent-text); margin-bottom: 1rem; display: block; }
-.h2 { font-size: clamp(2rem, 4.5vw, 3.4rem); max-width: 18ch; }
+.eyebrow { font: 500 var(--text-xs)/1 var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--accent-text); margin-bottom: 1rem; display: block; }
+.h2 { font-size: var(--text-2xl); max-width: 18ch; }
 .btn { display: inline-flex; align-items: center; gap: .55rem; padding: .85rem 1.35rem; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); text-decoration: none; color: var(--text); font-weight: 600; font-size: .98rem; transition: transform .25s var(--ease), border-color .25s, background .25s; min-height: 2.75rem; }
 .btn:hover { border-color: var(--accent); transform: translateY(-2px); }
+.btn:active { transform: translateY(0) scale(.97); transition-duration: .08s; }
 .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
 .btn.primary:hover { filter: brightness(1.08); }
 .chip { font: 500 .8rem/1 var(--font-mono); padding: .45rem .7rem; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--line); color: var(--text); white-space: nowrap; }
-.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-sm); }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; scroll-behavior: auto !important; } }
 
 /* Motion: initial hidden states exist only while html.motion-ok is set (see Base.astro + motion.ts) */

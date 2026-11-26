@@ -6,16 +6,17 @@ const stats = [['10+', 'years building Android'], ['100M+', 'users reached at Th
 <section class="hero" id="hero" aria-labelledby="hero-title">
   <div class="wrap grid">
     <div class="copy">
+      <p class="pill" data-hero><span class="dot" aria-hidden="true"></span>Open to senior Android and technical-lead roles</p>
       <span class="eyebrow" data-hero>Senior Android Engineer · Technical Lead</span>
       <h1 id="hero-title">Mostafa<br />Anter</h1>
       <p class="lede" data-hero>{profile.tagline}</p>
       <div class="cta" data-hero>
         <a class="btn primary" href="#contact">Get in touch</a>
-        <a class="btn" href="/Mostafa_Anter_Resume.pdf" download>Download resume</a>
+        <a class="btn" href="/Mostafa_Anter_Resume.pdf" download data-goatcounter-click="resume-download">Download resume</a>
         <a class="btn" href="#projects">See my work</a>
       </div>
       <dl class="stats" data-hero>
-        {stats.map(([n, l]) => <div><dt>{n}</dt><dd>{l}</dd></div>)}
+        {stats.map(([n, l]) => <div><dt><span class="sr-only">{n}</span><span aria-hidden="true" data-count={n}>{n}</span></dt><dd>{l}</dd></div>)}
       </dl>
     </div>
     <div class="visual" id="hero-visual">
@@ -32,12 +33,22 @@ const stats = [['10+', 'years building Android'], ['100M+', 'users reached at Th
   </div>
 </section>
 <style>
-  .hero { padding-top: calc(var(--nav-h) + clamp(2rem, 6vw, 5rem)); min-height: 100svh; display: grid; align-items: center; position: relative; overflow: hidden; }
-  .hero::before { content: ''; position: absolute; inset: -20% -10% auto auto; width: 60vw; height: 60vw; background: radial-gradient(closest-side, var(--glow), transparent); pointer-events: none; }
-  .grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: clamp(2rem, 6vw, 5rem); align-items: center; position: relative; }
-  h1 { font-size: clamp(3.4rem, 10vw, 8rem); letter-spacing: -.045em; margin-bottom: .3em; }
+  .hero { padding-top: calc(var(--nav-h) + clamp(1.25rem, 3.5vw, 3rem)); padding-bottom: var(--space-6); min-height: 100svh; display: grid; align-items: center; position: relative; overflow: hidden; }
+  /* Gradient mesh + film grain: pure CSS, no canvas, no JS */
+  .hero::before { content: ''; position: absolute; inset: 0; pointer-events: none;
+    background:
+      radial-gradient(40rem 32rem at 82% 12%, var(--glow), transparent 70%),
+      radial-gradient(34rem 28rem at 8% 88%, var(--glow-2), transparent 70%),
+      radial-gradient(26rem 20rem at 55% 55%, var(--glow-2), transparent 75%); }
+  .hero::after { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: var(--grain-opacity);
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"); }
+  .pill { display: inline-flex; align-items: center; gap: .6rem; margin: 0 0 var(--space-5); padding: .45rem .95rem; border: 1px solid var(--line); border-radius: 999px; background: color-mix(in srgb, var(--surface) 80%, transparent); font: 500 var(--text-xs)/1.3 var(--font-mono); color: var(--text); }
+  .dot { width: .55rem; height: .55rem; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 0 var(--accent); animation: ping 2.4s var(--ease) infinite; }
+  @keyframes ping { 70% { box-shadow: 0 0 0 .55rem transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }
+  .grid { z-index: 1; display: grid; grid-template-columns: 1.25fr .75fr; gap: clamp(2rem, 6vw, 5rem); align-items: center; position: relative; }
+  h1 { font-size: var(--text-hero); letter-spacing: -.045em; margin-bottom: .3em; }
   .lede { font-size: clamp(1.1rem, 2vw, 1.4rem); color: var(--muted); max-width: 38ch; }
-  .cta { display: flex; flex-wrap: wrap; gap: .75rem; margin-block: 2rem 2.5rem; }
+  .cta { display: flex; flex-wrap: wrap; gap: .75rem; margin-block: var(--space-5) var(--space-6); }
   .stats { display: grid; grid-template-columns: repeat(3, auto); gap: 1.5rem 2.5rem; margin: 0; justify-content: start; }
   .stats div { border-inline-start: 2px solid var(--accent); padding-inline-start: .9rem; }
   dt { font: 700 clamp(1.5rem, 3vw, 2.1rem) var(--font-display); letter-spacing: -.02em; }

@@ -11,12 +11,31 @@ $('#theme-toggle')?.addEventListener('click', () => {
   document.querySelector('meta[name="theme-color"]')?.setAttribute('content', next === 'dark' ? '#0b0f14' : '#f6f8f7');
 });
 
-// Mobile menu
-const menu = $('#menu'), burger = $<HTMLButtonElement>('#menu-toggle');
-const setMenu = (open: boolean) => { menu?.classList.toggle('open', open); burger?.setAttribute('aria-expanded', String(open)); };
-burger?.addEventListener('click', () => setMenu(!menu?.classList.contains('open')));
+// Mobile menu: focus is trapped inside the header (logo, links, buttons) while open; Escape / link click / outside tap close it
+// and focus returns to the menu button.
+const menu = $('#menu'), burger = $<HTMLButtonElement>('#menu-toggle'), header = $('.nav');
+const isOpen = () => !!menu?.classList.contains('open');
+const trapItems = (): HTMLElement[] => $$<HTMLElement>('a[href], button', header!).filter((el) => !el.hidden && el.getClientRects().length > 0);
+const setMenu = (open: boolean, restoreFocus = false) => {
+  menu?.classList.toggle('open', open);
+  burger?.setAttribute('aria-expanded', String(open));
+  burger?.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  // the menu is still visibility:hidden for the first frame of its transition, so focus on the next frame
+  if (open) requestAnimationFrame(() => setTimeout(() => $<HTMLAnchorElement>('a', menu!)?.focus(), 30));
+  else if (restoreFocus) burger?.focus();
+};
+burger?.addEventListener('click', () => setMenu(!isOpen(), true));
 menu?.addEventListener('click', (e) => { if ((e.target as Element).closest('a')) setMenu(false); });
-document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
+document.addEventListener('pointerdown', (e) => { if (isOpen() && !(e.target as Element).closest('.nav')) setMenu(false); });
+document.addEventListener('keydown', (e) => {
+  if (!isOpen()) return;
+  if (e.key === 'Escape') { setMenu(false, true); return; }
+  if (e.key !== 'Tab') return;
+  const items = trapItems(), first = items[0], last = items[items.length - 1];
+  if (!header!.contains(document.activeElement)) { e.preventDefault(); first.focus(); return; }
+  if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+  else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+});
 
 // Active section in nav
 const links = $$<HTMLAnchorElement>('[data-nav]');
@@ -29,11 +48,12 @@ links.forEach((a) => { const s = document.getElementById(a.dataset.nav!); if (s)
 $$<HTMLElement>('[data-video]').forEach((box) => {
   $('.play', box)?.addEventListener('click', () => {
     const v = document.createElement('video');
-    v.controls = true; v.autoplay = true; v.playsInline = true; v.preload = 'auto';
+    v.controls = true; v.playsInline = true; v.preload = 'metadata';
     v.setAttribute('aria-label', 'Mostafa Anter introduction');
     v.innerHTML = `<source src="${box.dataset.webm}" type="video/webm; codecs=vp9,opus"><source src="${box.dataset.mp4}" type="video/mp4"><track kind="captions" srclang="en" label="English" src="${box.dataset.captions}" default>`;
     box.replaceChildren(v);
     v.focus();
+    void v.play().catch(() => { /* user can press play */ }); // started by the visitor's click, not autoplay
   }, { once: true });
 });
 
@@ -86,5 +106,36 @@ addEventListener('scroll', prog, { passive: true }); addEventListener('resize', 
 
 // Tell the motion layer when a modal opens so smooth-scroll pauses behind it
 dlg?.addEventListener('toggle', () => window.dispatchEvent(new CustomEvent(dlg.open ? 'modal:open' : 'modal:close')));
+
+
+// Copy email (clipboard API with a textarea fallback) + visible and spoken confirmation
+const copyBtn = $<HTMLButtonElement>('#copy-email');
+copyBtn?.addEventListener('click', async () => {
+  const email = copyBtn.dataset.email!, label = $('[data-label]', copyBtn)!, status = $('#copy-status');
+  let ok = false;
+  try { await navigator.clipboard.writeText(email); ok = true; } catch {
+    const t = Object.assign(document.createElement('textarea'), { value: email });
+    t.style.position = 'fixed'; t.style.opacity = '0'; document.body.append(t); t.select();
+    try { ok = document.execCommand('copy'); } catch { /* ignore */ } t.remove();
+  }
+  const msg = ok ? 'Copied ✓' : 'Press Ctrl/Cmd+C to copy';
+  label.textContent = msg; if (status) status.textContent = ok ? 'Email address copied to clipboard' : 'Copy failed';
+  setTimeout(() => { label.textContent = 'Copy email'; if (status) status.textContent = ''; }, 2200);
+});
+
+// Contact form (rendered only when a Web3Forms key is configured). Posts as JSON; falls back to a normal form POST without JS.
+const form = $<HTMLFormElement>('#contact-form');
+form?.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const status = $('#cf-status')!, btn = $<HTMLButtonElement>('button[type=submit]', form)!;
+  if (!form.reportValidity()) return;
+  btn.disabled = true; status.classList.remove('err'); status.textContent = 'Sending…';
+  try {
+    const res = await fetch(form.action, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(Object.fromEntries(new FormData(form))) });
+    const data = await res.json();
+    if (data.success) { status.textContent = 'Thanks! Your message was sent.'; form.reset(); } else throw new Error(data.message || 'failed');
+  } catch { status.classList.add('err'); status.textContent = 'Sorry, that did not send. Please email me directly.'; }
+  btn.disabled = false;
+});
 
 export {};

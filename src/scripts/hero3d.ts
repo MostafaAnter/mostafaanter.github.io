@@ -147,7 +147,8 @@ async function start() {
 if (qualifies()) {
   const go = () => start().catch(() => visual?.classList.remove('three-on'));
   const idle = (window as unknown as { requestIdleCallback?: (cb: () => void, o?: object) => void }).requestIdleCallback;
-  addEventListener('load', () => (idle ? idle(go, { timeout: 2500 }) : setTimeout(go, 800)), { once: true });
+  // Wait until the page has loaded, give first paint and interaction a head start (2.5 s), then start on an idle frame.
+  addEventListener('load', () => setTimeout(() => (idle ? idle(go, { timeout: 2000 }) : go()), 2500), { once: true });
 }
 
 export {};

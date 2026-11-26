@@ -1,6 +1,10 @@
 ---
+import sharp from 'sharp';
 import { certificates, certDate } from '../lib/content';
-const items = [...certificates.items].sort((a, b) => (b.date ?? '0').localeCompare(a.date ?? '0'));
+const items = certificates.items.filter((i) => !('hidden' in i && i.hidden)).sort((a, b) => (b.date ?? '0').localeCompare(a.date ?? '0'));
+// Real intrinsic size of each thumbnail (prevents layout shift)
+const dims: Record<string, { width: number; height: number }> = {};
+for (const c of items) if (c.image) { const m = await sharp(`public/${c.image}-480.webp`).metadata(); dims[c.image] = { width: m.width!, height: m.height! }; }
 const cats = ['All', ...new Set(items.map((i) => i.category))];
 ---
 <section id="certificates" aria-labelledby="cert-h">
@@ -17,20 +21,20 @@ const cats = ['All', ...new Set(items.map((i) => i.category))];
             <button type="button" class="thumb" data-lightbox={`/${c.image}-1800`} data-title={c.title} aria-label={`View certificate: ${c.title}`}>
               <picture>
                 <source type="image/avif" srcset={`/${c.image}-480.avif`} />
-                <img src={`/${c.image}-480.webp`} alt={`${c.title} certificate`} width="480" loading="lazy" decoding="async" />
+                <img src={`/${c.image}-480.webp`} alt={`${c.title} certificate`} width={dims[c.image].width} height={dims[c.image].height} loading="lazy" decoding="async" />
               </picture>
               <span class="zoom" aria-hidden="true">View</span>
             </button>
           ) : (
-            <div class="thumb text" aria-hidden="true"><span>{c.issuer ?? 'Certification'}</span></div>
+            <div class="thumb text" aria-hidden="true"><span>{c.issuer}</span></div>
           )}
           <div class="info">
             <h3>{c.title}</h3>
-            <p>{c.issuer ?? 'Issuer to be confirmed'}{c.date ? ` · ${certDate(c.date)}` : ''}</p>
+            <p>{c.issuer}{c.date ? ` · ${certDate(c.date)}` : ''}</p>
             {'expires' in c && c.expires ? <p class="sub">Valid until {certDate(c.expires)}</p> : null}
             <div class="links">
-              {'verify' in c && c.verify ? <a href={c.verify} target="_blank" rel="noopener">Verify online ↗</a> : null}
-              {c.file?.endsWith('.pdf') ? <a href={`/${c.file}`} target="_blank" rel="noopener">PDF</a> : null}
+              {'verify' in c && c.verify ? <a href={c.verify} target="_blank" rel="noopener noreferrer">Verify online <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a> : null}
+              {c.file?.endsWith('.pdf') ? <a href={`/${c.file}`} target="_blank" rel="noopener noreferrer">PDF<span class="sr-only"> of {c.title} (opens in a new tab)</span></a> : null}
             </div>
           </div>
         </li>

@@ -1,0 +1,133 @@
+{
+  "_readme": "Featured case studies. Only fields that have a value are shown on the site. Keys: problem, role, built, impact[] (list), stack[], link {label, href, note}. Fields with a null value are hidden; see _todo for what the owner still needs to supply. Facts come from the resume/LinkedIn/blog only. 'highlights' = big-number callouts, taken only from numbers already on the resume; when present they replace the Impact list.",
+  "items": [
+    {
+      "id": "twc",
+      "title": "The Weather Channel",
+      "meta": "The Weather Company · 2024 – now",
+      "problem": "Serve 100M+ users with hurricane tracking, radar and live weather updates.",
+      "role": "Senior Android Engineer, working with product, design and backend. Code reviews, architecture decisions and mentoring.",
+      "built": "Server-driven UI (SDUI) screens, Adobe and analytics SDK integrations for personalization and safety tools, advanced concurrency, and test-driven development.",
+      "impact": [
+        "Performance improved by 40% through advanced concurrency",
+        "Feature-delivery flexibility up 60% with SDUI",
+        "Serves 100M+ users"
+      ],
+      "stack": [
+        "SDUI",
+        "Adobe SDK",
+        "Concurrency",
+        "TDD"
+      ],
+      "link": {
+        "label": "Google Play",
+        "href": "https://play.google.com/store/apps/details?id=com.weather.Weather"
+      },
+      "_todo": "Owner: which metric is the 40% (cold start, jank, ANRs)? Confirm with the employer what may be published about internal work.",
+      "highlights": [
+        {
+          "value": "100M+",
+          "label": "users served"
+        },
+        {
+          "value": "40%",
+          "label": "performance gain"
+        },
+        {
+          "value": "60%",
+          "label": "more delivery flexibility with SDUI"
+        }
+      ]
+    },
+    {
+      "id": "la3eb",
+      "title": "La3eb",
+      "meta": "La3eb · 2022 – 2024",
+      "problem": "A social gaming and e-commerce platform with 1M+ active users.",
+      "role": "Android Lead, and Senior Android Engineer before that. Led a team of 8 developers.",
+      "built": "A modularized clean architecture, Jenkins CI/CD pipelines, mParticle and Braze integrations for engagement, and GraphQL.",
+      "impact": [
+        "Development efficiency up 35% with new tools",
+        "Platform with 1M+ active users",
+        "Team of 8 developers"
+      ],
+      "stack": [
+        "Clean architecture",
+        "Modularization",
+        "Jenkins",
+        "mParticle",
+        "Braze",
+        "GraphQL"
+      ],
+      "link": {
+        "label": "Google Play",
+        "href": "https://play.google.com/store/apps/details?id=com.mecl.la3eb"
+      },
+      "_todo": "Owner: any concrete numbers for build time or release frequency?",
+      "highlights": [
+        {
+          "value": "1M+",
+          "label": "active users"
+        },
+        {
+          "value": "35%",
+          "label": "development efficiency gain"
+        },
+        {
+          "value": "8",
+          "label": "developers led"
+        }
+      ]
+    },
+    {
+      "id": "klliq",
+      "title": "KLLIQ",
+      "meta": "KLLIQ · 2020",
+      "problem": "A social app with large video and image uploads on a home timeline, realtime chat and push notifications.",
+      "role": "Senior Android Engineer",
+      "built": "A home timeline for large video and image uploads, realtime chat over Socket.IO, FCM push notifications and a custom ExoPlayer.",
+      "impact": null,
+      "stack": [
+        "Kotlin",
+        "Coroutines",
+        "RxJava",
+        "Dagger 2",
+        "MVVM",
+        "Socket.IO",
+        "FCM",
+        "ExoPlayer"
+      ],
+      "link": {
+        "label": "Read the write-up",
+        "href": "https://mostafa-anter-portfolio.blogspot.com/2020/10/klliq.html",
+        "note": "No longer on Google Play"
+      },
+      "_todo": "Owner: any concrete result (upload reliability, chat latency)? Impact is hidden until supplied."
+    },
+    {
+      "id": "android-tv",
+      "title": "Android TV",
+      "meta": "2021",
+      "problem": null,
+      "role": null,
+      "built": "An Android TV app with a custom ExoPlayer, built with Kotlin, Coroutines, Dagger Hilt, Paging 3, Room and the Leanback framework.",
+      "impact": null,
+      "stack": [
+        "Kotlin",
+        "Coroutines",
+        "Dagger Hilt",
+        "Paging 3",
+        "MVVM",
+        "Room",
+        "ExoPlayer",
+        "Leanback"
+      ],
+      "link": {
+        "label": "Read the write-up",
+        "href": "https://mostafa-anter-portfolio.blogspot.com/2021/05/android-tv.html",
+        "note": "No longer on Google Play"
+      },
+      "_todo": "Owner: problem, your role and any impact for this project (and which company it was for, if any)."
+    }
+  ]
+}

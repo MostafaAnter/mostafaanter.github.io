@@ -16,7 +16,8 @@
   "contact": {
     "email": "mostafa3nter@gmail.com",
     "phone": "+20 111 783 3303",
-    "whatsapp": "mostafa_3nter"
+    "whatsapp": "mostafa_3nter",
+    "web3formsKey": ""
   },
   "links": {
     "linkedin": "https://www.linkedin.com/in/mostafaanter",
@@ -47,5 +48,9 @@
       800
     ],
     "alt": "Portrait of Mostafa Anter"
-  }
+  },
+  "analytics": {
+    "goatcounter": ""
+  },
+  "_todo": "contact.web3formsKey and analytics.goatcounter are intentionally empty: the contact form and analytics are only rendered once they are set."
 }

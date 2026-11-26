@@ -1,0 +1,34 @@
+---
+import data from '../content/testimonials.json';
+// Only real, approved entries are ever rendered (see testimonials.json _readme). No entries => no section at all.
+const items = data.items.filter((t) => !t.placeholder);
+const rel: Record<string, string> = { manager: 'Manager', peer: 'Colleague', report: 'Led by me' };
+---
+{items.length > 0 && (
+  <section id="testimonials" aria-labelledby="test-h">
+    <div class="wrap">
+      <span class="eyebrow" data-reveal>Testimonials</span>
+      <h2 class="h2" id="test-h" data-reveal>What colleagues say.</h2>
+      <ul class="grid">
+        {items.map((t) => (
+          <li class="card quote" data-reveal>
+            <blockquote><p>{t.quote}</p></blockquote>
+            <p class="who">
+              <strong>{t.linkedin ? <a href={t.linkedin} target="_blank" rel="noopener noreferrer">{t.name}<span class="sr-only"> (LinkedIn, opens in a new tab)</span></a> : t.name}</strong>
+              <span>{t.role}, {t.company} · {rel[t.relationship] ?? t.relationship}</span>
+            </p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+)}
+<style>
+  .grid { list-style: none; margin: var(--space-6) 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr)); gap: var(--space-5); }
+  .quote { padding: var(--space-6); display: flex; flex-direction: column; gap: var(--space-4); }
+  blockquote { margin: 0; font-size: var(--text-lg); line-height: 1.5; }
+  blockquote p { max-width: none; margin: 0; }
+  blockquote p::before { content: '“'; color: var(--accent); font: 700 2.5rem/0 var(--font-display); display: block; margin-bottom: var(--space-3); }
+  .who { margin: auto 0 0; display: grid; gap: .2rem; }
+  .who span { color: var(--muted); font-size: var(--text-sm); }
+</style>
