@@ -1,11 +1,12 @@
 ---
 import { projects } from '../lib/content';
-import featured from '../content/featured.json';
+import featuredData from '../content/featured.json';
 const groups = [['all', 'All'], ['freelance', 'Freelance apps'], ['learning', 'Learning projects']] as const;
 const count = (g: string) => (g === 'all' ? projects.length : projects.filter((p) => p.group === g).length);
 const VISIBLE = 9;
 const rows: Array<[string, string]> = [['problem', 'Problem'], ['role', 'My role'], ['built', 'What I built']];
-type F = (typeof featured.items)[number];
+interface F { id: string; title: string; meta: string; problem: string | null; role: string | null; built: string | null; impact?: string[] | null; highlights?: { value: string; label: string }[]; stack: string[]; link: { label: string; href: string; note?: string } }
+const featured = { items: featuredData.items as F[] };
 const f = (c: F, k: string) => (c as unknown as Record<string, string | null>)[k];
 ---
 <section id="projects" aria-labelledby="proj-h">
@@ -19,9 +20,14 @@ const f = (c: F, k: string) => (c as unknown as Record<string, string | null>)[k
         <li class="case card" data-reveal>
           <p class="meta">{c.meta}</p>
           <h3>{c.title}</h3>
+          {c.highlights && (
+            <ul class="stats" aria-label="Key figures">
+              {c.highlights.map((h) => <li><strong>{h.value}</strong><span>{h.label}</span></li>)}
+            </ul>
+          )}
           <dl>
             {rows.filter(([k]) => f(c, k)).map(([k, label]) => (<><dt>{label}</dt><dd>{f(c, k)}</dd></>))}
-            {c.impact && (<><dt>Impact</dt><dd><ul class="impact">{c.impact.map((i) => <li>{i}</li>)}</ul></dd></>)}
+            {c.impact && !c.highlights && (<><dt>Impact</dt><dd><ul class="impact">{c.impact.map((i) => <li>{i}</li>)}</ul></dd></>)}
           </dl>
           <ul class="tech" aria-label="Stack">{c.stack.map((t) => <li class="chip">{t}</li>)}</ul>
           <div class="foot">
@@ -63,6 +69,10 @@ const f = (c: F, k: string) => (c as unknown as Record<string, string | null>)[k
   .case:hover, .case:focus-within { border-color: var(--accent); transform: translateY(-4px); box-shadow: var(--shadow); }
   .meta { font: 500 var(--text-xs) var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent-2); margin: 0 0 var(--space-3); }
   .case h3 { font-size: var(--text-xl); margin-bottom: var(--space-4); }
+  .stats { list-style: none; margin: 0 0 var(--space-5); padding: var(--space-4) 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); border-block: 1px solid var(--line); max-width: none; }
+  .stats li { display: grid; gap: .25rem; align-content: start; }
+  .stats strong { font: 700 clamp(1.6rem, 1.1rem + 1.5vw, 2.3rem)/1 var(--font-display); letter-spacing: -.03em; color: var(--accent-text); }
+  .stats span { font-size: var(--text-xs); line-height: 1.35; color: var(--muted); }
   dl { margin: 0 0 var(--space-4); display: grid; gap: var(--space-3); flex: 1; }
   dt { font: 500 var(--text-xs) var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
   dd { margin: .15rem 0 0; }

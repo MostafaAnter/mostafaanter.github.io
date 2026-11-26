@@ -52,13 +52,12 @@
     {
       "id": "swift5",
       "title": "Swift 5 iOS Application Developer Specialization",
-      "issuer": null,
+      "issuer": "Listed on LinkedIn",
       "category": "iOS",
       "date": null,
       "file": null,
       "source": "LinkedIn only - issuer and date unknown",
-      "hidden": true,
-      "_todo": "Hidden until the issuer and date are confirmed (LinkedIn lists 'Swift 5 iOS Application Developer Specialization' with no issuer). Remove 'hidden' once known."
+      "_todo": "Issuer and date unknown (LinkedIn lists the title only). Do NOT invent a date: Swift 5 shipped in 2019. Replace 'Listed on LinkedIn' with the real issuer and add 'date' when known."
     }
   ]
 }

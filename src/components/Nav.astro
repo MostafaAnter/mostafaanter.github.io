@@ -3,7 +3,7 @@ const links = [['about', 'About'], ['experience', 'Experience'], ['skills', 'Ski
 ---
 <header class="nav" id="top">
   <div class="wrap bar">
-    <a class="logo" href="#top" aria-label="Mostafa Anter, home"><svg viewBox="0 0 64 64" width="32" height="32" aria-hidden="true"><rect width="64" height="64" rx="14" fill="var(--surface-2)"/><path d="M12 46V18l20 20 20-20v28" fill="none" stroke="var(--accent)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Mostafa Anter</span></a>
+    <a class="logo" href="#top" aria-label="Mostafa Anter, home"><svg viewBox="0 0 64 64" width="32" height="32" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#3ddc84"/><g transform="translate(32 32) scale(.9) translate(-32 -32) translate(-1 0)" fill="none" stroke="#0b0f14" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 47V17l10 14 10-14v30"/><path d="M36 47l11-30 11 30M40.5 38h13"/></g></svg><span>Mostafa Anter</span></a>
     <nav aria-label="Primary" id="menu" class="menu" data-lenis-prevent>
       {links.map(([id, label]) => <a href={`#${id}`} data-nav={id}>{label}</a>)}
     </nav>

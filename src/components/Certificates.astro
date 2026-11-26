@@ -1,7 +1,7 @@
 ---
 import sharp from 'sharp';
 import { certificates, certDate } from '../lib/content';
-const items = certificates.items.filter((i: { hidden?: boolean }) => !i.hidden).sort((a, b) => (b.date ?? '0').localeCompare(a.date ?? '0'));
+const items = certificates.items.filter((i) => !('hidden' in i && i.hidden)).sort((a, b) => (b.date ?? '0').localeCompare(a.date ?? '0'));
 // Real intrinsic size of each thumbnail (prevents layout shift)
 const dims: Record<string, { width: number; height: number }> = {};
 for (const c of items) if (c.image) { const m = await sharp(`public/${c.image}-480.webp`).metadata(); dims[c.image] = { width: m.width!, height: m.height! }; }
