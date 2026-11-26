@@ -4,7 +4,6 @@
       "id": "lang",
       "name": "Languages",
       "items": [
-        "Kotlin",
         "Java",
         "Swift 5",
         "Groovy"
@@ -14,10 +13,8 @@
       "id": "android",
       "name": "Android",
       "items": [
-        "Jetpack Compose",
         "MVVM",
         "Multi-Module Architecture",
-        "Clean Architecture",
         "Modularization",
         "XML",
         "Android SDK"
@@ -54,7 +51,6 @@
         "Gradle",
         "Git & GitHub",
         "Jenkins",
-        "CI/CD",
         "TDD"
       ]
     },
@@ -79,6 +75,24 @@
         "Mentoring",
         "Agile sprint planning"
       ]
+    }
+  ],
+  "top": [
+    {
+      "name": "Kotlin",
+      "group": "Language"
+    },
+    {
+      "name": "Jetpack Compose",
+      "group": "UI toolkit"
+    },
+    {
+      "name": "Clean Architecture",
+      "group": "Architecture"
+    },
+    {
+      "name": "CI/CD",
+      "group": "Delivery"
     }
   ]
 }

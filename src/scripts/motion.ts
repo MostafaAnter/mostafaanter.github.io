@@ -35,8 +35,8 @@ async function init() {
   });
 
   // Timeline line draws with scroll
-  const line = document.querySelector('.timeline .line');
-  if (line) gsap.fromTo(line, { scaleY: 0 }, { scaleY: 1, ease: 'none', scrollTrigger: { trigger: '.timeline', start: 'top 70%', end: 'bottom 70%', scrub: true } });
+  const line = document.querySelector('.timeline.main .line');
+  if (line) gsap.fromTo(line, { scaleY: 0 }, { scaleY: 1, ease: 'none', scrollTrigger: { trigger: '.timeline.main', start: 'top 70%', end: 'bottom 70%', scrub: true } });
 
   // Stat counters: count up once when visible. Final text is in the HTML already (no-JS fallback).
   document.querySelectorAll<HTMLElement>('[data-count]').forEach((el) => {
