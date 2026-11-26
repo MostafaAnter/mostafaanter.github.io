@@ -3,6 +3,8 @@ import { profile } from '../lib/content';
 const { contact, links } = profile;
 const tel = contact.phone.replace(/\s/g, '');
 const wa = `https://wa.me/${tel.replace(/\D/g, '')}`; // wa.me/u/<username> links are not supported by WhatsApp, so the chat opens via the phone number
+const key = contact.web3formsKey; // empty until the owner adds a key: the form is not rendered
+const ext = (h: string) => h.startsWith('http');
 const rows = [
   ['Email', contact.email, `mailto:${contact.email}`],
   ['Phone', contact.phone, `tel:${tel}`],
@@ -19,25 +21,62 @@ const rows = [
     <h2 class="h2" id="contact-h" data-reveal>Let’s build something great together.</h2>
     <p class="lede" data-reveal>Open to senior Android and technical-lead roles, and to selected consulting work. Email is the fastest way to reach me.</p>
     <div class="cta" data-reveal>
-      <a class="btn primary" href={`mailto:${contact.email}?subject=Hello%20Mostafa`}>Email me</a>
-      <a class="btn" href={wa} target="_blank" rel="noopener">WhatsApp</a>
-      <a class="btn" href="/Mostafa_Anter_Resume.pdf" download>Download resume (PDF)</a>
+      <a class="btn primary" href={`mailto:${contact.email}?subject=Hello%20Mostafa`} data-goatcounter-click="email-me">Email me</a>
+      <button type="button" class="btn" id="copy-email" data-email={contact.email}><span data-label>Copy email</span></button>
+      <a class="btn" href={wa} target="_blank" rel="noopener noreferrer" data-goatcounter-click="whatsapp">WhatsApp<span class="sr-only"> (opens in a new tab)</span></a>
+      <a class="btn" href="/Mostafa_Anter_Resume.pdf" download data-goatcounter-click="resume-download">Download resume (PDF)</a>
+      <span class="sr-only" role="status" aria-live="polite" id="copy-status"></span>
     </div>
-    <ul class="rows">
-      {rows.map(([k, v, h]) => (
-        <li data-reveal><a href={h} target={h.startsWith('http') ? '_blank' : undefined} rel={h.startsWith('http') ? 'noopener' : undefined}><span>{k}</span><strong>{v}</strong><i aria-hidden="true">→</i></a></li>
-      ))}
-    </ul>
+
+    <div class:list={['layout', { 'with-form': !!key }]}>
+      {key && (
+        <form id="contact-form" class="card form" action="https://api.web3forms.com/submit" method="POST" data-reveal>
+          <h3>Send a message</h3>
+          <input type="hidden" name="access_key" value={key} />
+          <input type="hidden" name="subject" value="New message from mostafaanter.github.io" />
+          <input type="hidden" name="from_name" value="Portfolio contact form" />
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <label for="cf-name">Name</label>
+          <input id="cf-name" name="name" type="text" autocomplete="name" required />
+          <label for="cf-email">Email</label>
+          <input id="cf-email" name="email" type="email" autocomplete="email" required />
+          <label for="cf-msg">Message</label>
+          <textarea id="cf-msg" name="message" rows="5" required></textarea>
+          <button class="btn primary" type="submit">Send message</button>
+          <p class="status" id="cf-status" role="status" aria-live="polite"></p>
+        </form>
+      )}
+      <ul class="rows">
+        {rows.map(([k, v, h]) => (
+          <li data-reveal><a href={h} target={ext(h) ? '_blank' : undefined} rel={ext(h) ? 'noopener noreferrer' : undefined}><span>{k}</span><strong>{v}</strong><i aria-hidden="true">→</i>{ext(h) && <span class="sr-only"> (opens in a new tab)</span>}</a></li>
+        ))}
+      </ul>
+    </div>
   </div>
 </section>
 <style>
-  .lede { color: var(--muted); max-width: 52ch; margin-top: 1rem; font-size: 1.15rem; }
-  .cta { display: flex; flex-wrap: wrap; gap: .75rem; margin: 2rem 0 3rem; }
+  .lede { color: var(--muted); max-width: 52ch; margin-top: var(--space-4); font-size: var(--text-lg); }
+  .cta { display: flex; flex-wrap: wrap; gap: .75rem; margin: var(--space-6) 0 var(--space-7); }
+  .layout { display: grid; gap: var(--space-7); }
+  .layout.with-form { grid-template-columns: .9fr 1.1fr; align-items: start; }
   .rows { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
-  .rows a { display: grid; grid-template-columns: 9rem 1fr auto; gap: 1rem; align-items: center; padding: 1.15rem .25rem; border-bottom: 1px solid var(--line); text-decoration: none; color: var(--text); min-height: 44px; transition: padding .3s var(--ease), color .2s; }
+  .layout.with-form .rows { order: 2; }
+  .rows a { display: grid; grid-template-columns: 9rem 1fr auto; gap: 1rem; align-items: center; padding: 1.15rem .25rem; border-bottom: 1px solid var(--line); text-decoration: none; color: var(--text); min-height: 2.75rem; transition: padding var(--dur) var(--ease), color var(--dur-fast); }
   .rows a:hover { padding-inline-start: 1rem; color: var(--accent-text); }
-  .rows span { font: 500 .78rem var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
-  .rows strong { font: 600 clamp(1.05rem, 2.4vw, 1.5rem) var(--font-display); overflow-wrap: anywhere; }
+  .rows span:not(.sr-only) { font: 500 var(--text-xs) var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .rows strong { font: 600 var(--text-lg) var(--font-display); overflow-wrap: anywhere; }
   .rows i { font-style: normal; }
-  @media (max-width: 560px) { .rows a { grid-template-columns: 1fr auto; } .rows span { grid-column: 1 / -1; } }
+  .form { padding: var(--space-6); display: grid; gap: var(--space-2); }
+  .form h3 { font-size: var(--text-xl); margin-bottom: var(--space-3); }
+  label { font: 500 var(--text-xs) var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-top: var(--space-3); }
+  input:not([type='hidden']):not(.hp), textarea { width: 100%; padding: .8rem 1rem; min-height: 2.75rem; border-radius: var(--radius-sm); border: 1px solid var(--line); background: var(--bg); color: var(--text); font: inherit; }
+  input:focus-visible, textarea:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  textarea { resize: vertical; }
+  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+  .form .btn { justify-self: start; margin-top: var(--space-4); }
+  .status { margin: var(--space-2) 0 0; min-height: 1.5em; color: var(--accent-text); font-weight: 600; }
+  .status.err { color: #ff8a80; }
+  :global([data-theme='light']) .status.err { color: #b3261e; }
+  @media (max-width: 880px) { .layout.with-form { grid-template-columns: 1fr; } .layout.with-form .rows { order: 0; } }
+  @media (max-width: 560px) { .rows a { grid-template-columns: 1fr auto; } .rows span:not(.sr-only):first-child { grid-column: 1 / -1; } }
 </style>

@@ -1,51 +1,99 @@
 ---
 import { projects } from '../lib/content';
+import featured from '../content/featured.json';
 const groups = [['all', 'All'], ['freelance', 'Freelance apps'], ['learning', 'Learning projects']] as const;
 const count = (g: string) => (g === 'all' ? projects.length : projects.filter((p) => p.group === g).length);
 const VISIBLE = 9;
+const rows: Array<[string, string]> = [['problem', 'Problem'], ['role', 'My role'], ['built', 'What I built']];
+type F = (typeof featured.items)[number];
+const f = (c: F, k: string) => (c as unknown as Record<string, string | null>)[k];
 ---
 <section id="projects" aria-labelledby="proj-h">
   <div class="wrap">
-    <span class="eyebrow" data-reveal>Freelance projects</span>
-    <h2 class="h2" id="proj-h" data-reveal>Apps I built as an independent developer.</h2>
-    <p class="intro" data-reveal>Independent work from 2014 to 2021, written up on <a href="https://mostafa-anter-portfolio.blogspot.com/" target="_blank" rel="noopener">my blog</a>. Many of these apps have since left the Play Store, so each card links to the write-up rather than the store.</p>
-    <div class="filters" role="group" aria-label="Filter projects">
-      {groups.map(([g, label], i) => <button type="button" class="filter" data-filter={g} aria-pressed={i === 0 ? 'true' : 'false'}>{label} <span>{count(g)}</span></button>)}
-    </div>
-    <ul class="grid" id="project-grid">
-      {projects.map((p, i) => (
-        <li class="card item" data-group={p.group} data-extra={i >= VISIBLE ? '' : undefined}>
-          <div class="meta"><span>{p.year}</span><span>{p.group === 'learning' ? 'Udacity Nanodegree' : 'Freelance'}</span></div>
-          <h3>{p.title}</h3>
-          <p>{p.summary}</p>
-          <ul class="tech">{p.tech.map((t) => <li class="chip">{t}</li>)}</ul>
-          <div class="links">
-            <a href={p.url} target="_blank" rel="noopener">Read write-up <span aria-hidden="true">↗</span><span class="sr-only"> on the blog: {p.title}</span></a>
-            {p.github && <a href={p.github} target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span><span class="sr-only"> repository for {p.title}</span></a>}
+    <span class="eyebrow" data-reveal>Projects</span>
+    <h2 class="h2" id="proj-h" data-reveal>Selected work.</h2>
+    <p class="intro" data-reveal>Four projects that show scale, team leadership, realtime features and media. Everything else is in the archive below.</p>
+
+    <ul class="featured">
+      {featured.items.map((c) => (
+        <li class="case card" data-reveal>
+          <p class="meta">{c.meta}</p>
+          <h3>{c.title}</h3>
+          <dl>
+            {rows.filter(([k]) => f(c, k)).map(([k, label]) => (<><dt>{label}</dt><dd>{f(c, k)}</dd></>))}
+            {c.impact && (<><dt>Impact</dt><dd><ul class="impact">{c.impact.map((i) => <li>{i}</li>)}</ul></dd></>)}
+          </dl>
+          <ul class="tech" aria-label="Stack">{c.stack.map((t) => <li class="chip">{t}</li>)}</ul>
+          <div class="foot">
+            <a class="btn" href={c.link.href} target="_blank" rel="noopener noreferrer" data-goatcounter-click={`project-${c.id}`}>{c.link.label} <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab): {c.title}</span></a>
+            {c.link.note && <span class="note">{c.link.note}</span>}
           </div>
         </li>
       ))}
     </ul>
-    <div class="more"><button type="button" class="btn" id="project-more" aria-expanded="false">Show all projects</button></div>
+
+    <details class="archive">
+      <summary><span>Archive 2014 – 2021</span><span class="count">{projects.length} apps · freelance and learning projects</span></summary>
+      <p class="intro">Independent work written up on <a href="https://mostafa-anter-portfolio.blogspot.com/" target="_blank" rel="noopener noreferrer">my blog<span class="sr-only"> (opens in a new tab)</span></a>. Many of these apps have since left the Play Store, so each card links to its write-up.</p>
+      <div class="filters" role="group" aria-label="Filter archive projects">
+        {groups.map(([g, label], i) => <button type="button" class="filter" data-filter={g} aria-pressed={i === 0 ? 'true' : 'false'}>{label} <span>{count(g)}</span></button>)}
+      </div>
+      <ul class="grid" id="project-grid">
+        {projects.map((p) => (
+          <li class="card item" data-group={p.group}>
+            <div class="meta"><span>{p.year}</span><span>{p.group === 'learning' ? 'Udacity Nanodegree' : 'Freelance'}</span></div>
+            <h3>{p.title}</h3>
+            <p>{p.summary}</p>
+            <ul class="tech">{p.tech.map((t) => <li class="chip">{t}</li>)}</ul>
+            <div class="links">
+              <a href={p.url} target="_blank" rel="noopener noreferrer" data-goatcounter-click={`archive-${p.title.toLowerCase().replace(/\W+/g, '-')}`}>Read write-up <span aria-hidden="true">↗</span><span class="sr-only"> on the blog: {p.title} (opens in a new tab)</span></a>
+              {p.github && <a href={p.github} target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="sr-only"> repository for {p.title} (opens in a new tab)</span></a>}
+            </div>
+          </li>
+        ))}
+      </ul>
+      <div class="more"><button type="button" class="btn" id="project-more" aria-expanded="false">Show all projects</button></div>
+    </details>
   </div>
 </section>
 <style>
-  .intro { color: var(--muted); max-width: 62ch; margin-top: 1rem; }
-  .filters { display: flex; flex-wrap: wrap; gap: .5rem; margin: 2rem 0 1.5rem; }
-  .filter { padding: .6rem 1rem; min-height: 44px; border-radius: 999px; background: transparent; border: 1px solid var(--line); font-weight: 500; transition: all .2s; }
+  .intro { color: var(--muted); max-width: var(--measure); margin-top: var(--space-4); }
+  .featured { list-style: none; margin: var(--space-6) 0 var(--space-7); padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-5); }
+  .case { padding: var(--space-6); display: flex; flex-direction: column; transition: border-color var(--dur), transform var(--dur) var(--ease), box-shadow var(--dur); }
+  .case:hover, .case:focus-within { border-color: var(--accent); transform: translateY(-4px); box-shadow: var(--shadow); }
+  .meta { font: 500 var(--text-xs) var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent-2); margin: 0 0 var(--space-3); }
+  .case h3 { font-size: var(--text-xl); margin-bottom: var(--space-4); }
+  dl { margin: 0 0 var(--space-4); display: grid; gap: var(--space-3); flex: 1; }
+  dt { font: 500 var(--text-xs) var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  dd { margin: .15rem 0 0; }
+  .impact { margin: 0; padding-inline-start: 1.1rem; display: grid; gap: .25rem; }
+  .impact li::marker { color: var(--accent); }
+  .tech { list-style: none; padding: 0; margin: 0 0 var(--space-4); display: flex; flex-wrap: wrap; gap: .4rem; max-width: none; }
+  .foot { display: flex; align-items: center; gap: var(--space-4); flex-wrap: wrap; }
+  .note { font: 500 var(--text-xs) var(--font-mono); color: var(--muted); }
+
+  .archive { margin-top: var(--space-5); }
+  summary { list-style: none; display: inline-flex; align-items: center; gap: var(--space-4); min-height: 2.75rem; padding: .6rem 1.2rem; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); cursor: pointer; font-weight: 600; transition: border-color var(--dur-fast); }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: '+'; font: 600 1.2rem/1 var(--font-mono); color: var(--accent-text); transition: transform var(--dur) var(--ease); }
+  details[open] > summary::after { transform: rotate(45deg); }
+  summary:hover { border-color: var(--accent); }
+  .count { font: 500 var(--text-xs) var(--font-mono); color: var(--muted); }
+  .filters { display: flex; flex-wrap: wrap; gap: .5rem; margin: var(--space-5) 0 var(--space-4); }
+  .filter { padding: .6rem 1rem; min-height: 2.75rem; border-radius: 999px; background: transparent; border: 1px solid var(--line); font-weight: 500; transition: all var(--dur-fast); }
   .filter span { font: 500 .75rem var(--font-mono); color: var(--muted); margin-inline-start: .35rem; }
   .filter[aria-pressed='true'] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
   .filter[aria-pressed='true'] span { color: var(--accent-ink); }
-  .grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 1.1rem; }
-  .item { padding: 1.4rem; display: flex; flex-direction: column; transition: border-color .3s, transform .3s var(--ease); }
-  .item:hover { border-color: var(--accent); transform: translateY(-3px); }
+  .grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 21rem), 1fr)); gap: var(--space-4); }
+  .item { padding: var(--space-5); display: flex; flex-direction: column; transition: border-color var(--dur), transform var(--dur) var(--ease); }
+  .item:hover, .item:focus-within { border-color: var(--accent); transform: translateY(-3px); }
   .item[hidden] { display: none; }
-  .meta { display: flex; justify-content: space-between; font: 500 .75rem var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: .8rem; }
-  h3 { font-size: 1.3rem; }
-  .item p { color: var(--muted); font-size: .98rem; flex: 1; }
-  .tech { list-style: none; padding: 0; margin: 0 0 1.1rem; display: flex; flex-wrap: wrap; gap: .4rem; }
-  .links { display: flex; gap: .1rem 1.2rem; flex-wrap: wrap; font-weight: 600; font-size: .95rem; }
-  .links a { display: inline-flex; align-items: center; min-height: 44px; }
-  .more { text-align: center; margin-top: 2rem; }
+  .item .meta { display: flex; justify-content: space-between; color: var(--muted); }
+  .item h3 { font-size: var(--text-lg); }
+  .item p { color: var(--muted); font-size: var(--text-sm); flex: 1; }
+  .links { display: flex; gap: .1rem 1.2rem; flex-wrap: wrap; font-weight: 600; font-size: var(--text-sm); }
+  .links a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+  .more { text-align: center; margin-top: var(--space-6); }
   .more[hidden] { display: none; }
+  @media (max-width: 880px) { .featured { grid-template-columns: 1fr; } .case { padding: var(--space-5); } }
 </style>

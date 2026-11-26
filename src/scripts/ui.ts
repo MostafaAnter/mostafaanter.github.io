@@ -104,4 +104,35 @@ addEventListener('scroll', prog, { passive: true }); addEventListener('resize', 
 // Tell the motion layer when a modal opens so smooth-scroll pauses behind it
 dlg?.addEventListener('toggle', () => window.dispatchEvent(new CustomEvent(dlg.open ? 'modal:open' : 'modal:close')));
 
+
+// Copy email (clipboard API with a textarea fallback) + visible and spoken confirmation
+const copyBtn = $<HTMLButtonElement>('#copy-email');
+copyBtn?.addEventListener('click', async () => {
+  const email = copyBtn.dataset.email!, label = $('[data-label]', copyBtn)!, status = $('#copy-status');
+  let ok = false;
+  try { await navigator.clipboard.writeText(email); ok = true; } catch {
+    const t = Object.assign(document.createElement('textarea'), { value: email });
+    t.style.position = 'fixed'; t.style.opacity = '0'; document.body.append(t); t.select();
+    try { ok = document.execCommand('copy'); } catch { /* ignore */ } t.remove();
+  }
+  const msg = ok ? 'Copied ✓' : 'Press Ctrl/Cmd+C to copy';
+  label.textContent = msg; if (status) status.textContent = ok ? 'Email address copied to clipboard' : 'Copy failed';
+  setTimeout(() => { label.textContent = 'Copy email'; if (status) status.textContent = ''; }, 2200);
+});
+
+// Contact form (rendered only when a Web3Forms key is configured). Posts as JSON; falls back to a normal form POST without JS.
+const form = $<HTMLFormElement>('#contact-form');
+form?.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const status = $('#cf-status')!, btn = $<HTMLButtonElement>('button[type=submit]', form)!;
+  if (!form.reportValidity()) return;
+  btn.disabled = true; status.classList.remove('err'); status.textContent = 'Sending…';
+  try {
+    const res = await fetch(form.action, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(Object.fromEntries(new FormData(form))) });
+    const data = await res.json();
+    if (data.success) { status.textContent = 'Thanks! Your message was sent.'; form.reset(); } else throw new Error(data.message || 'failed');
+  } catch { status.classList.add('err'); status.textContent = 'Sorry, that did not send. Please email me directly.'; }
+  btn.disabled = false;
+});
+
 export {};
