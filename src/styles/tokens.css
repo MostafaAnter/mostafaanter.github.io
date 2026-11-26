@@ -1,23 +1,51 @@
+/* Design tokens. Change colors/spacing/type here; components only use these variables. */
 :root {
+  /* type */
   --font-display: 'Space Grotesk Variable', system-ui, sans-serif;
   --font-body: 'Inter Variable', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
-  --accent: #3ddc84;
-  --accent-ink: #04210f;
-  --radius: 16px;
+  --text-xs: clamp(.75rem, .73rem + .1vw, .8125rem);
+  --text-sm: clamp(.875rem, .85rem + .12vw, .95rem);
+  --text-base: clamp(1rem, .96rem + .2vw, 1.0625rem);
+  --text-lg: clamp(1.125rem, 1.05rem + .4vw, 1.35rem);
+  --text-xl: clamp(1.35rem, 1.2rem + .75vw, 1.75rem);
+  --text-2xl: clamp(2rem, 1.5rem + 2.4vw, 3.4rem);
+  --text-hero: clamp(3.4rem, 2rem + 7vw, 8rem);
+  --measure: 68ch;
+  /* spacing scale (rem, so it scales on large screens) */
+  --space-1: .25rem; --space-2: .5rem; --space-3: .75rem; --space-4: 1rem; --space-5: 1.5rem;
+  --space-6: 2rem; --space-7: 3rem; --space-8: 4.5rem; --space-9: 7rem;
+  /* shape + motion */
+  --radius-sm: .5rem; --radius: 1rem; --radius-lg: 1.75rem;
   --maxw: 73.75rem;
-  --ease: cubic-bezier(.22, 1, .36, 1);
   --nav-h: 4.25rem;
+  --ease: cubic-bezier(.22, 1, .36, 1);
+  --dur-fast: .2s; --dur: .35s; --dur-slow: .8s;
+  /* brand */
+  --accent: #3ddc84;          /* Android green: the single strong accent */
+  --accent-ink: #04210f;      /* text on accent */
 }
 :root[data-theme='dark'] {
   color-scheme: dark;
   --bg: #0b0f14; --surface: #121821; --surface-2: #19212c;
   --text: #eef2f6; --muted: #9aa7b6; --line: #243040;
-  --accent-text: #3ddc84; --glow: rgba(61, 220, 132, .14);
+  --accent-text: #3ddc84;
+  --accent-2: #7cc4ff;        /* restrained secondary: dates, labels */
+  --glow: rgba(61, 220, 132, .14); --glow-2: rgba(124, 196, 255, .08);
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.4);
+  --shadow: 0 10px 30px -12px rgba(0,0,0,.6);
+  --shadow-lg: 0 30px 80px -30px rgba(0,0,0,.7);
+  --grain-opacity: .05;
 }
 :root[data-theme='light'] {
   color-scheme: light;
   --bg: #f6f8f7; --surface: #ffffff; --surface-2: #eef2f0;
   --text: #0e1612; --muted: #4a5a52; --line: #d6dfdb;
-  --accent-text: #0a7a3c; --glow: rgba(10, 122, 60, .10);
+  --accent-text: #0a7a3c;
+  --accent-2: #0b6aa8;
+  --glow: rgba(10, 122, 60, .12); --glow-2: rgba(11, 106, 168, .08);
+  --shadow-sm: 0 1px 2px rgba(14,22,18,.08);
+  --shadow: 0 12px 30px -14px rgba(14,22,18,.25);
+  --shadow-lg: 0 30px 70px -30px rgba(14,22,18,.35);
+  --grain-opacity: .07;
 }

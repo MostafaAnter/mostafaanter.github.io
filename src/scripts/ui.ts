@@ -11,12 +11,29 @@ $('#theme-toggle')?.addEventListener('click', () => {
   document.querySelector('meta[name="theme-color"]')?.setAttribute('content', next === 'dark' ? '#0b0f14' : '#f6f8f7');
 });
 
-// Mobile menu
+// Mobile menu: focus-trapped while open, closes on Escape / link click / outside tap, returns focus to the button
 const menu = $('#menu'), burger = $<HTMLButtonElement>('#menu-toggle');
-const setMenu = (open: boolean) => { menu?.classList.toggle('open', open); burger?.setAttribute('aria-expanded', String(open)); };
-burger?.addEventListener('click', () => setMenu(!menu?.classList.contains('open')));
+const isOpen = () => !!menu?.classList.contains('open');
+const trapItems = (): HTMLElement[] => [burger!, ...$$<HTMLAnchorElement>("a", menu!)].filter(Boolean);
+const setMenu = (open: boolean, restoreFocus = false) => {
+  menu?.classList.toggle('open', open);
+  burger?.setAttribute('aria-expanded', String(open));
+  burger?.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  if (open) $<HTMLAnchorElement>('a', menu!)?.focus();
+  else if (restoreFocus) burger?.focus();
+};
+burger?.addEventListener('click', () => setMenu(!isOpen(), true));
 menu?.addEventListener('click', (e) => { if ((e.target as Element).closest('a')) setMenu(false); });
-document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
+document.addEventListener('pointerdown', (e) => { if (isOpen() && !(e.target as Element).closest('#menu, #menu-toggle')) setMenu(false); });
+document.addEventListener('keydown', (e) => {
+  if (!isOpen()) return;
+  if (e.key === 'Escape') { setMenu(false, true); return; }
+  if (e.key !== 'Tab') return;
+  const items = trapItems(), first = items[0], last = items[items.length - 1];
+  if (!items.includes(document.activeElement as HTMLElement)) { e.preventDefault(); first.focus(); return; }
+  if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+  else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+});
 
 // Active section in nav
 const links = $$<HTMLAnchorElement>('[data-nav]');

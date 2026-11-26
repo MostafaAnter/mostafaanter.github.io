@@ -4,6 +4,8 @@ import '@fontsource-variable/inter';
 import '@fontsource-variable/jetbrains-mono';
 import '../styles/global.css';
 import { profile } from '../lib/content';
+import sgUrl from '@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2?url';
+import interUrl from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
 
 interface Props { title?: string; description?: string }
 const title = Astro.props.title ?? `${profile.name} — ${profile.role}`;
@@ -49,6 +51,8 @@ const person = {
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="preload" as="font" type="font/woff2" href={sgUrl} crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href={interUrl} crossorigin />
     <slot name="head" />
     <script type="application/ld+json" set:html={JSON.stringify(person)} />
     <script is:inline>

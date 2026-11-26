@@ -11,6 +11,7 @@ import Contact from '../components/Contact.astro';
 import Footer from '../components/Footer.astro';
 ---
 <Base>
+  <link slot="head" rel="preload" as="image" type="image/avif" imagesrcset="/img/portrait-400.avif 400w, /img/portrait-800.avif 800w" imagesizes="(max-width: 880px) 70vw, 420px" fetchpriority="high" />
   <Nav />
   <main id="main">
     <Hero />

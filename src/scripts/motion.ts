@@ -38,6 +38,14 @@ async function init() {
   const line = document.querySelector('.timeline .line');
   if (line) gsap.fromTo(line, { scaleY: 0 }, { scaleY: 1, ease: 'none', scrollTrigger: { trigger: '.timeline', start: 'top 70%', end: 'bottom 70%', scrub: true } });
 
+  // Stat counters: count up once when visible. Final text is in the HTML already (no-JS fallback).
+  document.querySelectorAll<HTMLElement>('[data-count]').forEach((el) => {
+    const m = /^(\d+)(.*)$/.exec(el.dataset.count || ''); if (!m) return;
+    const end = +m[1], suffix = m[2], o = { v: 0 };
+    el.textContent = '0' + suffix;
+    ScrollTrigger.create({ trigger: el, start: 'top 95%', once: true, onEnter: () => gsap.to(o, { v: end, duration: 1.6, ease: 'power2.out', onUpdate: () => { el.textContent = Math.round(o.v) + suffix; }, onComplete: () => { el.textContent = end + suffix; } }) });
+  });
+
   window.__motionReady = true;
 
   // Custom cursor + magnetic buttons: mouse-like pointers only
