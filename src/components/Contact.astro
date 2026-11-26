@@ -2,9 +2,11 @@
 import { profile } from '../lib/content';
 const { contact, links } = profile;
 const tel = contact.phone.replace(/\s/g, '');
+const wa = `https://wa.me/${tel.replace(/\D/g, '')}`; // wa.me/u/<username> links are not supported by WhatsApp, so the chat opens via the phone number
 const rows = [
   ['Email', contact.email, `mailto:${contact.email}`],
   ['Phone', contact.phone, `tel:${tel}`],
+  ['WhatsApp', contact.whatsapp, wa],
   ['LinkedIn', 'in/mostafaanter', links.linkedin],
   ['GitHub', 'MostafaAnter', links.github],
   ['Stack Overflow', 'mostafa-anter', links.stackoverflow],
@@ -18,6 +20,7 @@ const rows = [
     <p class="lede" data-reveal>Open to senior Android and technical-lead roles, and to selected consulting work. Email is the fastest way to reach me.</p>
     <div class="cta" data-reveal>
       <a class="btn primary" href={`mailto:${contact.email}?subject=Hello%20Mostafa`}>Email me</a>
+      <a class="btn" href={wa} target="_blank" rel="noopener">WhatsApp</a>
       <a class="btn" href="/Mostafa_Anter_Resume.pdf" download>Download resume (PDF)</a>
     </div>
     <ul class="rows">

@@ -29,7 +29,7 @@ await variants(src('originals/portrait.jpg'), out('img/portrait'), [400, 800]);
 await sharp(src('originals/portrait.jpg')).resize(800).jpeg({ quality: 82, mozjpeg: true }).toFile(out('img/portrait.jpg'));
 
 // Video poster
-await variants(src('work/poster.png'), out('media/intro-poster'), [480, 960]);
+await variants(src('work/poster.png'), out('media/intro-poster'), [480, 680]);
 
 // Certificates: thumb 480 + full 1800 (lightbox), both avif + webp
 const certs = [

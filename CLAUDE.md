@@ -91,6 +91,7 @@ The repo root still has the OLD files (`index.html`, `app-ads.txt`, `contact/`).
 - **Unconfirmed months:** LocName start (2015-01) and Freelancer end (2015-01) are placeholders; LinkedIn only gives the year.
 - **Play Store:** only two live links: TWC `com.weather.Weather` and La3eb `com.mecl.la3eb`. All other apps were removed from the store; every blog Play link returned 404 and is intentionally NOT used.
 - **Blog = freelance work, not company work.** Projects are labelled "Freelance" (27) or "Udacity Nanodegree" learning projects (6). Posts for KLLIQ, LIVE PLUS and LocName share names with employers; they are shown as freelance without a company label (owner's instruction). Re-confirm if this is ever questioned.
+- **WhatsApp:** the owner's WhatsApp username is `mostafa_3nter` (`profile.json` > `contact.whatsapp`, shown as the visible label). WhatsApp does NOT support `wa.me/u/<username>` links (verified: 404 even for fake names), so the link opens a chat via the phone number: `https://wa.me/201117833303`. Revisit if WhatsApp ships username links.
 - **Metrics from resume:** 40% performance, 60% SDUI delivery flexibility, 35% dev efficiency, team of 8, 1M+ La3eb users, 100M+ TWC users.
 - **Certificates:** GitHub Copilot (Microsoft, 13 Sep 2025, valid to 14 Sep 2027, ID `A0A5D6AE95BD68EE`), Udacity Android Nanodegree (24 Jan 2017), Mobile Application Launchpad trained facilitator for "Developing Android Apps" (25 Dec 2016). Text-only cards from LinkedIn/resume: Microsoft Applied Skills (GitHub Copilot), Udemy "Master CI/CD for Android Developers" (2020), Swift 5 iOS Specialization (issuer/date unknown).
 - **About copy** comes from the owner's intro video (transcribed with whisper.cpp, errors corrected) plus LinkedIn. The video says "Live" for a company; unresolved whether it means La3eb or LivePlus, so the About text does not name it.
@@ -145,7 +146,7 @@ Deployed. Done: scaffold, content data, blog cache, media processing, all page s
 
 - macOS BSD `sed`: no `\b` and `-i` needs `''`. Use `perl -pi -e` for word-boundary edits.
 - `assets/` is git-ignored; `public/` outputs ARE committed (video ~9 MB total, certs/images small).
-- Never upscale images: the portrait source is only 800x800.
+- Never upscale images: the portrait source is only 800x800, and the cropped video poster is 680x720 (poster widths are 480/680). `process-media.mjs` silently SKIPS widths larger than the source, so stale files from an earlier run can linger in `public/`; if you change a source image's size, delete the old generated files first (this once caused an uncropped poster to be served).
 - Browser testing without Playwright: `puppeteer-core` with system Chrome (`/Applications/Google Chrome.app`), kept OUTSIDE the project (in the Claude session scratchpad). Headless `--screenshot` with `#anchor` URLs renders blank; drive Chrome with puppeteer and `scrollIntoView()` instead. The Astro dev toolbar icons visible in dev screenshots do not exist in production builds.
 - Transcription tooling used once: `brew install whisper-cpp` + `ggml-small.en.bin` model (not part of the project).
 - If the dev server is stuck, `pkill -f "astro dev"` then `npm run dev`.
