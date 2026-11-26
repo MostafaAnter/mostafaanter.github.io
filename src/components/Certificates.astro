@@ -5,8 +5,8 @@ const cats = ['All', ...new Set(items.map((i) => i.category))];
 ---
 <section id="certificates" aria-labelledby="cert-h">
   <div class="wrap">
-    <span class="eyebrow">Certificates</span>
-    <h2 class="h2" id="cert-h">Credentials, verified.</h2>
+    <span class="eyebrow" data-reveal>Certificates</span>
+    <h2 class="h2" id="cert-h" data-reveal>Credentials, verified.</h2>
     <div class="filters" role="group" aria-label="Filter certificates">
       {cats.map((c, i) => <button type="button" class="filter" data-cert-filter={c} aria-pressed={i === 0 ? 'true' : 'false'}>{c}</button>)}
     </div>
@@ -37,7 +37,7 @@ const cats = ['All', ...new Set(items.map((i) => i.category))];
       ))}
     </ul>
   </div>
-  <dialog id="lightbox" aria-label="Certificate viewer">
+  <dialog id="lightbox" aria-label="Certificate viewer" data-lenis-prevent>
     <form method="dialog"><button class="close" aria-label="Close certificate viewer">✕</button></form>
     <img alt="" id="lightbox-img" />
     <p id="lightbox-cap"></p>

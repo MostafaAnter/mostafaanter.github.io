@@ -51,6 +51,13 @@ const person = {
       (function () {
         var s = localStorage.getItem('theme');
         document.documentElement.dataset.theme = s || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        // Motion gate: reveals start hidden ONLY when animation is allowed AND will load.
+        var calm = matchMedia('(prefers-reduced-motion: reduce)').matches || matchMedia('(prefers-reduced-data: reduce)').matches;
+        if (!calm) {
+          document.documentElement.classList.add('motion-ok');
+          // Failsafe: if the motion script has not taken over, show everything.
+          setTimeout(function () { if (!window.__motionReady) document.documentElement.classList.remove('motion-ok'); }, 3500);
+        }
       })();
     </script>
   </head>

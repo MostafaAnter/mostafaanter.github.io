@@ -149,3 +149,5 @@ if (qualifies()) {
   const idle = (window as unknown as { requestIdleCallback?: (cb: () => void, o?: object) => void }).requestIdleCallback;
   addEventListener('load', () => (idle ? idle(go, { timeout: 2500 }) : setTimeout(go, 800)), { once: true });
 }
+
+export {};

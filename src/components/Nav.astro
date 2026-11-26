@@ -4,7 +4,7 @@ const links = [['about', 'About'], ['experience', 'Experience'], ['skills', 'Ski
 <header class="nav" id="top">
   <div class="wrap bar">
     <a class="logo" href="#top" aria-label="Mostafa Anter, home"><svg viewBox="0 0 64 64" width="32" height="32" aria-hidden="true"><rect width="64" height="64" rx="14" fill="var(--surface-2)"/><path d="M12 46V18l20 20 20-20v28" fill="none" stroke="var(--accent)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Mostafa Anter</span></a>
-    <nav aria-label="Primary" id="menu" class="menu">
+    <nav aria-label="Primary" id="menu" class="menu" data-lenis-prevent>
       {links.map(([id, label]) => <a href={`#${id}`} data-nav={id}>{label}</a>)}
     </nav>
     <div class="tools">
@@ -17,6 +17,7 @@ const links = [['about', 'About'], ['experience', 'Experience'], ['skills', 'Ski
       </button>
     </div>
   </div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
 </header>
 <style>
   .nav { position: fixed; inset: 0 0 auto 0; z-index: 50; height: var(--nav-h); backdrop-filter: blur(14px) saturate(1.4); background: color-mix(in srgb, var(--bg) 78%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--line) 70%, transparent); }

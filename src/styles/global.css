@@ -22,3 +22,15 @@ section { padding-block: clamp(4rem, 9vw, 8rem); }
 .chip { font: 500 .8rem/1 var(--font-mono); padding: .45rem .7rem; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--line); color: var(--text); white-space: nowrap; }
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; scroll-behavior: auto !important; } }
+
+/* Motion: initial hidden states exist only while html.motion-ok is set (see Base.astro + motion.ts) */
+html.motion-ok [data-reveal], html.motion-ok [data-hero] { opacity: 0; transform: translateY(28px); }
+html.has-cursor, html.has-cursor * { cursor: none !important; }
+.cursor-dot, .cursor-ring { position: fixed; left: 0; top: 0; z-index: 300; pointer-events: none; border-radius: 50%; opacity: 0; will-change: transform; }
+.cursor-dot { width: 8px; height: 8px; margin: -4px 0 0 -4px; background: var(--accent); }
+.cursor-ring { width: 38px; height: 38px; margin: -19px 0 0 -19px; border: 1.5px solid var(--accent); transition: width .25s var(--ease), height .25s var(--ease), margin .25s var(--ease), background .25s, opacity .3s; }
+.cursor-ring.hot { width: 64px; height: 64px; margin: -32px 0 0 -32px; background: color-mix(in srgb, var(--accent) 14%, transparent); }
+.cursor-ring.down { width: 28px; height: 28px; margin: -14px 0 0 -14px; }
+.cursor-on .cursor-dot, .cursor-on .cursor-ring { opacity: 1; }
+.progress { position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: var(--accent); transform: scaleX(0); transform-origin: left; pointer-events: none; }
+html:has(dialog[open]) { overflow: hidden; }

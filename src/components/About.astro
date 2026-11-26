@@ -5,16 +5,16 @@ const v = profile.video;
 <section id="about" aria-labelledby="about-h">
   <div class="wrap grid">
     <div>
-      <span class="eyebrow">About</span>
-      <h2 class="h2" id="about-h">Building apps that scale, and teams that ship.</h2>
-      {profile.about.map((t: string) => <p>{t}</p>)}
-      <ul class="facts">
+      <span class="eyebrow" data-reveal>About</span>
+      <h2 class="h2" id="about-h" data-reveal>Building apps that scale, and teams that ship.</h2>
+      {profile.about.map((t: string) => <p data-reveal>{t}</p>)}
+      <ul class="facts" data-reveal>
         <li><span>Based in</span> {profile.location} · working remotely worldwide</li>
         <li><span>Languages</span> {profile.languages.map((l) => `${l.name} (${l.level})`).join(' · ')}</li>
         <li><span>Education</span> B.Sc. Computer Science, Assiut University</li>
       </ul>
     </div>
-    <figure class="video card">
+    <figure class="video card" data-reveal>
       <div class="player" data-video data-webm={`/${v.webm}`} data-mp4={`/${v.mp4}`} data-captions={`/${v.captions}`} style={`aspect-ratio:${v.aspect}`}>
         <picture>
           <source type="image/avif" srcset={`/${v.poster}-480.avif 480w, /${v.poster}-960.avif 960w`} sizes="(max-width: 880px) 90vw, 460px" />

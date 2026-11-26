@@ -6,15 +6,15 @@ const stats = [['10+', 'years building Android'], ['100M+', 'users reached at Th
 <section class="hero" aria-labelledby="hero-title">
   <div class="wrap grid">
     <div class="copy">
-      <span class="eyebrow">Senior Android Engineer · Technical Lead</span>
+      <span class="eyebrow" data-hero>Senior Android Engineer · Technical Lead</span>
       <h1 id="hero-title">Mostafa<br />Anter</h1>
-      <p class="lede">{profile.tagline}</p>
-      <div class="cta">
+      <p class="lede" data-hero>{profile.tagline}</p>
+      <div class="cta" data-hero>
         <a class="btn primary" href="#contact">Get in touch</a>
         <a class="btn" href="/Mostafa_Anter_Resume.pdf" download>Download resume</a>
         <a class="btn" href="#projects">See my work</a>
       </div>
-      <dl class="stats">
+      <dl class="stats" data-hero>
         {stats.map(([n, l]) => <div><dt>{n}</dt><dd>{l}</dd></div>)}
       </dl>
     </div>

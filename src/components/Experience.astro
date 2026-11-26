@@ -3,11 +3,12 @@ import { experience, fmtMonth, yearsBetween } from '../lib/content';
 ---
 <section id="experience" aria-labelledby="exp-h">
   <div class="wrap">
-    <span class="eyebrow">Experience</span>
-    <h2 class="h2" id="exp-h">A decade across product teams and continents.</h2>
+    <span class="eyebrow" data-reveal>Experience</span>
+    <h2 class="h2" id="exp-h" data-reveal>A decade across product teams and continents.</h2>
     <ol class="timeline">
+      <span class="line" aria-hidden="true"></span>
       {experience.roles.map((r) => (
-        <li class="role">
+        <li class="role" data-reveal>
           <div class="when">
             <time>{fmtMonth(r.start)} – {r.end ? fmtMonth(r.end) : 'Present'}</time>
             <span>{yearsBetween(r.start, r.end)}</span>
@@ -30,7 +31,7 @@ import { experience, fmtMonth, yearsBetween } from '../lib/content';
 </section>
 <style>
   .timeline { --col: 10.5rem; list-style: none; margin: 3rem 0 0; padding: 0; position: relative; display: grid; gap: 1.5rem; }
-  .timeline::before { content: ''; position: absolute; inset-block: .5rem; inset-inline-start: calc(var(--col) + 1.1rem); width: 2px; background: linear-gradient(var(--accent), var(--line) 30%); }
+  .line { position: absolute; inset-block: .5rem; inset-inline-start: calc(var(--col) + 1.1rem); width: 2px; background: linear-gradient(var(--accent), var(--line) 30%); transform-origin: top; }
   .role { display: grid; grid-template-columns: var(--col) 1fr; gap: 2.2rem; position: relative; }
   .role::before { content: ''; position: absolute; inset-inline-start: calc(var(--col) + 1.1rem - 5px); top: 1.55rem; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--accent); }
   .when { padding-top: 1.1rem; text-align: right; font: 500 .85rem/1.4 var(--font-mono); }
@@ -46,7 +47,7 @@ import { experience, fmtMonth, yearsBetween } from '../lib/content';
   .product { margin-top: 1.2rem; padding-top: 1.1rem; border-top: 1px dashed var(--line); display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
   .product p { margin: .2rem 0 0; color: var(--muted); font-size: .92rem; max-width: 52ch; }
   @media (max-width: 760px) {
-    .timeline::before { inset-inline-start: 7px; }
+    .line { inset-inline-start: 7px; }
     .role { grid-template-columns: 1fr; gap: .6rem; padding-inline-start: 1.8rem; }
     .role::before { inset-inline-start: 2px; top: .35rem; }
     .when { text-align: left; padding: 0; display: flex; gap: .75rem; }

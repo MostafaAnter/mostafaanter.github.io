@@ -78,3 +78,13 @@ $$<HTMLButtonElement>('[data-lightbox]').forEach((b) => b.addEventListener('clic
 }));
 dlg?.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
 dlg?.addEventListener('close', () => lastTrigger?.focus());
+
+// Scroll progress line (not animation: kept for everyone)
+const bar = $<HTMLElement>('#progress');
+const prog = () => { const h = root.scrollHeight - innerHeight; if (bar) bar.style.transform = `scaleX(${h > 0 ? Math.min(1, scrollY / h) : 0})`; };
+addEventListener('scroll', prog, { passive: true }); addEventListener('resize', prog); prog();
+
+// Tell the motion layer when a modal opens so smooth-scroll pauses behind it
+dlg?.addEventListener('toggle', () => window.dispatchEvent(new CustomEvent(dlg.open ? 'modal:open' : 'modal:close')));
+
+export {};

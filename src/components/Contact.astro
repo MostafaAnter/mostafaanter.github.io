@@ -13,16 +13,16 @@ const rows = [
 ---
 <section id="contact" aria-labelledby="contact-h">
   <div class="wrap">
-    <span class="eyebrow">Contact</span>
-    <h2 class="h2" id="contact-h">Let’s build something great together.</h2>
-    <p class="lede">Open to senior Android and technical-lead roles, and to selected consulting work. Email is the fastest way to reach me.</p>
-    <div class="cta">
+    <span class="eyebrow" data-reveal>Contact</span>
+    <h2 class="h2" id="contact-h" data-reveal>Let’s build something great together.</h2>
+    <p class="lede" data-reveal>Open to senior Android and technical-lead roles, and to selected consulting work. Email is the fastest way to reach me.</p>
+    <div class="cta" data-reveal>
       <a class="btn primary" href={`mailto:${contact.email}?subject=Hello%20Mostafa`}>Email me</a>
       <a class="btn" href="/Mostafa_Anter_Resume.pdf" download>Download resume (PDF)</a>
     </div>
     <ul class="rows">
       {rows.map(([k, v, h]) => (
-        <li><a href={h} target={h.startsWith('http') ? '_blank' : undefined} rel={h.startsWith('http') ? 'noopener' : undefined}><span>{k}</span><strong>{v}</strong><i aria-hidden="true">→</i></a></li>
+        <li data-reveal><a href={h} target={h.startsWith('http') ? '_blank' : undefined} rel={h.startsWith('http') ? 'noopener' : undefined}><span>{k}</span><strong>{v}</strong><i aria-hidden="true">→</i></a></li>
       ))}
     </ul>
   </div>

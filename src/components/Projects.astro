@@ -6,9 +6,9 @@ const VISIBLE = 9;
 ---
 <section id="projects" aria-labelledby="proj-h">
   <div class="wrap">
-    <span class="eyebrow">Freelance projects</span>
-    <h2 class="h2" id="proj-h">Apps I built as an independent developer.</h2>
-    <p class="intro">Independent work from 2014 to 2021, written up on <a href="https://mostafa-anter-portfolio.blogspot.com/" target="_blank" rel="noopener">my blog</a>. Many of these apps have since left the Play Store, so each card links to the write-up rather than the store.</p>
+    <span class="eyebrow" data-reveal>Freelance projects</span>
+    <h2 class="h2" id="proj-h" data-reveal>Apps I built as an independent developer.</h2>
+    <p class="intro" data-reveal>Independent work from 2014 to 2021, written up on <a href="https://mostafa-anter-portfolio.blogspot.com/" target="_blank" rel="noopener">my blog</a>. Many of these apps have since left the Play Store, so each card links to the write-up rather than the store.</p>
     <div class="filters" role="group" aria-label="Filter projects">
       {groups.map(([g, label], i) => <button type="button" class="filter" data-filter={g} aria-pressed={i === 0 ? 'true' : 'false'}>{label} <span>{count(g)}</span></button>)}
     </div>
