@@ -49,6 +49,7 @@ const person = {
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <slot name="head" />
     <script type="application/ld+json" set:html={JSON.stringify(person)} />
     <script is:inline>
       // Saved choice wins, otherwise follow the system. Runs before paint to avoid a flash.
