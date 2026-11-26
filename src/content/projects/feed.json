@@ -1,0 +1,755 @@
+{
+  "fetchedAt": "2026-11-26T14:05:57.194Z",
+  "total": 33,
+  "posts": [
+    {
+      "title": "Android TV",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2021/05/android-tv.html",
+      "published": "2021-05-04T04:11:00.010-07:00",
+      "updated": "2021-05-04T04:21:16.016-07:00",
+      "labels": [
+        "Android Tv",
+        "LeanBack framework"
+      ],
+      "text": "Technology stack\n - Custom exo-player\n - Coroutine\n - DaggerHilt\n - pager3\n - MVVM\n - Kotlin\n - Room database\n - VCS\n and much more ;)",
+      "playStore": null,
+      "github": [],
+      "otherLinks": [],
+      "images": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihT0gEroWrJ6rVDYqYiKDq22eAu2N9hj7RLj4lbngsmQWZyv3dyTKbo8FFyk8usdla8W1PTu7BgDX2QW_ydPWPDqcKYNtkfqS_VyM8J02_VLg9fnWaOcvZIX9yB8rDC5RtsUb8P_gffRmc/s320/Screen+Shot+2021-05-04+at+1.03.33+PM.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSS5v_4JDDfQlQ1ACiiSmh9gbPD2HLJfToKFp48lsrypKQOFkpM1mGJQukgP-XQkKepCMsggIloglNOYEBPU9mj03ctg1WioJAuWrxXMlU2IZVUBkK06zdrxjY5nDT65s5PKZgpGBsxHb4/s320/Screen+Shot+2021-05-04+at+1.04.17+PM.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFFIBJ36wUcMDqRNYBVgaYAS32ZD1cw_q7M4Lu-DdzRroFaaSHt2f2RZ_sJ-7st5em259tmndSj2FThnAUE_Zdbif5bmFszsnX5uCWQCnYkdHfly0z7j0f1Dt5uhaloDZMpFbXubsNL1_t/s320/Screen+Shot+2021-05-04+at+1.04.46+PM.png"
+      ]
+    },
+    {
+      "title": "KLLIQ",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2020/10/klliq.html",
+      "published": "2020-10-28T13:38:00.006-07:00",
+      "updated": "2021-03-13T04:19:53.596-08:00",
+      "labels": [],
+      "text": "Technology stack \n - Home timeline uploads large files like videos and images \n - Realtime chat based on socket io \n - FCM for realtime notifications\n - Custom exo-player\n - Coroutine\n -Dagger2\n - MVVM\n - Kotlin\n - RxJava\n - VCS\n and much more ;)",
+      "playStore": "https://play.google.com/store/apps/details?id=com.dashnan.klliq",
+      "github": [],
+      "otherLinks": [],
+      "images": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAljHJwjXLgejEMQJ_YlAfLuTqsmJpxyrGX88sC5Jxr_lUvbmyzkJyKMHwW-q3U4HUdPyJ4JNaZIb-TKMgAkYw75h5sGVkE1nQ86lZYLreaNg3cggVbjiH0xJTEHCRECimYLTrH3nbCHO7/s1280/WhatsApp+Image+2021-02-27+at+2.47.29+PM.jpeg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7BkkOZRItMMm8IY6M10GQ97ZnGj_wgFzx9j4bmzO4NHjeFb9O5RGD0oGrvL2Yi8TeT70mMxJzGDj20DWP456BPUcSutW0y9gKtszhIg67UOBMwrBJSVFjRf4Ojdm1hLhSh7rkIumCdjDP/s1280/WhatsApp+Image+2021-02-27+at+2.47.29+PM+%25281%2529.jpeg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXaXXt3gwrOTsQZiDiCnTMFCy3y7tBVOXkRPwdRLLiMpIBuAVat0o7AUGj0iYRfEbTdmsmW_o44RuB4nBO4JWb0cJAwHaJV72_9cMu2VHizpe-tatH17xU9A-FTCcHGmyD4ToBeVYQIzJ-/s1280/WhatsApp+Image+2021-02-27+at+2.48.26+PM.jpeg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6ZVgBFGaus_56UU0AfpxBoCQoLJzaMy7ZVTz5NZB8lBEBQ4uMl2SPkHRU20ih6iHAQAfZxf4bvg6Bd-JF2qsX0F4S84YDyt93M4Vr2jqynTCpuGeseOFe5UNq4YHEwV4NFMMtl3H478Kt/s1280/WhatsApp+Image+2021-02-27+at+2.48.26+PM+%25281%2529.jpeg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_sxtMH0LDNlzbCkUWmMt4dClF5DxwZutco_RD-MwV45XhKp549qC3BuQQ8TmZKRvIkMDdtVDMgP3M40gG3k6QtlAa3fzaupm8L4FVux3CXc9Q006m2h2HhyzKxcGr5_n2dxQRcMFUUjwK/s1600/badge_new.png"
+      ]
+    },
+    {
+      "title": "LIVE PLUS",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2017/06/live-plus.html",
+      "published": "2017-10-30T06:32:00.000-07:00",
+      "updated": "2020-04-18T10:06:22.468-07:00",
+      "labels": [
+        "Loader",
+        "Retrofit",
+        "Rxjava"
+      ],
+      "text": "Never miss another match or the latest transfers news . \n ● Responsive Android application to track live matches. \n ● Fetch data from the Internet with custom API. \n ● custom player to play live stream. \n ● using amazing collabs recycler view. \n you can find app on official page on facebook",
+      "playStore": null,
+      "github": [],
+      "otherLinks": [
+        "https://www.facebook.com/LivePlusOfficial/"
+      ],
+      "images": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhruhD7WEzXIUhDZRA78I_7lNIdBnXXDrOYh4kBTrdT-SBjN2HZlVtxr5tmc8hmIGj-JodtbUa9S3dj2mUnJsO_kU17ZdtrxzcwbPgj6_-9GnbCMueHvgmAf5PHimPEH6vRXPsrlWnxDFEv/s1600/Splash+screen.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcLE_AApGa9PnEHoPauKthCOY5DHoUX7QYmzHSIPLsf-UMWFtMFKx2njJ0fJ1P5inT9cUQroUXd1nvwNPZA5MMWBe8hYF3-4mbjXcPk5QeyEbHaHAf-ecGfTH35Ax1gN6Fraz88uRSandz/s1600/Home.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3Z4Kmrw7dh7mKmVX2r4hVedQIkHDQ1AVPjo8W4KwwBJIr9B0c40cQ9dFDUxwUlno-UUExDUG5DjCX9EbtOU-WNByrqsIpS92yhotU2C7JM9kx5n1WQiAXqUYEAsNnv7cSKI42IGj8UfmD/s1600/Package+.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwp0akgIOvtsxdtsUFdolOAfgQBcrhCpu4Uf9OuaVPYxD4xoUBLrggLU6jw33yrvMT0dz-2E8yjwjdKrWdyKVHfL3K8EFURgEX7HXLUAebyssNy6P9pPtlHeRQojvMCEV7k9xzsCuMOmkp/s1600/Channel+View+-+teams.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0anwD4C6hSSXHcYNlU4g2xXB_Pe6M9Q6gXOz-bGUvgGc7hmyIx_mpooh5DyWXKbqQ4V1D7_YZXftbDc7zDqNbx5iHUaL9dNhiBHhBLo7MtKdRdAFoKx-qM3SYIe58FI4Lajt8MiDclK4c/s1600/Chat+room+-+package+.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9Cch8_f1QGX-MO-W0_BIm-7N1h_zkFfyT7Px8i50yIuSRxmXrNhzDN0YW2eG9Tkrf5ADnWvoUt024ajL9hdn9XMKuanBtcoa_jmi9Tq3eTBmo5GHil868CtPvYeTodtSrAsBhVhefLTyA/s1600/Channel+View+-+end+match.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRJLV-hPahQ7kQjjgif-8WHRlzlqWRXrTER1IS7hHvZUSpCkVo1pKP0qJh5hqb-XBow_JQouIx2kTOEejcs2padfZgEmolfcabSrkBbbEinbpoXMnNs3Ky2wp6aqgwQNEjRrMgKFKtxqn8/s1600/Channel+View+-+settings+.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQK247Ityw5DihDerzpSIPW7VD6EV4-3x2-JCcATqHk2_8UYNy0O8cQOixqgL9edB7UgkQ6aPlvMBMHYajMv211G9q_t38DSVQtfoxnO3izJZOMO3VKz_FtBT4KBKLPdIkofTbQfyfK4I5/s1600/Channels.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBqlPOYR1mRFiyFqy_38w1eUXl1ezo-UI5ojCBuMpilDOjz6GpL7OHm73pKOge1YVMb1SO_9oTdkk-l4VRYedmEcN0Usp2CkUwVqOngpx8pSnY7qS94s1tzpppB3S8HrQTUaoyTiRrU8oW/s1600/Menu.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUYgrdgM9mURfzxIuZP3p9yQKpWjMhYOCb4tLNYkDyZ7IwiTahICL6Y7uMa0IjV1XEt6yFhOmj0kYPnpISBSejEHxE-K2iZh8UMjX0KudmZerP8qsibfYWDzSMRgNZm_Zrpqw_WFUaQbWR/s1600/Chat+room.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpbLEoWwgn-TZxQpROPNEE5B7e7Fx8tOQz9TYlCnurjTivZaVrUj1xR7EzIirLIrNBXI0KyBUWDxxA-gAXpJNoJce8_Q93B3fydG1IciYHse1ApxhRC3tfKwt2vxnegfxKb2U3G6tQqgFO/s1600/Chat+room+2.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidqDOrCtZXPI31vvES9VSeIgwftUP36C5rWGpQOfKjwz2SpnpLfGTJJRtSNB6txizdzqqvLU49huTPv7vLvN6KN2fpz7QKFhgL-J081dqRoLHsr-RBi3H8Luhfe0hUCCZ7D991TZAhj0gJ/s1600/Chat+groups.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsWOi2QOw-OpLbfspeh0Xxa8BcXBNnhaYJLn2eJFE6Z3PugBIUB20BjBREuw7ILns7kaHIf3uiAIl73F9yEbfOVjksBo3Fo6EqmC8_Wpd0rZVgmzp7EyunscPuQK7_wmsms-w94x7Hdbod/s1600/Channel+View+-+channels.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcilgcifjGLYo3Un7g48brvaBXZvAWKUtDh8LHrYuKTg7KrR_HxQ3FYLMlywlIdwXO1mcQbqVI45Legua3Jkn5odnMhlMYhTKegwUym_TUobR0Ot34_wfRBmaVQZdQ9e5vsDCy5CfRdRk-/s1600/Settings+match+2.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6pLyFo-SK5O4vIlmvUV4PJ2osE9aTe9hvmuKUXV1ZDqRCM7fEaFRD3RBDsp7rByJEju28BM1rYLN9jFLAxhG_PCkO7uRFy9dYyab9rDFuXKo160wzpp79Obd2dVe5eqVJw5uL_y0stzgR/s1600/Settings+match.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjy2xQzifB0cDV2e4Dgfu55MHZLuhFV6ZOdpF2dOaPufnDBIsrqyZs7-J01CTCrX152gfN1udWjlXC4cyt60oaF1Lpt83XKyLTCwgwD9pZfflZorW9xrFu4wE3HgWc7kQAz5wWPfUgKT4mU/s1600/settings.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgit0jgETUvlMUNLdR1hd744OhE6F_2QAasait3MVF4MkjR61r07qqD1ijnQMKNSLzf2TwHLJtm_c3wQ8Vk41M4LYDKkioDdj2Z_TI-7TL7_vzGATjH2cl_eGHFkVCgysRzeN-KVLRMf_k1/s1600/Channel+View+-+chat.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRmH273IuRS10TtzsWcFITTlcgzDBJX-L69A3AS6tTsssj7yiMcIXVcfTjMiW_jZDUsXKi_eZrFr3X1OR12Ktt_yf_UqcGxzpBkC_s0Wy30Hn8NxMbUGejRxnvcPWnQj4exFJriCDGk1Se/s200/f9a5ef6db5291750b10db51c5e3b2f494c9f61bc.png"
+      ]
+    },
+    {
+      "title": "Football90",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2017/09/football90.html",
+      "published": "2017-10-14T07:59:00.000-07:00",
+      "updated": "2019-07-18T02:38:30.145-07:00",
+      "labels": [],
+      "text": "Football90 keeps you updated with the latest sports news, results, squads and more. \n ● Watch the best moments of the match (And the day) with the Football90 stream right after they happen. \n ● LINE-UPS AND HEAD-TO-HEAD: Do you need to know the line-ups before the match starts? We have them in advance. And also the head-to-head history so you can check how both teams have played against each other in the past. \n ● LIVE TABLES: One goal can change a lot. Our live tables will show you if a scored goal has changed the league ranking, as well as the current top scorer's table. \n ● RealTime chat when the match started.",
+      "playStore": "https://play.google.com/store/apps/details?id=apps.bugless.football90",
+      "github": [],
+      "otherLinks": [],
+      "images": [
+        "https://1.bp.blogspot.com/mp0OF5VUjdWx5G7ldIE1SXTlEiBltd3btUt9GbWASB-0tg86UOgB7WPjGhtacLbB5WU=w1366-h598-rw",
+        "https://1.bp.blogspot.com/4i22y3JrjH_Fo5Pgu-B3LLL4cBt0uE85TEojheG-kWJipQ9qTXCpVsYK3dnFRKLJmMo=w1366-h598-rw",
+        "https://1.bp.blogspot.com/K7c7TwBP6ho4-KLxIFtgfA86vdZX6Iv4vuWg9ampNTfBglVxNEjIusj82ptF2loo_w=w1366-h598-rw",
+        "https://1.bp.blogspot.com/onocAfS0Vw4RLa7YO146QoCqAZ_5fxhusWi92e_JG8RGlkrasLFtBxU24VjZeQagSZo=w1366-h598-rw",
+        "https://1.bp.blogspot.com/IMl8D6K3TszAQvWuQnfvNJKMt0x4l5dwGBiZkd3l2w7_IYhKUF83Kh_GB_fztwVD2WBV=w1366-h598-rw",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0cPlVThpR-y-7yBXL74qpRkhc8c-HtT1UQpO67yacnTgIrbYId2VNcuxEgE8xbtHzKArIK-YehUqfT1ArSUFSsgyD9CfZv3BT0lO24kXO92cVqWZT0GuQi1ewxlxLQpjnRLkhozDn1DFY/s320/All+News.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgJfvQ55yJnVSya4DgMSSTeHzejc0hrvWDAFUnTtBVgDOqTNTogC3wf9Oa2JKn5BXWfXwCGY14XrcSvqNKrRuXA2IxcDial8i5uVByD-Z_TxBPgC280OJo-S2Dq7DnwT30uTp2FQnaPJE9/s320/Chat.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkldovLEz-19sUrLk5xgTxSOJakNsssfEZZhP_i1g_3Mo9QPxbpBXx6Kf-DqOdCgdRuzyElZfZAwNoYxfKfbvRmrL4E4RcQEyK0sE0vKrRoPHqqaoBTg5qvgfeuzyL6jjvQxCvTRoRiIc1/s320/Details.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6T0vABxI5yezIdnnC_o7foj2ODRNjFi_TTgszg24yC5QlXXFfY_ix26Z_dY8iN6WoFE1PHavC2LN76SN3mp7cDqnY8616ZSRhUjlFdaODt_XeI8d5uU2k6Srt39d6bRhWMaizU-e2TDuC/s320/Goals.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8-0_MKqRKtKo2e-6iLIAax3ed9YIAXMaxvl6_DTbs8KLmJLwMufyXu1CcVXXHXMYK22h9r-wluKSdMPLfZy8gTp7pNYPHytAMT-rDH63j_hzJhoEB90iPUFtdqXupVXNxBmCOV35RLzI6/s320/Login.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8-0_MKqRKtKo2e-6iLIAax3ed9YIAXMaxvl6_DTbs8KLmJLwMufyXu1CcVXXHXMYK22h9r-wluKSdMPLfZy8gTp7pNYPHytAMT-rDH63j_hzJhoEB90iPUFtdqXupVXNxBmCOV35RLzI6/s320/Login.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfoLBiG-WBOgnyF3UAst1I3EwZRN2hpuOKxYZ_PvJGhvoqdYhqAgU_VzMVqo2NvSlAuY6jkACsUGP8MGZOd6c6OAngCkP0aFJYNAOXHMEp28u0dxukRaBlgD016fEijjhXK6AHNKLVc_Dw/s320/Matchs.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGwSBiT_WKg1NiTH8n5n8CHH2sma8rsGG3LVMcZDJPHVkvwb3hYTYYm6PrtOddGEJuG9p4xwIDtOtvae8eaf9seYJs8gvObZXJMCBSiyuMHEqrlfKxTPfRJrETznvhYKluLt6lo4_3bs7m/s320/News.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihibIQdQVBjcfmQ8du1IMOqyJgTauUPq1mUqjReOPa8cqfPQ7PIJbPHEWU5ZqysM8pkpEpOPq4_iseH-UkstmPPkWaaQQrP8yxOmnyID_s2JPWmNqKLQ605WdMMOzabDLzrdpqRyj-sIbI/s320/Profile.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggMfb2eBOS41F_oTzEqVpjOJUyd4pEYEZkZ8gY2Uvj04fZnOoSx2nO_sfHO7_oDpP3ZLZU4f5Uf114JoIY98KTZN5JnlID7qguXrUq6tXMS8DtzJ0A6lM-dyNOncXzLWHAKc4waSXrj4fq/s320/registration.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_sxtMH0LDNlzbCkUWmMt4dClF5DxwZutco_RD-MwV45XhKp549qC3BuQQ8TmZKRvIkMDdtVDMgP3M40gG3k6QtlAa3fzaupm8L4FVux3CXc9Q006m2h2HhyzKxcGr5_n2dxQRcMFUUjwK/s1600/badge_new.png"
+      ]
+    },
+    {
+      "title": "WIKIPETS",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2019/01/wikipets.html",
+      "published": "2017-10-13T04:58:00.000-07:00",
+      "updated": "2019-07-18T02:39:32.116-07:00",
+      "labels": [],
+      "text": "WikiPets is a social platform that connect pets owners to share their experience. World wide people come to WikiPets to search for any services related to pets, Send broadcast in a range base to pets owners, Create interactive reminders, and share their own experience with others. WikiPets is the world of pets. \n WikiPets Features: \n1-Send broadcast to around pets owners to ask questions, interact with them, and take your pet for a walk with a friend.\n2-Follow friends, find for your pet a perfect mate, and adopt more pets.\n3-create a profile for your pet, add daily activities, pictures and share them along with your WikiPets community.\n4-Make reminders and to-do list for your pet as you go to stay notified.\n5-Discover upcoming Pets events near you and get your pet socialized.\n6-Find your complete guide for the nearest Pets Hospitals, Hotels, Shops, Shelters, Etc...",
+      "playStore": "https://play.google.com/store/apps/details?id=bugless.apps.wikipets",
+      "github": [],
+      "otherLinks": [],
+      "images": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir62hu_xkvUHn36yS2OSYvidfCxITPaWNZ2IxsNUnnflSNZOo_RlmRkWTxTJHbIkz6MTYwx7seOrNQC_GlbvvXNy4TlZvFoMriinUO5M1Gs0SHaJaIrjGVyL0FrIBiQe4z4rinQwlVVTgn/s1600/01.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUHa1wMAp0WKCM1B5GDsAfv-fTlJ9Uvv0Q8Q-APNHsH1uKsyj8yNE6D68V4-_S8wCsGBT3qjIBTtefu0l9yfrlUgw_FCS7TCHcRiP8wwqOp0hHIF-vb1hrP8JhFA5DR6JFRw77l_NPzX1d/s1600/02.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYjX6PdfWPt5v82l60ToIZhv4rqdYHijszVX52cvZ3gY6p0ZYjME3_wTeUDJrEdDeKwShB0Zqe9ORy5v2QrJ-JXX3d1vI1GJRhEOPngZIy3ClVDG4LmVXy1RUy8MARGyDea6XwUrQOTxqB/s1600/03.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0j71cAgB-zpO6WT9RRjamsJUqYEd9G9QclG-MF5vzEUbU5wfcbqyaH9EIGZHk5xhhZD56hbu7oCQ9Kz-JHkZBI5zbGEFsZUa3YE-_DgtJzSJ_V1-9LkzW-OIzhtCOmesHTxFk9JMzRy-/s1600/04.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh25-PcOoQQNIOkLxOgB6mIOX_s4eTM8SVbQ-lB2aUyVlkWsf499-W82yEBvjvcfHZMgVgh0NqdUTqTz4c12CeYMYeRjG-WFFjBR4XzBGRcHhqBiOYFf7fWga1CeQWmCFjUGhFkWViuEzP7/s1600/05.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEher9eImKO8V0zI5_msDFn8NLddLKnwGo2ouXLZOM0zv97TS566wBBD6C3yFyWMcfP1PArfb9QfPOW9B1GYXvAItcS7p_bsmS3SRKJS_sotBjn2ranJPhWVCzKXjLDcnyPBKw9ZHVwrtpOs/s1600/06.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_sxtMH0LDNlzbCkUWmMt4dClF5DxwZutco_RD-MwV45XhKp549qC3BuQQ8TmZKRvIkMDdtVDMgP3M40gG3k6QtlAa3fzaupm8L4FVux3CXc9Q006m2h2HhyzKxcGr5_n2dxQRcMFUUjwK/s1600/badge_new.png"
+      ]
+    },
+    {
+      "title": "Al-Embratoria",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2017/10/al-embratoria.html",
+      "published": "2017-10-12T15:35:00.000-07:00",
+      "updated": "2019-07-18T02:40:25.040-07:00",
+      "labels": [
+        "Chromecast",
+        "DLNA",
+        "ExoPlayer"
+      ],
+      "text": "The official app of www.embratoria.com . The best app for IPTV. \n ● Chromecast \n ● ExoPlayer. \n ● DLNA.",
+      "playStore": "https://play.google.com/store/apps/details?id=com.friend.embratoriag7",
+      "github": [],
+      "otherLinks": [
+        "http://www.embratoria.com/"
+      ],
+      "images": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-3_XZMQe3CXtopy-5o7HjPna2kPAj_zRGEWSv6LlS6sSYtMEHfdI5NHJ6Q66X93aAm9IsNBG_t-d0yLyIZ95C0_7d_bynbgZJtvAirXFSffB1bklZb5u7V49lP4U8-XjTEijFVQCOL4E1/s320/22491673_10211930900200684_2690982919971675660_n.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDcbuf6srm-acX180e4ZOx_GJWXE4fuZFFtiUFx8vkrnhO8fhcVMupNkhQD7Lv2nbbOHC7J4IzsW6yv7id4asEZB68V5dtGedQkJ34hKhz_i71EcC5n7SwwcFr9cH005zHVteucieJsHNg/s1600/badge_new.png"
+      ]
+    },
+    {
+      "title": "MAKonway",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2017/02/makonway.html",
+      "published": "2017-10-11T20:30:00.000-07:00",
+      "updated": "2021-05-04T04:26:24.018-07:00",
+      "labels": [
+        "Firebase",
+        "Geofire"
+      ],
+      "text": "MAKonway is the first Application provides integrated car and motorcycles service in Egypt \n • MAK-Map \n Shows nearest service provider you need , and shows his rate from users dealt with him before \n • MAK-Chat \n Chat with users whom have concerned with the same model and brand . Also you can chat with your friend and locate them online on MAK-Map, nobody will lose anymore \n • MAK-Card \n MAK-Card provides special discount at service providers all the year \n • MAK-Jobs \n Easiest way to link people whom search for jobs in the Auto and Moto field \nSave your time, effort and money , make your life easy.\nMAKonway ….. Always with you",
+      "playStore": "https://play.google.com/store/apps/details?id=perfect_apps.makonway&hl=en",
+      "github": [],
+      "otherLinks": [],
+      "images": [
+        "https://4.bp.blogspot.com/Z0otGYpqRSsYtGZ298jFVfr4oGvmSSVYjQ6B9HMb-gGtkk1hPe3XIDMefRNLlmQ4dm4=h900-rw",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2pKXDRKtmpd-btuU4awR1rlwT8A2SPdrCVhgLPXKyLoAFAMfPqliOoX9xCNJ0uMvgKNpkyZJo4tNJejzMQ7dOQ2ykyFSOU2T5ENTOmv9WiyTUigVDEaqqAe_gEo4lKzil_y9YZoviGYpn/s200/App-en_03-H-groups5.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQT_l1N6ppxHAd1ouBu3a1QHIWsFEVpKE6mh_169Py35tRQQEr_AWXRz3TBmr0Sn7kUl51Diz6df_wxG7KPZsC1OqAMFRubkgLeKxS48www_vmVnf1jFwdMBY4uBMkAUoBQ6tEgI8kIGjH/s200/App-en_03-j-maps-copy.png",
+        "https://2.bp.blogspot.com/yT7S2t9eV27SaZu-3l1z-BzeUOZvLcNSAnBczz_cDx48hY8n_mzV5xmscH8OG9MSRsE=h900-rw",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDNxla9-rthkH8mPiA9gMCTXN4P6v81lkubUlrqwZVp-OlAVW_G9Lzeg1vHnZQ7R9NHcJ1yeH_ELN4P_3mQVIANuxWsNNhq0pTUGma-gReiF_1NH6nw_pCjkP77spAb3If3H32VqEjRhBI/s200/App-en_04-F-my-favs.png",
+        "https://2.bp.blogspot.com/yCyJukRRzvpvhq8N1ZzAFq3Z5rf0N7VnBAEsW85vTS5GC10FOSRvbDeIVZqH2h6aknw=h900-rw",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_sxtMH0LDNlzbCkUWmMt4dClF5DxwZutco_RD-MwV45XhKp549qC3BuQQ8TmZKRvIkMDdtVDMgP3M40gG3k6QtlAa3fzaupm8L4FVux3CXc9Q006m2h2HhyzKxcGr5_n2dxQRcMFUUjwK/s1600/badge_new.png"
+      ]
+    },
+    {
+      "title": "THE PLACE",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2017/02/the-place.html",
+      "published": "2017-10-11T02:02:00.000-07:00",
+      "updated": "2019-07-18T02:10:13.705-07:00",
+      "labels": [],
+      "text": "The application is focused on building the first social media plat form in the world that is concerned with finding outing places, organizing outings and make prepaid reservations for all target segments starting from 12 years old and up. \n The combination between the social media communication between friends and the easiness of finding the best places to hang out at, will make it much easier for users for organizing their outings and go to any place and find the table is ready and the food is served, this is a new era of the e-life in the world. The many categories that will be covered under this application will make it very easy to the user to find the best deal by a click of a button. Categories like: Tourism Places, Restaurants, Cinemas, Sports, Meeting Rooms, Weddings, Kids outings, shopping spots, adult games, safaris … \n This application will almost delete the waiting lists of people want to go out for an outing or want to reserve a chair in a theater or a soccer game, it also will have a major enhancement on the tourism business in the countries that are relying on tourism in the national income. Tourists can make their search and organize their full trip and the places they would go before even reaching the country they are going.",
+      "playStore": "https://play.google.com/store/apps/details?id=come.the_place.app",
+      "github": [],
+      "otherLinks": [],
+      "images": [
+        "https://1.bp.blogspot.com/xeum4ZonwC_LiOLLLkX5ateCEoE6Q87BEKCieKGMmgSRHmpz8dUq1YuZgqPsfPTefxM=w1366-h674-rw",
+        "https://3.bp.blogspot.com/rnUyEwbz8oRpzC_GE9_CQVuRA9HFqHcv_pOJ7RIrDySy4Ywb1PRhNz8lZREAiwfPAqw=w1366-h674-rw",
+        "https://3.bp.blogspot.com/4B5kavqcvewxIyvuFksMOAjJe9RX3w50nRqhXaqYglAvnXUe29zseSVmHe2uAqDEBcsC=w1366-h674-rw",
+        "https://3.bp.blogspot.com/1IigxC4Ok-AfX6g4qXzD3INVHqwXQ9z275g9tbTzWagO0EkNAuwpanTRfIia8cF9Fg=w1366-h674-rw",
+        "https://4.bp.blogspot.com/RGyQ6EaErFkSJDGEuSfjcnQKALnB4GcaYkG60oVcj26x2HKqzEwhw4fjAbHs-T_NF2w=w1366-h674-rw",
+        "https://1.bp.blogspot.com/B05TzAPzcXuatSJJD1cwV36VvUoEZPLYqn7qCmdV5LGcoH5RhKIfHw60xVZSOUT_Iron=w1366-h674-rw",
+        "https://3.bp.blogspot.com/kI9-Rm581JO1nHGj9xgsbyfOS3XYJlDPk6z8PqhrxiFP50aZ5QoQE57wBgVR2ntZ6nYv=w1366-h674-rw",
+        "https://2.bp.blogspot.com/ssoSFKdHqlfvCatIrhvYFv6BOTznmz6hB1SEAd57--mStqRyEAc-KRuCxunYfWb7lA=w1366-h674-rw",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDcbuf6srm-acX180e4ZOx_GJWXE4fuZFFtiUFx8vkrnhO8fhcVMupNkhQD7Lv2nbbOHC7J4IzsW6yv7id4asEZB68V5dtGedQkJ34hKhz_i71EcC5n7SwwcFr9cH005zHVteucieJsHNg/s1600/badge_new.png"
+      ]
+    },
+    {
+      "title": "KOCH",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2017/06/koch.html",
+      "published": "2017-06-10T06:35:00.000-07:00",
+      "updated": "2019-07-18T02:24:11.332-07:00",
+      "labels": [],
+      "text": "Fresh home to home online ordering, you can search and find the nearest provider \n from your location and order some food easy. \n ● Responsive Android application to order food. \n ● Fetch data from the Internet with Koch API. \n ● User can show all providers that nearest from his location by Koch map. \n ● if your cooker you can although register and put your services on a map. \n Android UI Fundamentals - Tablet Intents \n offline data persistence - shared preferences \n GITHUB",
+      "playStore": null,
+      "github": [
+        "https://github.com/MostafaAnter/KOCH",
+        "https://github.com/MostafaAnter/KOCH"
+      ],
+      "otherLinks": [],
+      "images": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkP79khax2fq5TKNz1i8AN1kQQ03rbxOzQzLP5oy-DJCHRfhEA6lnW4X97DSTKjJAZrYe20fBrl5d2AKuAc0J6Rcsb3rLWVMN4lI2RcDso-C9NI-WSYqq5ss94MFll5KamFP3LTjP3yXnc/s320/Screenshot+from+2017-08-18+13-44-03.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQG3J4uZNo-GuH0yGt-NZb3dw-OQbWAe8Oqj9BLeJIqatDr9Ub-OjCL2n2z-9Vac14W-1GqXhaii7mhSTsCbaRu_Wvdm222ymsk5gr8jOOC3j74XqWa_wGUuO5b9Xpu7l5WYxHzAgc0ciY/s320/Screenshot+from+2017-08-18+13-44-27.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVuKC_DVFzggxIjkHG3N9AxisHUFMXJCWnzDa9W_V2Jh34VlwO9x-5_ccmCPi-NXqLvlA9VEIEgS-zev6YHAl8zKRwhqsEDdK74qg25jkEQGjNzjOujInhKl0AksLFn9b5RiSckDYr3J40/s320/Screenshot+from+2017-08-18+13-44-56.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLqoiH2eKKc8IdJK4kWiys3DzFfx8GXo1kEFsqUes34nK7_bx5CuFpRGAanJmmwJZOEupmbaW8uIEKZ-9a0lcP_fw6EVBIvnNHG38LfXedzoca-fS6LPM4L6GUUrXKH5AhZoB1rPFWrv8_/s320/Screenshot+from+2017-08-18+13-45-22.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNedFPtp3gi6APP9BjmIDxKbBe_oepaRqhVgt7R9k1-aeDCsPeJq5j0aOHbHz391JVJdbG3kaR5Q-C3A-bCQhuh-SgJeM8NfUierUuglgReNMSWFehU5cyPy8BEzzqNuMmOnDXiWCnffaU/s320/Screenshot+from+2017-08-18+13-45-41.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAqBnLk2lfqNhCypvYgt1U42GCQkRMkforjHl5ufat180venIYmWqoUOBj-a4VTmRcswAGaYCeD3rYBJcpiMXUrV3szkBVh0jI1rR5bbQqYK57driyuK7_i8toaq7Hkc9zsr9OR4yUzoWt/s320/Screenshot+from+2017-08-18+13-45-59.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLUBZEOzARcGXhWMBArvXsDYbeT0hWbLw-7DqBgsFMunMJ2v0zhFv62WQs4xXI5e8_LGEekybgVup7vAwA7DJxdLGuPF5DYuY8VrOMPXG0qf57avOUF0jdxLvL5oxnjOTwEy25App1gRB4/s320/Screenshot+from+2017-08-18+13-46-40.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0FQ3-fWYkZ3bKq0jMjOIGV_ib7O_cofQz7Rs7a7J2eV92VHLdjCfsdVCUEJOBqHAdIvxU8qw-3LzwFkGT-b0hlITly7HeKBBo1b0uuADVp9u0biv-Y9484V-yntR1lvgL3oyl9Rv4Y0id/s320/Screenshot+from+2017-08-18+13-46-57.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfUmeyi4dcC7S1MFgBgaSj2BU8oIpN-l2u9E-K3EOYyNiX-Tgq11Fynz7VyP0ExkLuUPAVgjOQzZYsUAUn1dNjqXlp89PORo6eXp0fiY10wpQsecBcirbmwmQkIZzMHf_Qnw1Ppc0JEU1S/s1600/GitHub-Mark-32px.png"
+      ]
+    },
+    {
+      "title": "socialCap",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2017/08/socialcap.html",
+      "published": "2017-06-08T07:11:00.000-07:00",
+      "updated": "2020-10-28T13:44:13.021-07:00",
+      "labels": [],
+      "text": "Fresh home to home online ordering , you can search and find nearest provider \n from your location and order some food easy. \n ● Responsive Android application to track friends. \n ● Find out exactly where your friends are in real time You can see route to all your family and friends \n ● Find out exact distance between you and your friends You can see exact time you need to arrive to your friends' locations. \n ● Post that message you've been meaning to leave at your current location This can work as hint message for your friends when them open SocailCap in the same location.",
+      "playStore": "https://play.google.com/store/apps/details?id=com.cap.social.socialcap&hl=en",
+      "github": [],
+      "otherLinks": [],
+      "images": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9ishM4gOH9inn_0k4wj-HJXHcJSqYtDaacDtYTDYlqWcteplca0hqdNRt86PhokdJDFtb5pojwr6x_QUdOV8IvwEI02ZcZkx-Bqf6QFyXHtHk9ZYnDNqIBuGjSogQHESbiMCp1wBxgAJN/s320/device-2015-12-01-174342.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFAaGi-PiQ6mmhJ7XEMYG4qbi4Lhir3NV2dMhCK9fyqNxDa4pbik7h9bPkVtw-PKyCAQKIbYxCOr8qFg6S2nSSaKrJlbHdVvtgwj2fm3irigh9OxStRLRbWPbF1bdUJmJrAdetffiXh_Br/s320/device-2015-12-01-174446.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFm5h9-fcL_c3mGfbiOhcozaMFQ-OkfbVSzLii67Ady83nFh1w2VbMXX8snXUorVT3ptphrxL7pWszMdTlb4Aoj1sQZtUI3FQBzYMDKxKxHnIFsgZmF8bsZoaTNjHZlcRiyztYIx5UCV3z/s320/layout-2015-10-21-0215804.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIuHZ3IO6dCO2DhrVhdOZg7TSKfcck0OtkQOOJEF_piVVhasZCPhL_DAwf9MYcoG4rgnRPvt_VM81ljNOSb6K0W61K2YTfF-COaoEtkHEZf53nYdpFVo8XZ29E6IqL5wJzCZlSZWhfXtXi/s320/layout-2015-10-251-021804.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgd9KhDJJfs5_y4riDX8IMDCqteorK66BZ6gYXs7XEKG1o20UAjJn1PDZolSvRlAA2mlBBTm5RHtEXo7UirIjFr4-ienUA1MNajlMWFbABVaqUr7LmHWuAvrSntE2bZs6N9rzFU5lNPZuS6/s320/layout-2015-12-02-172507.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDcbuf6srm-acX180e4ZOx_GJWXE4fuZFFtiUFx8vkrnhO8fhcVMupNkhQD7Lv2nbbOHC7J4IzsW6yv7id4asEZB68V5dtGedQkJ34hKhz_i71EcC5n7SwwcFr9cH005zHVteucieJsHNg/s1600/badge_new.png"
+      ]
+    },
+    {
+      "title": "Go Ubiquitous",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2017/02/built-watch-face-for-android-wear-so.html",
+      "published": "2017-02-25T23:00:00.000-08:00",
+      "updated": "2017-08-18T02:41:16.670-07:00",
+      "labels": [
+        "Android Wear APIs"
+      ],
+      "text": "Built a watch face for Android Wear so users can access Sunshine's weather information at a glance. \n Part of the Android Developer Nanodegree Program \n GITHUB",
+      "playStore": null,
+      "github": [
+        "https://github.com/MostafaAnter/Ubiquitous",
+        "https://github.com/MostafaAnter/Ubiquitous"
+      ],
+      "otherLinks": [],
+      "images": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCQhdCVj6SI3D6u4CAkVWdjcUbtHsB4nKQ7gL0CSVkrFndPOKrRwbHBzlYpN4glri2FkOtzV1Us-NII4Agq5a-V1U8nMTq9lURJdod5d2jtO9C201PQBzTlul4oR_Ko-v-JmJUIQjs8Hdc/s200/P6+-+Go+Ubiquitous_wear_1_framed_square.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXD4l3q-hm7Q2VdyUr6EW2NFOeNHYDQqtdKRGE8ix1dMzWAf8RKOgedbQ4Yg1vSvhWuFTHt3b96_45C4UItv1OTgN4reqRoOprZYOwN_Yl3yp6P37b3nEoTnr3GXWe6_jAZe2nlxyfcJ1u/s200/P6+-+Go+Ubiquitous_wear_1_framed_round.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_nMbMecRaHry50jb0uKOd7xnlFeEYyToJXRSZNb8cjJKpIWJzgIfXPdA0ix4xl_DaaS3Xc4HgRQid35mRgbUX7sy6Y4Jh9-77g_28PG7RZzFEvdbIJ2xTGRLcJ42KE-OOe0qDRgCaXJ-o/s200/P6+-+Go+Ubiquitous_wear_2_framed_square.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbB-c3ZZhs_bMTGU8Hz5Z2Dkvyn2uVFCfD512aVVyunGpyjhndFwDFqnbPLxffvFkfIeVsjsERzu3O2wvinFmlcl_1TwgKrIhHN8qUZ8ZKOQGUZvteX6mygZBLhUnvdWzRNwEyaSAK-bJa/s200/P6+-+Go+Ubiquitous_wear_2_framed_round.png",
+        "https://classroom.udacity.com/images/icon-nanodegree-2467d.svg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU19AjE56dKBf3WvPRWgdx0E7iFJmDoOAzErCQkK2UHgc40Uztc7NpDC1N-DvYQxPE2_W9LE-rnyrN2ChH2HCplPx27_bY_aJLBMnjE_3USUrjP-uHAfWXQbZZahWN76n_My0WlLEh7YQa/s1600/GitHub-Mark-32px.png"
+      ]
+    },
+    {
+      "title": "Stock Hawk",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2017/02/added-enhancements-to-one-app-in-order.html",
+      "published": "2017-02-23T11:27:00.000-08:00",
+      "updated": "2017-08-18T02:42:15.650-07:00",
+      "labels": [
+        "Android Libraries",
+        "Android Widgets",
+        "error handling"
+      ],
+      "text": "Added enhancements to one app in order to make it production ready. The work included ensuring errors were handled gracefully, building a widget for the home screen, adding support for screen readers, optimizations for localization, and data visualization via a library. \n Android Widgets Localization and Accessibility Android Libraries error handling \n Part of the Android Developer Nanodegree Program \n GITHUB",
+      "playStore": null,
+      "github": [
+        "https://github.com/MostafaAnter/StockHawk",
+        "https://github.com/MostafaAnter/StockHawk"
+      ],
+      "otherLinks": [],
+      "images": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSaZciEsWQUipRhVqEO2OmxJb792g7dIYM4jTjPyBb4tEH7qd7VzkrHNZE5gnpkwS-GstVNEBQ8OerrjSv4yo1zQDZZgEnQVOeqiMijT2ZFn83d32JUQTD8sMEvIfjCLZd1WfbOocjT3DU/s200/device-2016-12-16-202659.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjL30Tl6jT8nDzaCfx_1HRnnf5UEK1Ipb3aR3cgaeK9veTG6V23taBKDpK7-YeenqS6l1P68_Dwks8zR_Qv2C__JSMogzzOxxtLhfR-9tiQi44NcrCfyI2peq4MZuHXbAb2J3mBCs3dqVf/s200/device-2016-12-16-174203.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbCobGWbqlSO31tbwZSi67Z8eJGGFXieRHmrpJg0jt4XDIkNs_1hnLv9S-P2DVDdd9Txj-67K5kMR66jiJ4mW373MhYi8x53J4639kaSGIlNC6lH6sAbaofByQnnw66LQK_oyZUr7UZjhJ/s200/device-2016-12-16-174119.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAz2ZQ65GdEaXcgLjoNzKlxF9kMOufOuRNI7RXlnYzsAqz4hiRo4IUols_JSOdVMDeUBss4czRjVeQievpoiXX5xrf3_GvGH0Q9n4SgzxviC6n8tITJfZeaJsDu5AceE_QURRBrDSRz4bo/s200/device-2016-12-16-174136.png",
+        "https://classroom.udacity.com/images/icon-nanodegree-2467d.svg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU19AjE56dKBf3WvPRWgdx0E7iFJmDoOAzErCQkK2UHgc40Uztc7NpDC1N-DvYQxPE2_W9LE-rnyrN2ChH2HCplPx27_bY_aJLBMnjE_3USUrjP-uHAfWXQbZZahWN76n_My0WlLEh7YQa/s1600/GitHub-Mark-32px.png"
+      ]
+    },
+    {
+      "title": "Tawsili - توصيلي",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2017/03/tawsili.html",
+      "published": "2017-02-21T00:29:00.000-08:00",
+      "updated": "2019-01-17T05:02:00.636-08:00",
+      "labels": [
+        "google maps",
+        "json parser",
+        "volley"
+      ],
+      "text": "Request a taxi with one tap and watch as it comes to you! Tawsili finds the nearest taxi around and directs it to you. You can see driver's name, photo, ratings and license plate as well as the ETA on a live map. Pay with cash, credit card or BKM Express. At the end of your trip you can rate your driver and write comments. If you want to ride with top-quality drivers and easily find taxis, download Tawsili! Having trouble hailing a cab from the street or a taxi stop? Tired of the traffic or waiting for the bus? Try Tawsili! • Go cashless It’s easy to pay with credit card! Don’t worry about getting change or stopping at an ATM. • Ride history Did you forget something in the taxi? Don’t worry, all rides are recorded. • Calculate fare You can calculate the fare between destinations. • Share your ETA You can share your route with friends and family through the app with a link to your ride. Try Tawsili! Currently in KSA ! \n twitter",
+      "playStore": null,
+      "github": [],
+      "otherLinks": [
+        "https://twitter.com/TAWSILI?lang=en"
+      ],
+      "images": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwr35bDPtfuRoLEzX4CIxcaUw0mhDjsmygFEalhh3ISrmcPTlmB_kZwBYIJwu2QXILLRof_ffZ5QCSrml0rs08AZWhzojLMC2DzUVp6hvwqElbIkPB4dco-JjzYfu0Ul93bl2Zf4u3dgaU/s200/01-Splash.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjC56dJ4sPS7TPT7rVWbIonvpgqL1r8pfwe9116teFpSbtXhjDOonjR6yI-eChBcCj8jHDErr1800A-ZGgbPZUtgx3KVrrKbwrlI8B_LwGIh5hmT859mlJxNC9aZeDPlPh609Bj3wORL_PL/s1600/02-Main-Screen.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2rywRieG1d2MhtrkGkBKK5yN-KfZiA4sFScv_chQXgMdDnPy6w9IsVSJsQNUb5bS1Jdh_bmCdT3If-ye4PJrJmIJ4-KP2RojgSgYwTYsTbxgOSQmfjDWSGFaQdKTW7VNtyJuisnzboZ5t/s1600/03-Signup.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQy29whGgeTMs_EjdBSmevJ3ZPPDldXTPHyLmUU7nYraMVQsA10CI-rmkL5jeJV2ZjZ40tcyytXi7izx93Nqs49wL60P1LpJy6GbhQR0U6dfvR8upMhgpy6E3by3xrJbuFoiA2K15x7GYP/s1600/06-Choose-Location.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCKf4Ku_bU3NNShTFDQjTL7Ip9bYFjGROQesMrWKytSn57Nam9yWY4Mj6OgfDT4DySwqnq5xPJr42vCGC7rLOIvKuri4WXvmQ_85rlN7leWW5qLScER1anON9hwknUUUlKZFuWTN0cpoKv/s1600/08-Start-Trip.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwANymHJLJGzwhsymRM82kVIVlHsksfWwnUlPV7JNnCuAmuAXzHSvuRfGmPMfVOA2Fav8P9hV1KJtsTZ_iIT4taMPDNXDACQzgZ2LhMkmSjlNVYw-ngwWhpc2LV8leS46vGIQ2K9lcw2ao/s1600/09-Ride-Later.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgyn-CtKOBU7jLGsURtTZVOjS2-VG_q0bFNOUw4-jD-4bemAa4gU4lcOFm14mrrDdIy4Rqs7QOPfyieXRJY1lNLid67Y0ojbmffTepEn5s5V0oDOQ1YiEjiNnb-sQSxTJi0hbX6v6srKAV/s1600/10-1-Select-Time.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd-FCZbuoDLaZpWF18btbsch6UrGpfEJNU1tuQOlkr8O8gjx6xU1WSylTv-Z8KJUBsgFuK8E2qmV6EOcIgk2h_6MlGq6hbY0Vyt1J3O-irvZkyW8DMYOaoajqKj3Zq8OHE7A63GFUcBSqu/s1600/11-Coming-Driver.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtwNdCIofkLc4pR3kGq7beNErkMrOLpGnodd7487mGNGgkczWFhAE87s7NArNy_ZaD_qDj2RDTSG4miSGkML-56NlRc52VPGhjORcTkNIplBDZwa5FzbnaSKSmTEzC3epaB7-cicGvGv3Q/s1600/12-Driver-Here.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGnDimrURh5vptPX3jMs3KWte_9nMIUPbLBBc5FW6Qb4AeygUmzTl8s3lmNFZUWjqSJpQ0YHPWIS55RyylKsER8_MpPqvyu6Zav53s6T3UhLjIfDvqoFLHwaQQKkWHlDMNg2XVvE5ueMbd/s1600/13-Finish-Trip.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJzqOPqXJ8W4FF8jDAsBsoDIYuCeDiW6mOZbRCCm3ltI-hDkLRUbak4z1RVcEflcGNC8Mmkh2xs2L8ycazHnVQk8GsU16EZ6gq7mSa4cVVJ2q-s6_EedukCl4DV694Coj2hb3kIEcbABvN/s1600/14-Summary.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCYTw-eNsjaccVoOr9H1tzMJcRmfOGvufD1xSuSxGDsAbA2eAxMMk0BNVcCjJ9PERZ-rL5LG_a9uwCUAW_m9W9bQIF9yfw4nbxdkMutCSAOafNTnYp2AUSctVFABGttCSrc1t-WflFlF2P/s1600/18-Invite-Friends.jpg"
+      ]
+    },
+    {
+      "title": "M-Articles",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2017/02/m-articles.html",
+      "published": "2017-02-20T12:33:00.000-08:00",
+      "updated": "2017-08-18T06:41:09.052-07:00",
+      "labels": [],
+      "text": "Implemented my custom app using the full gamut of the Android framework, including a Material user experience and the use of a variety of Google Play services.\n The M-Articles app brings you the latest English news reading experience on the go and keeps you informed on happenings from anywhere and around the World, greater personalisation and better overall performance. So you can get more of the news that matters to you. \n Android Platform Fundamentals Gradle material design principles Google Play Services \n Part of the Android Developer Nanodegree Program",
+      "playStore": "https://play.google.com/store/apps/details?id=com.mostafa_anter.capstoneproject",
+      "github": [],
+      "otherLinks": [
+        "https://raw.githubusercontent.com/MostafaAnter/CapstoneProject/master/art/output_RJH4vY.gif"
+      ],
+      "images": [
+        "https://raw.githubusercontent.com/MostafaAnter/CapstoneProject/master/art/output_RJH4vY.gif",
+        "https://classroom.udacity.com/images/icon-nanodegree-2467d.svg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDcbuf6srm-acX180e4ZOx_GJWXE4fuZFFtiUFx8vkrnhO8fhcVMupNkhQD7Lv2nbbOHC7J4IzsW6yv7id4asEZB68V5dtGedQkJ34hKhz_i71EcC5n7SwwcFr9cH005zHVteucieJsHNg/s1600/badge_new.png"
+      ]
+    },
+    {
+      "title": "Build It Bigger",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2017/02/build-it-bigger.html",
+      "published": "2017-02-20T11:31:00.000-08:00",
+      "updated": "2017-10-12T16:01:49.601-07:00",
+      "labels": [
+        "automated unit testing",
+        "build variants",
+        "dependency management",
+        "gradle tasks"
+      ],
+      "text": "Used Gradle to build a joke-telling app that has both a free and paid version. This included factoring functionality into libraries as well as using build flavors to modularize the construction of each variant of the app. I also configured a Google Cloud Endpoints development server to supply the jokes. \n Project contains a Java library for supplying jokes\n Project contains an Android library with an activity that displays jokes passed to it as intent extras.\n Project contains a Google Cloud Endpoints module that supplies jokes from the Java library. Project loads jokes from GCE module via an async task.\n Project contains connected tests to verify that the async task is indeed loading jokes.\n Project contains paid/free flavors. The paid flavor has no ads, and no unnecessary dependencies.\n automated unit testing gradle tasks dependency management build variants \n Part of the Android Developer Nanodegree Program \n GITHUB",
+      "playStore": null,
+      "github": [
+        "https://github.com/MostafaAnter/BuildItBigger",
+        "https://github.com/MostafaAnter/BuildItBigger"
+      ],
+      "otherLinks": [],
+      "images": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEKWCDoENmPP_67KDZ339DukpDQSG0r9UDtnPaKk2T7jJDIXei70sDkjWzG-Hou8nfzsEbPw3CH9Edc06DaoCjnA_Ts8n9h81rLQuMgaCIPKXuxek-Mc1BvQpSB1Ig6JG1dbNyOMf-_hZf/s320/Untitled.png",
+        "https://classroom.udacity.com/images/icon-nanodegree-2467d.svg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCl46gpvRUKk0D1c6K0gTmZv2Sf1wRtY9fyGItN4p85LMITzCBHlattt4q928asOE5e-n2Sv8Sqc6qsDK49J3BGPSlL3FucjwvKEWwK8cIdylFV6RW_UsHL7O-PbrOKEk6hAIwKmf1FjbI/s1600/GitHub-Mark-32px.png"
+      ]
+    },
+    {
+      "title": "Tab3e",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2017/03/tab3e.html",
+      "published": "2017-02-20T04:41:00.000-08:00",
+      "updated": "2017-03-12T04:59:25.572-07:00",
+      "labels": [
+        "Android Libraries",
+        "Android UI Fundamentals"
+      ],
+      "text": "Student tracker that notify parent with absents days count and more \n ● Responsive Android application to monitor Students. ● Fetch data from the Internet with tab3e API. ● User can show student absent days count and show school tables easy. \n Android UI Fundamentals - Tablet Intents \n offline data persistance - shared preferences",
+      "playStore": "https://play.google.com/store/apps/details?id=com.tab3e_app&hl=en",
+      "github": [],
+      "otherLinks": [],
+      "images": [
+        "https://4.bp.blogspot.com/xFM3Yj4yMTNH28DDR51ddjJWAGLg0eI9xGlFmtvy-pWbFxMZmKovqv89g6kgquIrrA=h900-rw",
+        "https://1.bp.blogspot.com/3_979q9Ky7MJ2rd5-HNA9wEUNYEZG3bRJGCOL_hMaqDHdODdxQ8MVfoyrC78t6hpQT1u=h900-rw",
+        "https://1.bp.blogspot.com/RkIzXBx8nKdnWGOHaVjUdbvcksgslHPOqzw4ypZ9IHBw6hJdePrDYUBxa4d7cEMZB8Q=h900-rw",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDcbuf6srm-acX180e4ZOx_GJWXE4fuZFFtiUFx8vkrnhO8fhcVMupNkhQD7Lv2nbbOHC7J4IzsW6yv7id4asEZB68V5dtGedQkJ34hKhz_i71EcC5n7SwwcFr9cH005zHVteucieJsHNg/s1600/badge_new.png"
+      ]
+    },
+    {
+      "title": "Elh2ny",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2017/02/elh2ny.html",
+      "published": "2017-02-19T05:52:00.000-08:00",
+      "updated": "2017-03-12T05:53:37.019-07:00",
+      "labels": [
+        "Admob",
+        "Android Libraries",
+        "Retrofit",
+        "Rxjava"
+      ],
+      "text": "Find nearest Neonatal Intensive Care Unit \n ● Responsive Android application to find nearest Neonatal Intensive Care Unit. \n ● Fetch data from the Internet with Elh2ny API. \n ● User can show article and advises that help parents to treat with child in this phase. \n Android UI Fundamentals - Tablet Intents \n offline data persistance - shared preferences",
+      "playStore": "https://play.google.com/store/apps/details?id=com.elh2ny&hl=en",
+      "github": [],
+      "otherLinks": [],
+      "images": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjutMKusgcJtNnPWdF0hB9afAPPvIslC2-dWbjTDtsEbYmL_AJeIUyr_u8-_-3HMmDO6y0e0wqHvjBRp0ma9mMiv74fWiHu_g_lOkAVGQOQK34ar1TCVRxmcFTpnzsmvyamiw79PSunKZPh/s320/device-2017-02-11-145207.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQhx_m26EVEXqbNOaOx5F6Iuha8dM0tHWt8izlkr8g_68tZBVU9wsdALcKnIkkZJI-a-3JdCYNbnUDPlQ-e7K-wrK7Ps47DgpAxQK6NQq-mvDbvfiIDq9gpLU1349rcGqToKZ8tPT7CGR6/s320/device-2017-02-11-145250.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhV9oXr-FzdyhwI47lmiX4aYLPK6UasUtP6gU0zsIENlj8A0LzkLf7cC0ulO0hHPo_7AgFKak_gCLNeIQWMpqSGC_qgZaWt3s-yJFtuML0nvwymthRnPy9Kt6VSpAdy8Fym8S0hggjnk6-O/s320/device-2017-02-11-145326.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiM5poTfdgKJ-hLvC5pilSqQAEZB1jy1QzgWWkBk9hyGj3YU2ZD_PBlkRDxkmuySugMPUZ_ZaisPVrRzfBthnNr_G9doxviheONxNbi-_6l6IEmKg6eL5Db0_jzEHWPYUhzICZ_Jkj6I3pX/s320/device-2017-02-11-145341.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQAv4pPLLbwdck_GBpYj4hSxImz2tRLevFBmmxP1J_Ds1mchQmxv48nXleCYR6QT8MUmRgQzBUbCwC94XsvFKqAwj0Hxiyu7JPx0oimbAjggJecsTevE4aFk5nF19mrCJJbwoh5EcVUeWH/s320/device-2017-02-11-145404.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBBVzzO4ykz9ROXdrEMlDNOWe8Pob-DPOiw9WTJpftCBw16UzvAvcFfU7lyY98bN1zGaxsFLspuxPy4Tn_ati4cqQ8zRLdspi_bPc4zv8JTMAy_7UffHdBn1Dd1AVG-o39N6bPAUZG9b_d/s320/device-2017-02-11-145421.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDcbuf6srm-acX180e4ZOx_GJWXE4fuZFFtiUFx8vkrnhO8fhcVMupNkhQD7Lv2nbbOHC7J4IzsW6yv7id4asEZB68V5dtGedQkJ34hKhz_i71EcC5n7SwwcFr9cH005zHVteucieJsHNg/s1600/badge_new.png"
+      ]
+    },
+    {
+      "title": "Popular Movies App",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2017/02/popular-movies-app_23.html",
+      "published": "2017-02-18T04:08:00.000-08:00",
+      "updated": "2021-05-04T04:34:47.143-07:00",
+      "labels": [
+        "Android UI Fundamentals",
+        "Intents",
+        "offline data persistance"
+      ],
+      "text": "Tablet \nBuilt an app, optimized for tablets, to help users discover popular and highly rated movies on the web. It displays a scrolling grid of movie trailers, launches a details screen whenever a particular movie is selected, allows users to save favorites, play trailers, and read user reviews. This app utilizes core Android user interface components and fetches movie information using themoviedb.org web API.\n Android UI Fundamentals - Tablet Intents themoviedb.org API offline data persistance - shared preferences \n Part of the Android Developer Nanodegree Program \n GITHUB",
+      "playStore": null,
+      "github": [
+        "https://github.com/MostafaAnter/MoviesApp",
+        "https://github.com/MostafaAnter/MoviesApp"
+      ],
+      "otherLinks": [],
+      "images": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMMZzr7oErJQpWkmbbYePd5P_LlwiU9S-svcnvhKzQkFg9LRZZ8RttPEFg_3oBuOW9HwnZLqtGq97X8ZH5kZ6sLFIfQTlBzgi5tUg-wpbR4tirGj0_qxOTccuCjZ9ha-sYxLWacsvnKAh9/s640/device-2016-03-24-011148.png",
+        "https://classroom.udacity.com/images/icon-nanodegree-2467d.svg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU19AjE56dKBf3WvPRWgdx0E7iFJmDoOAzErCQkK2UHgc40Uztc7NpDC1N-DvYQxPE2_W9LE-rnyrN2ChH2HCplPx27_bY_aJLBMnjE_3USUrjP-uHAfWXQbZZahWN76n_My0WlLEh7YQa/s1600/GitHub-Mark-32px.png"
+      ]
+    },
+    {
+      "title": "Elmasria",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2017/02/elmasria.html",
+      "published": "2017-02-18T04:07:00.000-08:00",
+      "updated": "2017-04-13T05:45:13.789-07:00",
+      "labels": [],
+      "text": "Explorer for Elmasria company projects \n ● Responsive Android application to explore last company's projects. \n ● Fetch data from the Internet with Elmasria API. \n● User can show projects that ordered by year inside recycler view . \n ● Recycler view with collapse and expand function. \n Android UI Fundamentals - Tablet Intents \n offline data persistance - shared preferences \n Recycler view with collapse and expand",
+      "playStore": "https://play.google.com/store/apps/details?id=com.zedy.elmasria",
+      "github": [],
+      "otherLinks": [],
+      "images": [
+        "https://4.bp.blogspot.com/JWypmiV6mQ2lwPbesbrS6sH-roGLSUrvMoiStjAYxNBtmhMhFhZBkYnqEygHxNicJmo=h900-rw",
+        "https://2.bp.blogspot.com/Gjc1FtZvO5b37OsjYU8HfFbiYo4TnS5zZ4KizSKZdiTmCN3mTPXpgZD73HBbfMAPojE=h900-rw",
+        "https://4.bp.blogspot.com/2StyakMZFGhrzgX7aCAmJUr8bd6mPJczR_03Yc-Kzr9U8fvxLBxmwSRKDE2X0Q50gQ=h900-rw",
+        "https://1.bp.blogspot.com/DwxDXiJfT7WMoTPvNupmr4_i4Cd7iHwnS-nl_K9lHJeDqkcbgs9iRigsFc2nUfcmV91U=h900-rw",
+        "https://4.bp.blogspot.com/ryvSjmCzHv_RYT1AwU3i18Rokhs1ihTTGUn-2Hnb9Z9T2eQr8Qujo5mPc64KeaAYiWRR=h900-rw",
+        "https://4.bp.blogspot.com/656bVc1Fml70jdYYs-vVo6QiHpDyNn216glDpw56Ztk4tEZKAWt1HtuZlskHmsl_Xw=h900-rw",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDcbuf6srm-acX180e4ZOx_GJWXE4fuZFFtiUFx8vkrnhO8fhcVMupNkhQD7Lv2nbbOHC7J4IzsW6yv7id4asEZB68V5dtGedQkJ34hKhz_i71EcC5n7SwwcFr9cH005zHVteucieJsHNg/s1600/badge_new.png"
+      ]
+    },
+    {
+      "title": "Baitk Biedak",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2017/02/baitk-biedak.html",
+      "published": "2017-02-17T06:15:00.000-08:00",
+      "updated": "2017-04-13T06:19:29.678-07:00",
+      "labels": [
+        "Android UI Fundamentals",
+        "offline data persistance",
+        "volley"
+      ],
+      "text": "The official version of the initiative \"Build your Home by yourself\" \n ● Responsive Android application to explore last initiative's projects. \n ● Fetch data from the Internet with custom API. \n● User can register to initiative by enter his personal data. \n ● User can save project locally by add it to favorite list. \n ● using fragment to multi screen support. \n Android UI Fundamentals - Tablet Intents \n offline data persistance - shared preferences \n Recycler view with favorite option",
+      "playStore": "https://play.google.com/store/apps/details?id=baitkbiedak.official",
+      "github": [],
+      "otherLinks": [],
+      "images": [
+        "https://2.bp.blogspot.com/rD6iQruOUnicl1wrSeCxggTG-BMAzvUMBkOV7SLceK0-5J-yFLV1i2kBMqWqZbF8kTY=h900-rw",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDcbuf6srm-acX180e4ZOx_GJWXE4fuZFFtiUFx8vkrnhO8fhcVMupNkhQD7Lv2nbbOHC7J4IzsW6yv7id4asEZB68V5dtGedQkJ34hKhz_i71EcC5n7SwwcFr9cH005zHVteucieJsHNg/s1600/badge_new.png",
+        "https://3.bp.blogspot.com/7H5f2WG06YVO0Ri8tGHVd3Jeg_tgv1_X1JvEAbF7BV-PT_-6_kekqBKzG6OMYBvB6g=h900-rw",
+        "https://1.bp.blogspot.com/LBGi25lxOaP3TXlDU5DJNe67jeqfoQGnzhRdslzYYylS5oh7xVqziJPb-A-dsW3JaQ=h900-rw",
+        "https://2.bp.blogspot.com/HeYr59B1sJIjVAt4eF3cCGCdLUcDT5wX_uG1FlxvtGf2aWtlOZg9qnrptPXSGp_xM74=h900-rw"
+      ]
+    },
+    {
+      "title": "Zedy Real Estate",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2017/02/zedy-real-estate.html",
+      "published": "2017-02-16T06:24:00.000-08:00",
+      "updated": "2017-04-13T06:59:35.486-07:00",
+      "labels": [
+        "Retrofit"
+      ],
+      "text": "A program specialist for the management of real estate projects for companies. \n ● Responsive Android application to track project tasks. \n ● Fetch data from the Internet with custom API. \n ● determine the number of engineers who work for you and many functions \n ● Recycler view with collapse and expand function. \n Android UI Fundamentals - Tablet Intents - Retrofit \n offline data persistance - shared preferences \n Recycler view with collapse and expand",
+      "playStore": "https://play.google.com/store/apps/details?id=com.zedy.realestate",
+      "github": [],
+      "otherLinks": [],
+      "images": [
+        "https://4.bp.blogspot.com/pop2PXFXacDEKt4NOrGomZJeCDtcIYro360lt0Cq2wkl8rhcytPZbfcfoojnc0Vq2kX0=h900-rw",
+        "https://1.bp.blogspot.com/x0ix2E5PcCTlxud-JmzAJL7Q93gyg9xw1TWsqJHR18_R5fEuYMfgs9i0xqQ64tP-hw=h900-rw",
+        "https://3.bp.blogspot.com/0LDf-pE63DeiGo2NGFkx3trkv7xszVvN3-b2HBuUubJOoh36YpizI8l47KECNaOjq-U=h900-rw",
+        "https://3.bp.blogspot.com/kybSAR_0iDNdnv_skfvNzHPBFq5VCDT5qjI3FLQg3fFZ7SJq4VzOEOJWgYEtnbyZtLk=h900-rw",
+        "https://2.bp.blogspot.com/yO4uyuKtOGauJoR35SdbCkQcJO378mHMtsteyuh9WrZteQDI6G03MzFW4jEjlTbWVcs=h900-rw",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDcbuf6srm-acX180e4ZOx_GJWXE4fuZFFtiUFx8vkrnhO8fhcVMupNkhQD7Lv2nbbOHC7J4IzsW6yv7id4asEZB68V5dtGedQkJ34hKhz_i71EcC5n7SwwcFr9cH005zHVteucieJsHNg/s1600/badge_new.png"
+      ]
+    },
+    {
+      "title": "Disturba",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2017/08/disturba.html",
+      "published": "2016-10-01T07:36:00.000-07:00",
+      "updated": "2017-08-18T07:40:57.658-07:00",
+      "labels": [
+        "LocName company"
+      ],
+      "text": "location tracker and task manager for manage drivers . \n ● Responsive Android application to track drivers. \n ● Add task to drivers and track what job done and what doesn't. \n ● login to web service. \n GITHUB",
+      "playStore": null,
+      "github": [
+        "https://github.com/MostafaAnter/Disturba",
+        "https://github.com/MostafaAnter/Disturba"
+      ],
+      "otherLinks": [],
+      "images": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfx8H83WZAkIXlQJujkIVqp1ryVdOT3UAViQD4bZ31gHT7JpWnCC4mThtS3-AQd1Cu57s_NIxgM_xBTUOJX_u0j_jDGIUp8aNOGnKMEOVPRN-46CqObqVLssudvVSR0nylu6PQHGRTIcPX/s200/dis1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjK9bktUrMR2M_jeK6Q-2dxMEuHEWaXgmP2JbvrXtGhaLbuTIth3D1JzuIkXe5VzKgxgc-L7EhMSKFycHltHi0Z1JxETnSOwNk8CuQ4E5ZB5WkvObR0uT2ATqDaGTVG6OsbRIoBT1iZq9ZX/s200/dis2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP3iHmB9BE6M0j6CK81FkHB4oOGzXcP9YxTKZzvK2iPb5geWQr0FySe5lVFTtLAytzNn-L0mlhbu6FXQ4Nxt0wV4Fa2hjaSagNHZxdFi5sV7pR3PtPUMmALIpijweEShm9M01kREF9Ebkx/s200/dis3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH6UYUYcgDjIf2Jaa0D0z2qeTQIYksoN_I_vHjNkTEU4j965ucb0h8qgz1lIDmItEydGXpRblP_M3juun0EoCyRvnbcezhEXOuyXgcYfmSQb1hoCdkQsyeWk2Z79_dQAlH9RGE9rP-YrlS/s200/dis.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfUmeyi4dcC7S1MFgBgaSj2BU8oIpN-l2u9E-K3EOYyNiX-Tgq11Fynz7VyP0ExkLuUPAVgjOQzZYsUAUn1dNjqXlp89PORo6eXp0fiY10wpQsecBcirbmwmQkIZzMHf_Qnw1Ppc0JEU1S/s1600/GitHub-Mark-32px.png"
+      ]
+    },
+    {
+      "title": "LocName",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2016/09/locname.html",
+      "published": "2016-09-30T07:58:00.000-07:00",
+      "updated": "2017-08-18T07:59:37.383-07:00",
+      "labels": [
+        "LocName company",
+        "Material Design principles"
+      ],
+      "text": "i developed first phase of this app that contained on material design implementation. \n #Geolocation Do you live somewhere that is hard to reach? Does your street even have a name? Or maybe you don't know your way around town and need a helping hand? With the LocName address book app, you can can save all your favourite locations as short, unique names, or LocNames! Forget about long, complicated addresses and transform your current address into a short LocName that you can easily share with your friends and clients. They can then use GPS navigation to find their way to you! And so can you of course. Creating a LocName is as easy as 1,2,3: 1. Allow the app find your GPS map location (home, work, etc). 2. Give that location a short LocName and add additional details. 3. Voila! Share it with your friends so they can find their way to you! Who can benefit from LocName: 1) Anyone looking to simplify sharing their address details. 2) Expats who need away to get around their new country of residence. 3) Tourists - Save any location you would like to revisit. \n GITHUB",
+      "playStore": "https://play.google.com/store/apps/details?id=com.locname.v2",
+      "github": [
+        "https://github.com/MostafaAnter/LocName",
+        "https://github.com/MostafaAnter/LocName"
+      ],
+      "otherLinks": [],
+      "images": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVVX_oQ1rZbzU3O48kE0DoO_RycZ0LttjmRyZYa_OIVdx9RC4dZUwnYKKUkRDyWF-rmT5EXYjlIRCVyAP_CbXon9DXe8vr-k7Gbxsae8YDvO1gQ5v-BqIKCUEO8_aemghbHIfupSVbdkIK/s320/loc0.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPRPxf4IrG_j7N9fkXAlu-nc3OBZkw0vYm2Fbowg4GQF52Z2emLk352-PjI9WhwANzIUQXwAf-IeRuqpM7JtELseyuuP9JNIlNvYXFZdDRByIE-gJIMk6i5VPDPofcuU0104uL8FCBE9hs/s320/loc2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCUsvr5LK4bR-pVoH8xM5MGStwSHnLwP1PP0bwcf9fBCgafpHBSehEiX3aBZmAe-yVWoiAWzh2VzPt42dNOLYC0zhdqq4edhZj9x1pOffP7wyGvA0fbXLtRu3RWYp77KacdEm6Zpqw0UQk/s320/loc5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDcbuf6srm-acX180e4ZOx_GJWXE4fuZFFtiUFx8vkrnhO8fhcVMupNkhQD7Lv2nbbOHC7J4IzsW6yv7id4asEZB68V5dtGedQkJ34hKhz_i71EcC5n7SwwcFr9cH005zHVteucieJsHNg/s1600/badge_new.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfUmeyi4dcC7S1MFgBgaSj2BU8oIpN-l2u9E-K3EOYyNiX-Tgq11Fynz7VyP0ExkLuUPAVgjOQzZYsUAUn1dNjqXlp89PORo6eXp0fiY10wpQsecBcirbmwmQkIZzMHf_Qnw1Ppc0JEU1S/s1600/GitHub-Mark-32px.png"
+      ]
+    },
+    {
+      "title": "Material App",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2017/02/make-your-app-material.html",
+      "published": "2016-02-10T11:54:00.000-08:00",
+      "updated": "2017-08-18T07:13:20.436-07:00",
+      "labels": [
+        "Material Design principles"
+      ],
+      "text": "Transformed the user experience of a news reading app using Material Design principles. This includes consistent and meaningful use of Material Design UI components, fonts, color, motion and surfaces. \n Material Design principles \n Part of the Android Developer Nanodegree Program \n GITHUB",
+      "playStore": null,
+      "github": [
+        "https://github.com/MostafaAnter/XYZReader",
+        "https://github.com/MostafaAnter/XYZReader"
+      ],
+      "otherLinks": [
+        "https://raw.githubusercontent.com/alex-gru/Udacity-Android-Dev-Nanodegre-P5/master/static/screenshots/P5%20-%20Make%20Your%20App%20Material_7.gif"
+      ],
+      "images": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLP6PjpLtrHydeJloqXC1oKoHMDnrGeFu5QMIw7ZYsf_QP1UE2P_wCvYuxOx6M405sLzYxm8iA6NOwfHPU0-InzjiIDhr7VVzog5SFcYY3fGlWLsuYG7Ul9HLc_J-6HYSgaFoVvBUpSCst/s200/P5+-+Make+Your+App+Material_4.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhG-xQghPKmenDJN-a2zKqLqg12syWDOW1XGUFaUEvJyXCXWHA2uPQp6MGq8LEhHxulxqYIbJjBbxmEpo7gi7FZmw4lNYR9422QGzFqyvM4CSjYBakSHw4d-2Kx9v0r0BR29T0VmgMX2kwG/s200/P5+-+Make+Your+App+Material_5.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIZ0KDyI8uA-l3mNdQ77OygbK9j3rwag3xvE-2p_6fYYeYx97pxedm2fsLeadcPS-whdpgDwaK1XMOay4-kVB-k9Hiv-kfNu9Qi0PQXus9z31JNw1zgiFEJBayVsfXur0oETcHJUztGzdW/s200/P5+-+Make+Your+App+Material_3.png",
+        "https://raw.githubusercontent.com/alex-gru/Udacity-Android-Dev-Nanodegre-P5/master/static/screenshots/P5%20-%20Make%20Your%20App%20Material_7.gif",
+        "https://classroom.udacity.com/images/icon-nanodegree-2467d.svg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfUmeyi4dcC7S1MFgBgaSj2BU8oIpN-l2u9E-K3EOYyNiX-Tgq11Fynz7VyP0ExkLuUPAVgjOQzZYsUAUn1dNjqXlp89PORo6eXp0fiY10wpQsecBcirbmwmQkIZzMHf_Qnw1Ppc0JEU1S/s1600/GitHub-Mark-32px.png"
+      ]
+    },
+    {
+      "title": "Tutors",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2016/10/tutors.html",
+      "published": "2016-02-09T12:43:00.000-08:00",
+      "updated": "2017-08-23T12:51:35.083-07:00",
+      "labels": [],
+      "text": "search about teacher and contact with him, you can find the best teacher \n and rate him to recommend him to another students. \n ● Responsive Android application to search about teachers. \n ● Fetch data from the Internet with tutors API. \n ● User can search about teacher and contact with him. \n ● Teachers can makes accounts and show them self. \n ● students can rate teachers. \n Android UI Fundamentals - Tablet Intents \n offline data persistance - shared preferences \n GITHUB",
+      "playStore": null,
+      "github": [
+        "https://github.com/MostafaAnter/Tutors",
+        "https://github.com/MostafaAnter/Tutors"
+      ],
+      "otherLinks": [],
+      "images": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTxuj3bQrbZMtbV9HsLz41fWwokOHkyrky4RsJzamZCyP8GLBVyXSqGmdESaUn-hIJnwMHpyLqNW25mwgTXuUYQNFMPDS5deKHefK8xFqEMEmDQQlrRB-b2wO5pWqhjFs3_6G4HcSgoR0e/s320/706728_3q8t7648btql2ggxuzjbzmwld.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBPXuW0RsoOlXK7gjH2k7hMe1jJ87pzfj7O08He-5509mJSW0e3tFSMLIvz_PXMyDuZMT9M1_5Sp_2ORYoyQu7aFEjziUiATAIcIWt-MaTGNZVBTi1gCwiP9tbTgyi5BKgeN-z5sc6awxH/s320/706728_fsixyt2dwvdmlbthlr2rjyuht.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjwuUoWXTNJDD4BUztvy4W-JwzAWw30QHbUyL6eJjSatutCMdBn4C-RDgF8FupM0Z7bgn-es3IR9i0tRNlHjiGbgxuJNNfLUAqLa7pMbMyWOhCtpREfWVvdW8mcKYIFcV3hzlkhqRjdjP4/s320/706728_jq_hnjro_pabpykeoe4jihed3.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgV5AIxwtjazMLpC65lPs6nrYRNDDPpePdPqgPo0rquQ_JpgsgSHfj-fCl_26oJiIcnKQEmguVUBbPiNmkE1-pFNRjK7b78q4Vtdkj3Le8tB4QKb2beKuyLkExZ_JVVl3d1DzhXwSuyRvlf/s320/706728_lkhmhxu4cc5o4_nwd72hm7kpx.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlSeJ4_W0WKpM9HMgV2RgOpXlIB8B_OqbacfdPZ-nvgpkYbKXt0PEt_k4kp0nhUBOvmrOPcjm5XRM_dtkC01m1FUVgdnFYSfpjHivEHGNb5wWVEZG81RhkqNCfQt18bxR6vJhGyOose5vG/s320/706728_rdfzbd8cjwyidkst7efgutt_a.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-vRmsA-B9NxK6QJEsw7YzjX_gHwpwGKt14q4QwMfAck1FcuV6Syldpme1_ytef1BI-LQ9EESGBZfxmUJaVz62gtXg8Bz697BxkXI4nga3tQBDzwkBqk7LJUevydSeqUoJzl38vmQzdHJd/s320/706728_rdwxjf8tobcobaclnx2fws0ml.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdF-nX7WZgoylz7ewtHOys3rSSJiecS5tf8XGxMakSci18ml_wi5rBHKWGLjvLyaFH2_ofrakHVlhV4qBgu5IXXEQwfPCIH_cruYjd15vNF6jOkRBsmF1f_S3ZvTOBlS8Zx43oLmyd9nJS/s320/706728_sjcskihmxc9qzuq2v3qh90esm.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfUmeyi4dcC7S1MFgBgaSj2BU8oIpN-l2u9E-K3EOYyNiX-Tgq11Fynz7VyP0ExkLuUPAVgjOQzZYsUAUn1dNjqXlp89PORo6eXp0fiY10wpQsecBcirbmwmQkIZzMHf_Qnw1Ppc0JEU1S/s1600/GitHub-Mark-32px.png"
+      ]
+    },
+    {
+      "title": "Sharkny",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2016/01/sharkny.html",
+      "published": "2016-01-30T13:10:00.000-08:00",
+      "updated": "2017-08-23T13:10:53.679-07:00",
+      "labels": [],
+      "text": "F \n About Sharkny \n We enable organizations to continuously – and affordably – monitor the health and performance of their business. \n How do we do that? \n We make it fast, easy and affordable (just $20/month/user) for business users to build and share real-time dashboards – making it possible for them to move from course-correcting once a quarter to continuously optimizing their business. \n What kind of company is Klipfolio? \n Klipfolio is a start-up with analytics-minded, friendly, active, and socially conscious people, driven by a passion for what we’re doing and the results our customer’s achieve. We talk with and help our customers every day, and we thrive on making them successful. We've just started a new chapter in our story and we're growing rapidly. Interested in working for us? \n ● Responsive Android application. \n ● Fetch data from the Internet with sharkny API. \n ● Using view pager . \n ● offline data persistence. \n Android UI Fundamentals - Tablet Intents \n offline data persistance - shared preferences \n GITHUB",
+      "playStore": null,
+      "github": [
+        "https://github.com/MostafaAnter/Sharkny",
+        "https://github.com/MostafaAnter/Sharkny"
+      ],
+      "otherLinks": [],
+      "images": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3XuinOwGTPKYa-sxNZpoX80PZDNhtvtYpffWWmffEJWctbEzvUJKtAENxxZdO8yit9Q3KOqTNg9-tT_4_8GFM-ynWalqe2eUEi2iHVmk9l2jqtYBaV7GnjKahCUQ3ykNcQIdlkrCsYkL0/s320/device-2016-06-19-173722.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg04TY9-NPvmtPUUcwelzN9qq9B7OlmY51_E2pZzbiJh9bBj0VqDgvxINDWfxm8OlmfT0T_widqlKa4dG_BfVruKMs7y8GsTtXwsHkEZyOSCMZUKGLhTB6Byh2Azm_ljJ253ybMwt8K7rED/s320/device-2016-06-19-173643.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6I_UWLRiUC7rVVx-PaXJGOeLYvhaHt4meIF91t7lnDD-MBIbHmfJytd_ruiaQJgvrgaKPBMOhluV_zhPczHDxr8F8kUULJcOiAYgErhvRmmtFWjiwAd01nmkpMAVjYfkW5DTnnLprfl9b/s320/device-2016-06-19-173553.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZsZEzAZFxbMtOJBf3P3_oTpn_ovOAfhxORTasvWHCSgZcW4CfX5AAzUumOLLvs7qNeJe8Euru6WR7pDVUrrn9nBrhyo5r-YiXH_inr329qS_F3b-USd6NbJbedHlk2-QC9r8POu2lcU5_/s320/device-2016-06-19-172743.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfUmeyi4dcC7S1MFgBgaSj2BU8oIpN-l2u9E-K3EOYyNiX-Tgq11Fynz7VyP0ExkLuUPAVgjOQzZYsUAUn1dNjqXlp89PORo6eXp0fiY10wpQsecBcirbmwmQkIZzMHf_Qnw1Ppc0JEU1S/s1600/GitHub-Mark-32px.png"
+      ]
+    },
+    {
+      "title": "Bayt Al-Sinnari",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2016/01/bayt-al-sinnari.html",
+      "published": "2016-01-29T10:00:00.000-08:00",
+      "updated": "2017-09-01T10:01:23.338-07:00",
+      "labels": [],
+      "text": "Go to a trip to Beit El Sanary, Beit El Senary is an archeological house in Sidi Zeinab, affiliated to the Bibliotheca Alexandrina, where many workshops, scientific, cultural and artistic events are organized. \n ● Responsive Android application. \n ● Fetch data from local Sqlite database. \n ● Using gallery view . \n ● offline data persistence. \n Android UI Fundamentals - Tablet Intents \n offline data persistance - shared preferences \n you can find more info on official page on facebook",
+      "playStore": null,
+      "github": [],
+      "otherLinks": [
+        "https://www.facebook.com/AlSennary/"
+      ],
+      "images": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6qaXDOEPS2MOxOYZj3GarLhQPlxwNUqTGx22IYSB7w_hmm55lUsPwjFXIRRQH-ciZChtUhMy8Vd-fsOEYdX8FFXQWD5QqLpytO_4OGoeWyVpFQflt0kv3Gm37m8vREgN79eGKnxlcXtW_/s320/706728_iifi_we5f5bypg5mdes2ki286.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHGihyHy0OifPRx9ROfYA75-aBtjvTDwHFeKBAorgqgQb1dMAitJxZ3ot3GOtalCyT082XGpSB0GhThikmRGNWjbOYkFBdfhJ_fDFzFz3ktWcqANJ04EM4po8FATbGJLxS5kzmSsq1OH5k/s320/706728_2vs4kveeveddmnjidtybaveps.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy9ePa0YGzIXXQ2RdPbhiNcAU5a01quiiYk-046HoMrMoLDCLQje9TZ8C4fJ8WoI04JrNe8zVoaQPQ6g1WMYtXnAW2EPmzQxLRdqoMNzQoIvEFo-3-RAdxgHN-H-V9Hk6_UPYwnCm9AiOZ/s320/706728_znhfvh7ijtjtjdtkmwex8qs8k.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNxzWn5wpSC9mWley7of36LkgO-Wa991w8TZnlzUZ0d4tewjbG1DJr8X1kQx0sxsVBrTpokaAge2eizHgwa2Ivp-NuQVk5MAWiARUd55DvN9yTg4BbEt5tvF7ztRygQfBPDXEis_SjCoP4/s320/706728_afsqb2fbg70goojqxayg2nttw.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRmH273IuRS10TtzsWcFITTlcgzDBJX-L69A3AS6tTsssj7yiMcIXVcfTjMiW_jZDUsXKi_eZrFr3X1OR12Ktt_yf_UqcGxzpBkC_s0Wy30Hn8NxMbUGejRxnvcPWnQj4exFJriCDGk1Se/s200/f9a5ef6db5291750b10db51c5e3b2f494c9f61bc.png"
+      ]
+    },
+    {
+      "title": "The Prof in English",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2016/01/the-prof-in-english.html",
+      "published": "2016-01-28T10:11:00.001-08:00",
+      "updated": "2021-05-04T04:36:17.909-07:00",
+      "labels": [],
+      "text": "Good helper for high school students that learn Englis. \n ● Responsive Android application . \n ● Get data from local SQLite database. \n ● Text to speech feature. \n ● Easy search filter to find words immediately.",
+      "playStore": "https://play.google.com/store/apps/details?id=com.mostafaAnter.profnotes",
+      "github": [],
+      "otherLinks": [],
+      "images": [
+        "https://2.bp.blogspot.com/jFANa-4-LTW40m_1nPPuG17qKd9mMuUxo0uYXJcNugAOEnMYMdfh1ykuJTz9ELcwm9U=h900-rw",
+        "https://1.bp.blogspot.com/j0N3PrkbtMO25baCvjywSJFdMyCyYCIwfdkH-jyvqkZzM6EQoVqJxtXf_eb1gyqjikr1=h900-rw",
+        "https://4.bp.blogspot.com/br81DcBzDlxVN4H4fCmrI_t5NZ96HZqilmZP9BvjAhI4UQ3VbE3dF3GUO7tFRknhM9dU=h900-rw",
+        "https://2.bp.blogspot.com/wnZX-nCk0ZQBPTJRcacqRi1gLrg1h0VZXAQjBfVf2NBsCDQv_7xVoaW-IJEha8sJU0XR=h900-rw",
+        "https://2.bp.blogspot.com/mbaSruWX7h9HqBZ8zivr59qUa88RCnXXKIoOg1t_dWZ9tTim6b3CMDsV4fDjBF_pNe7g=h900-rw",
+        "https://2.bp.blogspot.com/IPoM7CfAjmpqLVPEEJC12lLC-6wJ_fRRUkMwXkdJNgXUTIX4GCJjAGPAq1UpflRVBsE=h900-rw",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDcbuf6srm-acX180e4ZOx_GJWXE4fuZFFtiUFx8vkrnhO8fhcVMupNkhQD7Lv2nbbOHC7J4IzsW6yv7id4asEZB68V5dtGedQkJ34hKhz_i71EcC5n7SwwcFr9cH005zHVteucieJsHNg/s1600/badge_new.png"
+      ]
+    },
+    {
+      "title": "Santa Effects",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2017/09/santa-effects.html",
+      "published": "2016-01-27T05:01:00.001-08:00",
+      "updated": "2020-10-28T13:50:56.774-07:00",
+      "labels": [
+        "Image Processing",
+        "NDK",
+        "OpenCv"
+      ],
+      "text": "Santa Effects \n You can take pictures by this application, and then add effects \n In addition to that you can add effects and some amendments to the existing images in the studio \nThat was captured before.\n Android Platform Fundamentals \n NDK \n OpenCV image processing",
+      "playStore": "https://play.google.com/store/apps/details?id=com.mostafaAnter.santaeffects&hl=en",
+      "github": [],
+      "otherLinks": [],
+      "images": [
+        "https://3.bp.blogspot.com/VAFIzTdB49_eWwevrCu6smTa8O0M4nfiL9oGDmv7wrUyaBkj8j59MCgcIsXAq68IVA=h900-rw",
+        "https://3.bp.blogspot.com/OToKRGlgSNuOZhWzAHgCRZTaGM7bofMJOzEhvIUDmA2DCYC6HDWYgzVD6A8_yrV1vQ=h900-rw",
+        "https://1.bp.blogspot.com/mAPGdR4_01kJMqhLFL-jJt3_p1LfgelY0G0Q_oberBGMjmEYqksp9gNboSPUeekb1jV0=h900-rw",
+        "https://4.bp.blogspot.com/f9nWUXV27GDge7M_jGvUwF0Y0-yR6WlT8tP93VxCkdalRgAzruc_WPffWpnAoOSK9uc=h900-rw",
+        "https://3.bp.blogspot.com/PEBeQE-ygxCuSrls95cyPYYnVwbmDCzGI-JrHDvSXWBlA3NaaOZYX_77_iHfdCLDHA=h900-rw",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDcbuf6srm-acX180e4ZOx_GJWXE4fuZFFtiUFx8vkrnhO8fhcVMupNkhQD7Lv2nbbOHC7J4IzsW6yv7id4asEZB68V5dtGedQkJ34hKhz_i71EcC5n7SwwcFr9cH005zHVteucieJsHNg/s1600/badge_new.png"
+      ]
+    },
+    {
+      "title": "AvaToon",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2016/01/avatoon.html",
+      "published": "2016-01-26T05:18:00.001-08:00",
+      "updated": "2020-10-28T13:51:31.103-07:00",
+      "labels": [
+        "eclips",
+        "Image Processing",
+        "NDK"
+      ],
+      "text": "AvaToon (Avatar Cartoon Image) is a fun photo app that lets you to make unique cartoon pictures of yourself and friends, with different Avatars! \n Features and benefits of AvaToon: ► support Avatars for girls and boys. ► convert your image to cartoon easy, then get on of 24 avatar free ► save your avatar to gallery easy. ► Change the avatar's image to give your character own markers . ► More power you can control background color whenever you want just tray it and have fun . ► Conveniently share your avatar on social networks like Facebook. \n Android Platform Fundamentals \n Gradle \n OpenCV image processing \n NDK",
+      "playStore": "https://play.google.com/store/apps/details?id=com.mostafa_anter.avatoon&hl=en",
+      "github": [],
+      "otherLinks": [],
+      "images": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoYMx_UeMU9sPo3wZFtchhoPrdTrcq3ILxszllYYcYvx-zgQpd1BcmjtR_zPMKv0-x99K4BppEsvr00gga4JQ1oPOlih3h1jTX6JBvcKuWIZz2harL5dhcR8cjB9Z6iDJVG7HSFMx4xzXB/s320/device-2015-10-02-175929.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPGySE7iy5nDK8Kix-Z-aChv6rOxoLe0tFR4BdMJFMEW2h7ab3AXCgcPDmg_6Coo04BwYrYM9b09Cv8hELkC4tpU6-g-zvtXMUS0GZF0eZoStQg2CrXazRbNNmHULy_QlkIkvWqtUxNaYQ/s320/device-2015-10-02-180052.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisBa8xgJixHGZLsn1VQX6oNPDw29qrz1aF79grvTsxvWj8ALFi1Ug4lU9ziX6zee2ChS94mErmDa8Lhl_AYRKmOW6mMIJytm_JwcFow_b2BIGpuS_lcjL9_1Fcsh78qJdZRyFZ1jX2UGG4/s320/device-2015-10-02-180137.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGStznit4EqJXv_8Amykf4L7LM5ZCdJEv5P4wfXbqeG61qqImRjqZOuDtrI21GK9TYdrWPsxcj_APjT6-1jYH7Nbw-Brs4f_PkT7FnMtfkHUSFSWqHNH78_DUMquvOO8O-9-5vgg8w2moB/s320/device-2015-10-02-180914.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHQ0L6prMHeIeobVIgkr_KAipJQukXrXkF91MzDqMynm_EBPwpESZEnYXqgOPq0FyES3r_hFhyphenhyphenaP9bQ3hnaHhXby1mGczOPAZ97Y2cRczt7TbrZeyJ2HpWDLUxAyeXoixIb40lMj7MBnbs/s320/device-2015-10-02-180935.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6U-ADf_LZdS5QKUEKpDSxpVCuIPE4G8woTp5LbdW271syfhMkpNwd8fwCZoGKAB0X_Sfy_2TOPDYKi-ZyHyyB3yxnSpB1pgxl2NovAM-zFCWQqU56Fn44IoAuxydEE0JNcjMPZVbIfSAz/s320/device-2015-10-02-180956.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEje8z8u60Jhx_ucsAcUhhiJAhzmQTG3zKJ1Io6g21Rvv2bQidXVG4cTmJkBidyMpYuVBrNBk0frSkx-7lYEaA90fc75cMkdgFl4Ur23AXv0HpdXe6hOxXtTJfWYJqyxyM_zlvFOoeCcZG4w/s320/device-2015-10-02-181014.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDcbuf6srm-acX180e4ZOx_GJWXE4fuZFFtiUFx8vkrnhO8fhcVMupNkhQD7Lv2nbbOHC7J4IzsW6yv7id4asEZB68V5dtGedQkJ34hKhz_i71EcC5n7SwwcFr9cH005zHVteucieJsHNg/s1600/badge_new.png"
+      ]
+    },
+    {
+      "title": "Share Smile ツ",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2016/01/share-smile.html",
+      "published": "2016-01-25T05:38:00.001-08:00",
+      "updated": "2020-10-28T13:52:25.059-07:00",
+      "labels": [],
+      "text": "Smile Selfie ツ \n ــــــــــــــــــــــــــــــــــ \n application Target that makes you happy. \n feature : \n- there are many smiles for every one\n- easy to use\n- save you Photo in gallery after finishing modify.\n Android Platform Fundamentals \n Gradle \n image processing",
+      "playStore": "https://play.google.com/store/apps/details?id=com.mostafaAnter.chibsismilee&hl=en",
+      "github": [],
+      "otherLinks": [],
+      "images": [
+        "https://4.bp.blogspot.com/gVg_k0FtXb9VgdISFyzO0yb-VGZCadx74pDrSZzXOw3Q9fMVokVjh6BbLLhIxAjkoFo=h900-rw",
+        "https://1.bp.blogspot.com/tTp8YwP4o3hLGSO0Cq6OC42NXnVw261BO1JrIznyzZR2nCFmzsuiadWjbLtEDafkf-E=h900-rw",
+        "https://2.bp.blogspot.com/Q8X-wybwNhXhAL4-T9dczKOGbQ0n9yrxgN2tpNEZxjXctw3yPbv1PmF9ZqoFnLyD0K8=h900-rw",
+        "https://4.bp.blogspot.com/tMtNRGIEtPqUwDIXjZA0QRSYL_vIFS7BVF9Vq5eO7zH_Wow6pmbwNXlztl39mPGYkJhJ=h900-rw",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDcbuf6srm-acX180e4ZOx_GJWXE4fuZFFtiUFx8vkrnhO8fhcVMupNkhQD7Lv2nbbOHC7J4IzsW6yv7id4asEZB68V5dtGedQkJ34hKhz_i71EcC5n7SwwcFr9cH005zHVteucieJsHNg/s1600/badge_new.png"
+      ]
+    },
+    {
+      "title": "Translation Note",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2016/01/translation-note.html",
+      "published": "2016-01-23T11:50:00.001-08:00",
+      "updated": "2021-05-04T04:36:49.230-07:00",
+      "labels": [],
+      "text": "vocabulary apps that help you memorize words and phrases that you added. \n 1- You can add more than one meaning of word \n 2- listen to word speech \n 3- add and remove word easy \n 4- press on word on list to listen it \n Android UI Fundamentals - Tablet Intents \n SQLite database - offline data persistance - shared preferences",
+      "playStore": "https://play.google.com/store/apps/details?id=com.mostafaAnter.translationnote&hl=en",
+      "github": [],
+      "otherLinks": [],
+      "images": [
+        "https://4.bp.blogspot.com/kEsV48p2ImYq1a4z_ejc6-LFVMMN-qR9OOJVId4GFofGR8iMTHRaY2XAeL8noGmw9gU=h900-rw",
+        "https://4.bp.blogspot.com/aQWImaeeyXrEyMnVdgkXIpuVWcUPLcVrDJdMZ69PNCr-DBj0bJL1U8ucnB9nl-nUCd0=h900-rw",
+        "https://3.bp.blogspot.com/RQGLv1X8v_KbnZg9PcHFZ6dNQtFexUnCSthLU0m3NhK54k-7tYIXVLPsL9JXgdMXLQ=h900-rw",
+        "https://2.bp.blogspot.com/P4JSl34Wt0X2shhJXvLuiHlfWURtwL2MNcLsGBo8fqaR_M03ldJv4hJ_o-jO7PirY6Y=h900-rw",
+        "https://4.bp.blogspot.com/jIoQRUBOEF3hDgj0WjdoNyvaR_WvoZoTGX5YudD5vphzTSNWwLM2j77oUro9hEihoX8=h900-rw",
+        "https://2.bp.blogspot.com/Dzh3HZGP-Zd6vqF6fmkOHWNJlfMbIuEDLe27F05XFyHbslkj2MCA_A2NC8NUP-8kwA=h900-rw",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDcbuf6srm-acX180e4ZOx_GJWXE4fuZFFtiUFx8vkrnhO8fhcVMupNkhQD7Lv2nbbOHC7J4IzsW6yv7id4asEZB68V5dtGedQkJ34hKhz_i71EcC5n7SwwcFr9cH005zHVteucieJsHNg/s1600/badge_new.png"
+      ]
+    },
+    {
+      "title": "Knowledge Challenge",
+      "url": "https://mostafa-anter-portfolio.blogspot.com/2016/01/knowledge-challenge.html",
+      "published": "2016-01-23T06:13:00.001-08:00",
+      "updated": "2021-05-04T04:37:02.969-07:00",
+      "labels": [],
+      "text": "Trivial game than make some sport for your mind.\n Android Platform Fundamentals \n Eclips \n RESTFull web service \n Android SDK",
+      "playStore": "https://play.google.com/store/apps/details?id=com.mostafaAnter.knowledgechallenge&hl=en",
+      "github": [],
+      "otherLinks": [],
+      "images": [
+        "https://4.bp.blogspot.com/oyj_GhvhJwc0wUwxYoy5BA0tVtG7EHpLxbUSvk4Zef4G3ffJ5tDza04maNWlpfhd_LM=h900-rw",
+        "https://1.bp.blogspot.com/Li798-eFehKi5CXGr-pMSnI9GrMOG2bYmbhCO2rdY0u2wPlvm2XaPYIMSRinvoBu3km3=h900-rw",
+        "https://4.bp.blogspot.com/4a1S8t8F5pKELYZWzYFBXTIdjkRxXffo_ZGt3-rsUY5AbVrHIxb61yjKFpeeJc0qaIFV=h900-rw",
+        "https://3.bp.blogspot.com/hw1J9YQH6P8er_d1G-TwG35utfXEbGj6uEGi7L3qcYwb6g9U6-e9rUtwAznain-nkmw=h900-rw",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDcbuf6srm-acX180e4ZOx_GJWXE4fuZFFtiUFx8vkrnhO8fhcVMupNkhQD7Lv2nbbOHC7J4IzsW6yv7id4asEZB68V5dtGedQkJ34hKhz_i71EcC5n7SwwcFr9cH005zHVteucieJsHNg/s1600/badge_new.png"
+      ]
+    }
+  ]
+}

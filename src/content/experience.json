@@ -1,0 +1,32 @@
+{
+  "note": "Dates reconciled by owner rule: each job ends when the next starts. Differences from resume: WeVenture ends Feb 2022, Umoja ends Aug 2021, KLLIQ ends Oct 2020.",
+  "roles": [
+    { "id": "twc", "company": "The Weather Company", "brand": "The Weather Channel", "title": "Senior Android Engineer", "start": "2024-09", "end": null, "place": "Remote, US",
+      "bullets": ["Collaborate with product, design and backend teams on weather apps serving 100M+ users", "Improved performance by 40% using advanced concurrency", "Ensure code quality through test-driven development (TDD)", "Integrate Adobe and analytics SDKs for personalization", "Use server-driven UI (SDUI) to boost feature delivery flexibility by 60%", "Mentor junior developers and lead code reviews and architecture decisions"],
+      "product": { "name": "The Weather Channel", "summary": "Hurricane tracking, radar and live weather updates built with SDUI; safety tools enhanced with Adobe SDK integrations.", "play": "https://play.google.com/store/apps/details?id=com.weather.Weather" } },
+    { "id": "la3eb-lead", "company": "La3eb", "title": "Android Lead", "start": "2023-04", "end": "2024-09", "place": "Remote, Saudi Arabia",
+      "bullets": ["Led a team of 8 developers building a gaming platform with 1M+ active users", "Architected a modularized clean architecture", "Implemented CI/CD pipelines with Jenkins", "Integrated mParticle and Braze SDKs for engagement", "Improved development efficiency by 35% with new tools", "Mentored and coached team members; evaluated and recommended new technologies"],
+      "product": { "name": "La3eb Gaming Platform", "summary": "Social gaming and e-commerce features with modular architecture; GraphQL and Braze integrated for engagement.", "play": "https://play.google.com/store/apps/details?id=com.mecl.la3eb" } },
+    { "id": "la3eb-senior", "company": "La3eb", "title": "Senior Android Engineer", "start": "2022-02", "end": "2023-04", "place": "Remote, Saudi Arabia",
+      "bullets": ["Delivered features across the Android product lifecycle with clean architecture", "Improved quality with modular design and automated CI/CD", "Reduced technical debt affecting performance", "Helped implement the QA process with the relevant team"] },
+    { "id": "weventure", "company": "WeVenture", "title": "Senior Android Engineer", "start": "2021-08", "end": "2022-02", "place": "Remote, Singapore",
+      "bullets": ["Defined the architecture and technology stack, with modularization", "Built automated testing frameworks with Jenkins CI/CD", "Delivered scalable solutions for startup products"] },
+    { "id": "umoja", "company": "Umoja", "title": "Android Lead", "start": "2020-10", "end": "2021-08", "place": "Remote, London",
+      "bullets": ["Defined the mobile technical architecture and clean-code standards", "Planned agile sprints and development milestones", "Led decision-making on architecture standards"] },
+    { "id": "klliq", "company": "KLLIQ", "title": "Senior Android Engineer", "start": "2020-04", "end": "2020-10", "place": "Remote, Saudi Arabia",
+      "bullets": ["Designed scalable architecture for high-traffic apps", "Contributed to feature and product specifications in a multi-team setup", "Chose technology stack and software architecture"] },
+    { "id": "liveplus", "company": "LivePlus", "title": "Android Engineer", "start": "2017-10", "end": "2020-04", "place": "Egypt",
+      "bullets": ["Developed and maintained Android apps", "Took part in the full product lifecycle and feature specifications", "Delivered under tight deadlines in fast-paced cycles"] },
+    { "id": "mal", "company": "Mobile Application Launchpad", "title": "Android Study Group Leader", "start": "2016-09", "end": "2017-02", "place": "Asyut, Egypt",
+      "bullets": ["Part-time role in a program supported by Google, MCIT and Udacity", "Led a study group learning Android and helped them implement the Sunshine project"] },
+    { "id": "locname", "company": "LocName", "title": "Android Developer", "start": "2015-01", "end": "2016-01", "place": "Cairo, Egypt",
+      "bullets": ["Contributed to new feature and product specifications", "Participated in fast-paced development cycles"],
+      "dateNote": "LinkedIn says '2015 - January 2016'; month of start unknown, placeholder 2015-01 - confirm." },
+    { "id": "freelance", "company": "Freelancer.com", "title": "Freelance Android Developer", "start": "2014-01", "end": "2015-01", "place": "Cairo, Egypt",
+      "bullets": ["Developed nine Android applications for different customers", "Collaborated with designers and backend developers to resolve issues before release", "Delivered consistently on time across multiple projects"],
+      "dateNote": "LinkedIn says 'January 2014 - 2015'; end month unknown." }
+  ],
+  "education": [
+    { "school": "Assiut University", "degree": "B.Sc. Computers and Information, Computer Science", "start": 2012, "end": 2016, "note": "Resume: graduated Nov 2016" }
+  ]
+}

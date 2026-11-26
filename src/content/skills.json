@@ -1,0 +1,11 @@
+{
+  "groups": [
+    { "id": "lang", "name": { "en": "Languages", "ar": null }, "items": ["Kotlin", "Java", "Swift 5", "Groovy"] },
+    { "id": "android", "name": { "en": "Android", "ar": null }, "items": ["Jetpack Compose", "MVVM", "Multi-Module Architecture", "Clean Architecture", "Modularization", "XML", "Android SDK"] },
+    { "id": "libs", "name": { "en": "Frameworks & Libraries", "ar": null }, "items": ["Dagger Hilt", "Retrofit", "RxJava", "GraphQL", "Firebase", "Google Play Services", "Facebook SDK"] },
+    { "id": "sdks", "name": { "en": "SDKs & Platforms", "ar": null }, "items": ["Adobe SDKs", "mParticle", "Braze", "Server-Driven UI (SDUI)"] },
+    { "id": "tooling", "name": { "en": "Tooling & Delivery", "ar": null }, "items": ["Android Studio", "Gradle", "Git & GitHub", "Jenkins", "CI/CD", "TDD"] },
+    { "id": "ai", "name": { "en": "AI-Accelerated Engineering", "ar": null }, "items": ["GitHub Copilot", "Cline", "Claude", "Prompt Engineering for Coding", "Generative AI for Developers"] },
+    { "id": "lead", "name": { "en": "Leadership", "ar": null }, "items": ["Team management (8+ developers)", "Technical architecture", "Code reviews", "Mentoring", "Agile sprint planning"] }
+  ]
+}
