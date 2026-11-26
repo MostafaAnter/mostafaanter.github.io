@@ -8,7 +8,8 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "fetch:blog": "node scripts/fetch-blog.mjs",
-    "media": "node scripts/process-media.mjs"
+    "media": "node scripts/process-media.mjs",
+    "audio": "bash scripts/make-audio.sh"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.12",
