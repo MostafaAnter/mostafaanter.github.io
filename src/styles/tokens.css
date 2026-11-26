@@ -10,7 +10,7 @@
   --text-lg: clamp(1.125rem, 1.05rem + .4vw, 1.35rem);
   --text-xl: clamp(1.35rem, 1.2rem + .75vw, 1.75rem);
   --text-2xl: clamp(2rem, 1.5rem + 2.4vw, 3.4rem);
-  --text-hero: clamp(3.4rem, 2rem + 7vw, 8rem);
+  --text-hero: clamp(3.1rem, 1.4rem + 6.4vw, 6.75rem);
   --measure: 68ch;
   /* spacing scale (rem, so it scales on large screens) */
   --space-1: .25rem; --space-2: .5rem; --space-3: .75rem; --space-4: 1rem; --space-5: 1.5rem;

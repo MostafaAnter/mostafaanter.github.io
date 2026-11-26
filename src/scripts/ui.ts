@@ -11,26 +11,28 @@ $('#theme-toggle')?.addEventListener('click', () => {
   document.querySelector('meta[name="theme-color"]')?.setAttribute('content', next === 'dark' ? '#0b0f14' : '#f6f8f7');
 });
 
-// Mobile menu: focus-trapped while open, closes on Escape / link click / outside tap, returns focus to the button
-const menu = $('#menu'), burger = $<HTMLButtonElement>('#menu-toggle');
+// Mobile menu: focus is trapped inside the header (logo, links, buttons) while open; Escape / link click / outside tap close it
+// and focus returns to the menu button.
+const menu = $('#menu'), burger = $<HTMLButtonElement>('#menu-toggle'), header = $('.nav');
 const isOpen = () => !!menu?.classList.contains('open');
-const trapItems = (): HTMLElement[] => [burger!, ...$$<HTMLAnchorElement>("a", menu!)].filter(Boolean);
+const trapItems = (): HTMLElement[] => $$<HTMLElement>('a[href], button', header!).filter((el) => !el.hidden && el.getClientRects().length > 0);
 const setMenu = (open: boolean, restoreFocus = false) => {
   menu?.classList.toggle('open', open);
   burger?.setAttribute('aria-expanded', String(open));
   burger?.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-  if (open) $<HTMLAnchorElement>('a', menu!)?.focus();
+  // the menu is still visibility:hidden for the first frame of its transition, so focus on the next frame
+  if (open) requestAnimationFrame(() => setTimeout(() => $<HTMLAnchorElement>('a', menu!)?.focus(), 30));
   else if (restoreFocus) burger?.focus();
 };
 burger?.addEventListener('click', () => setMenu(!isOpen(), true));
 menu?.addEventListener('click', (e) => { if ((e.target as Element).closest('a')) setMenu(false); });
-document.addEventListener('pointerdown', (e) => { if (isOpen() && !(e.target as Element).closest('#menu, #menu-toggle')) setMenu(false); });
+document.addEventListener('pointerdown', (e) => { if (isOpen() && !(e.target as Element).closest('.nav')) setMenu(false); });
 document.addEventListener('keydown', (e) => {
   if (!isOpen()) return;
   if (e.key === 'Escape') { setMenu(false, true); return; }
   if (e.key !== 'Tab') return;
   const items = trapItems(), first = items[0], last = items[items.length - 1];
-  if (!items.includes(document.activeElement as HTMLElement)) { e.preventDefault(); first.focus(); return; }
+  if (!header!.contains(document.activeElement)) { e.preventDefault(); first.focus(); return; }
   if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
   else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
 });
