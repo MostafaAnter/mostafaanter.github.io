@@ -97,7 +97,7 @@ The repo root still has the OLD files (`index.html`, `app-ads.txt`, `contact/`).
 
 ## 8. Status
 
-Done: scaffold, content data, blog cache, media processing, all page sections (hero with static portrait, about + click-to-play video, experience timeline, skills, projects with filters, certificates with filter + lightbox, contact), light/dark theme, mobile menu. Tested in headless Chrome at 1440 and 390 px: no console errors, no horizontal overflow.
+Deployed. Done: scaffold, content data, blog cache, media processing, all page sections (hero with static portrait, about + click-to-play video, experience timeline, skills, projects with filters, certificates with filter + lightbox, contact), light/dark theme, mobile menu. Tested in headless Chrome at 1440 and 390 px: no console errors, no horizontal overflow.
 
 **3D hero (done):** `src/scripts/hero3d.ts`. A phone with a canvas-texture screen (portrait, name, animated radar) and three "module" layers that separate on scroll; follows the mouse (auto-sways on touch). three.js is a lazy dynamic import (about 190 KB gzipped, in its own chunk), loaded only after `load` + idle. It does NOT start when: `prefers-reduced-motion`, `prefers-reduced-data` / `saveData`, `hardwareConcurrency <= 2`, `deviceMemory <= 2`, or no WebGL; then the static portrait (`.frame` in `Hero.astro`) stays. Adds class `three-on` on `#hero-visual` when running; pauses when offscreen or tab hidden; context loss falls back to the portrait. The screen UI is drawn in `drawScreen()`; edit text/colors there. Tuning knobs: camera distance (`camera.position`), layer spacing (`layers`), pixel ratio cap.
 
@@ -124,8 +124,13 @@ Done: scaffold, content data, blog cache, media processing, all page sections (h
 2. (done, see above)
 3. (done, see above)
 4. (done: SEO assets) 5. (done: QA, except manual Safari/Firefox, see above)
-6. Deploy: `.github/workflows/deploy.yml` (build + publish to Pages). **Ask the owner first.** Then push and verify the live URL; confirm `/app-ads.txt` and `/contact/` still load.
-7. README for the owner (update content, add a certificate, refresh the blog feed). This file covers the same ground.
+6. (done: deployed, see below)
+
+**Deploy (done, live at https://mostafaanter.github.io):** `.github/workflows/deploy.yml` builds with `npm ci && npm run build` (Node 22) and publishes `dist/` via `actions/deploy-pages`. Triggers on every push to `main` and manually (`gh workflow run deploy.yml`). Repo Pages source was switched from "legacy (main branch root)" to "GitHub Actions" (`gh api -X PUT repos/MostafaAnter/mostafaanter.github.io/pages -f build_type=workflow`). Check a deploy with `gh run list --limit 3` / `gh run watch <id>`. Live checks after the first deploy: every public file returned 200, `/app-ads.txt` identical, `/contact/` loads, 404 page works, no console errors, Lighthouse mobile 99/100/100/100.
+- The OLD root files (`index.html`, `app-ads.txt`, `contact/index.html`) are still in git but no longer served (Pages serves only the built `dist/`). They are safe to delete later (ask the owner first); the same files live on in `public/`.
+- GitHub warns that actions/checkout, setup-node and upload-artifact run on a deprecated Node 20 runtime. Harmless now; bump action versions when newer majors appear.
+- A bad push to `main` goes live automatically. Run `npm run build` and `npx astro check` before pushing.
+7. README for the owner is `README.md` (done).
 
 ## 9. Open questions for the owner
 
